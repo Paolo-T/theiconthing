@@ -1,16 +1,16 @@
 {
-   "slug": "classica",
+   "slug": "the-eco-experts",
    "hero": {
-      "title": "Classica",
-      "subtitle": "Classical music app concept design",
-      "heroImg": "../images/classica/classica_tile.png"
+      "title": "The Eco Experts",
+      "subtitle": "Home page redesign",
+      "heroImg": "../images/theEcoExperts/theEcoExperts_tile.png"
    },
    "content_1": [
       {
          "id": "section-1",
          "aside": {
             "title": "Overview",
-            "list": ["Music player"]
+            "list": []
          },
          "main": {
             "title": "Overview",
@@ -51,33 +51,9 @@
          }
       }
    ],
-   "contentImg_1": ["../images/classica/classica_3.png"],
-   "contentList": {
-      "title": "Four sections",
-      "listItems": [
-         {
-            "title": "Discover",
-            "description": "Users are recommended interesting classical music content."
-         },
-         {
-            "title": "Search",
-            "description": "Users can search their music library."
-         },
-         {
-            "title": "Learn",
-            "description": "Users can follow an educational track and test and improve their classical music knowledge."
-         },
-         {
-            "title": "Profile",
-            "description": "Section that includes their history of content consumption, their favorites, their achievements, and some settings."
-         }
-      ]
-   },
-   "contentImg_2": [],
+   "contentImg_1": ["../images/theEcoExperts/theEcoExperts_2.png"],
+   "contentList": {},
+   "contentImg_2": ["../images/theEcoExperts/theEcoExperts_3.png", "../images/theEcoExperts/theEcoExperts_4.png"],
    "content_2": [],
-   "contentImg_3": [
-      "../images/classica/classica_2.png",
-      "../images/classica/classica_5.png",
-      "../images/classica/classica_4.png"
-   ]
+   "contentImg_3": ["../images/theEcoExperts/theEcoExperts_6.png"]
 }

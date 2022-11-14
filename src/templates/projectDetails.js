@@ -141,8 +141,7 @@ export default function ProjectDetails({ data }) {
                {/* Content list */}
                <section className="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-y-10 md:gap-y-6 gap-x-0 md:py-24 text-dark">
                   <h3 className="col-start-2 col-end-4">{data.projectDataJson.contentList.title}</h3>
-                  {(Array.isArray(data.projectDataJson.contentList.listItems) ||
-                     data.projectDataJson.contentList.listItems.length) &&
+                  {Array.isArray(data.projectDataJson.contentList.listItems) &&
                      data.projectDataJson.contentList.listItems.map((listItem, i) => (
                         <div key={i} className="col-start-5 col-end-11">
                            <h4 className="uppercase tracking-widest col-start-1 col-end-4 md:col-start-1 mb-2">

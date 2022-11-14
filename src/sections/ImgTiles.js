@@ -111,10 +111,10 @@ function ImgTiles({ isPageNav, props }) {
          img: data.theEcoExpertsImg.childImageSharp.gatsbyImageData,
          id: data.theEcoExpertsImg.id,
          linkTo: "/theecoexperts",
-         hRef: "https://www.theecoexperts.co.uk/",
+         // hRef: "https://www.theecoexperts.co.uk/",
          imgAlt: "DIY tool rental",
          isExternal: false,
-         isLocked: false,
+         isLocked: true,
       },
 
       // {
