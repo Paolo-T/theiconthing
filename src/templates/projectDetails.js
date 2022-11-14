@@ -67,11 +67,16 @@ export const data = graphql`
 `
 
 export default function ProjectDetails({ data }) {
-   const { title, subtitle } = data.projectDataJson.hero
-
-   const heroImg = getImage(data.projectDataJson.hero.heroImg.childImageSharp.gatsbyImageData)
-
    console.log("Data", data)
+
+   const { title, subtitle } = data.projectDataJson.hero
+   const heroImg = getImage(data.projectDataJson.hero.heroImg.childImageSharp.gatsbyImageData)
+   const content_1 = data.projectDataJson.content_1
+   const contentImg_1 = data.projectDataJson.contentImg_1
+   const contentListist = data.projectDataJson.contentList
+   const content_2 = data.projectDataJson.content_2
+   const contentImg_2 = data.projectDataJson.contentImg_2
+   const contentImg_3 = data.projectDataJson.contentImg_3
 
    return (
       <>
@@ -104,9 +109,9 @@ export default function ProjectDetails({ data }) {
                   />
                </section>
                {/* Content */}
-               {(Array.isArray(data.projectDataJson.content_1) || data.projectDataJson.content_1.length) && (
+               {(Array.isArray(content_1) || content_1.length) && (
                   <section className="w-full bg-white text-dark">
-                     {data.projectDataJson.content_1.map((section, i) => (
+                     {content_1.map((section, i) => (
                         <div key={i} className="container md:mb-16">
                            {/* Paragraph */}
                            <div className="grid grid-cols-1 md:grid-cols-12 gap-y-16 gap-x-0 mb-20">
@@ -128,8 +133,8 @@ export default function ProjectDetails({ data }) {
                   </section>
                )}
                {/* Image */}
-               {(Array.isArray(data.projectDataJson.contentImg_1) || data.projectDataJson.contentImg_1.length) &&
-                  data.projectDataJson.contentImg_1.map((image, i) => (
+               {(Array.isArray(contentImg_1) || contentImg_1.length) &&
+                  contentImg_1.map((image, i) => (
                      <GatsbyImage
                         key={i}
                         image={image.childImageSharp.gatsbyImageData}
@@ -139,33 +144,37 @@ export default function ProjectDetails({ data }) {
                      />
                   ))}{" "}
                {/* Content list */}
-               <section className="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-y-10 md:gap-y-6 gap-x-0 md:py-24 text-dark">
-                  <h3 className="col-start-2 col-end-4">{data.projectDataJson.contentList.title}</h3>
-                  {Array.isArray(data.projectDataJson.contentList.listItems) &&
-                     data.projectDataJson.contentList.listItems.map((listItem, i) => (
-                        <div key={i} className="col-start-5 col-end-11">
-                           <h4 className="uppercase tracking-widest col-start-1 col-end-4 md:col-start-1 mb-2">
-                              {listItem.title}
-                           </h4>
-                           <p className="col-start-4 col-end-12">{listItem.description}</p>
-                        </div>
-                     ))}
-               </section>
+               {contentListist.title && (
+                  <section className="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-y-10 md:gap-y-6 gap-x-0 md:py-24 text-dark">
+                     <h3 className="col-start-2 col-end-4">{contentListist.title}</h3>
+                     {Array.isArray(contentListist.listItems) &&
+                        contentListist.listItems.map((listItem, i) => (
+                           <div key={i} className="col-start-5 col-end-11">
+                              <h4 className="uppercase tracking-widest col-start-1 col-end-4 md:col-start-1 mb-2">
+                                 {listItem.title}
+                              </h4>
+                              <p className="col-start-4 col-end-12">{listItem.description}</p>
+                           </div>
+                        ))}
+                  </section>
+               )}
                {/* Image */}
-               {(Array.isArray(data.projectDataJson.contentImg_2) || data.projectDataJson.contentImg_2.length) &&
-                  data.projectDataJson.contentImg_2.map((image, i) => (
+               {(Array.isArray(contentImg_2) || contentImg_2.length) &&
+                  contentImg_2.map((image, i) => (
                      <GatsbyImage
                         key={i}
                         image={image.childImageSharp.gatsbyImageData}
-                        className="container grid col-span-12 mb-20"
+                        className={`container grid col-span-12 mb-20 ${
+                           !data.projectDataJson.contentList.title && "mt-20"
+                        }`}
                         alt={`${title} "presentation image"`}
                         loading="lazy"
                      />
                   ))}{" "}
                {/* Content */}
-               {Array.isArray(data.projectDataJson.content_2) && (
+               {Array.isArray(content_2) && (
                   <section className="w-full bg-white text-dark">
-                     {data.projectDataJson.content_2.map((section, i) => (
+                     {content_2.map((section, i) => (
                         <div key={i} className="container md:mb-20">
                            {/* Paragraph */}
                            <div className="grid grid-cols-1 md:grid-cols-12 gap-y-20 gap-x-0 mb-20">
@@ -188,17 +197,25 @@ export default function ProjectDetails({ data }) {
                   </section>
                )}
                {/* Image */}
-               {Array.isArray(data.projectDataJson.contentImg_3) &&
-                  data.projectDataJson.contentImg_3.map((image, i) => (
-                     <GatsbyImage
-                        key={i}
-                        image={image.childImageSharp.gatsbyImageData}
-                        className="container grid col-span-12 mb-20"
-                        alt={`${title} "presentation image"`}
-                        loading="lazy"
-                     />
-                  ))}{" "}
-               {/* Other projects */}
+               <div
+                  className={
+                     contentImg_3.length > 3
+                        ? "container grid grid-cols-3 gap-3 md:gap-6 "
+                        : "container grid col-span-12 mb-20"
+                  }
+               >
+                  {Array.isArray(contentImg_3) &&
+                     contentImg_3.map((image, i) => (
+                        <GatsbyImage
+                           key={i}
+                           image={image.childImageSharp.gatsbyImageData}
+                           className=""
+                           alt={`${title} "presentation image"`}
+                           loading="lazy"
+                        />
+                     ))}{" "}
+                  {/* Other projects */}
+               </div>
                <ImgTiles isPageNav={true} />
             </TransitionPageIn>
          </div>
