@@ -1,0 +1,4 @@
+{
+   "eslint.workingDirectories": ["./{PATH_TO_CLIENT}"],
+   "git.ignoreLimitWarning": true
+}

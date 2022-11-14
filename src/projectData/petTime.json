@@ -1,0 +1,84 @@
+{
+   "slug": "pet-time",
+   "hero": {
+      "title": "Pet Time",
+      "subtitle": "Pet management app concept design",
+      "heroImg": "../images/petTime/petTime_tile.png"
+   },
+   "content_1": [
+      {
+         "id": "section-1",
+         "aside": {
+            "title": "Overview",
+            "list": ["Pet management"]
+         },
+         "main": {
+            "title": "Overview",
+            "body": "Pet Time is a fun and friendly app for animal lovers. Whether you are experts or enthusiastic newbies, you'll find plenty of learning resources to help taking care of your pet friends."
+         }
+      },
+      {
+         "id": "section-2",
+         "aside": {
+            "title": "Skills applied",
+            "list": ["UX/UI", "Concept", "Art direction"]
+         },
+         "main": {
+            "title": "The brief",
+            "body": "The app is for those passionate about pets, who want to learn more about their loved domestic animals.The target customers are the curious newbie who has, so far, lacked a convenient opportunity to educate themselves on the topic, and the long-standing aficionado who’s looking for a high-quality, comprehensive app to teach them how to take care of their beloved pets, plus related content to enjoy on the go. The app monetizes through subscriptions. Some content and features are free for all users, while others are reserved for subscribers."
+         }
+      },
+      {
+         "id": "section-3",
+         "aside": {
+            "title": "Solution",
+            "list": []
+         },
+         "main": {
+            "title": "The solution",
+            "body": "An app that provides a dedicated section for interesting articles, news, podcasts, learning resources. A section to help finding pet friendly locations and facilities. The UI will be user friendly and easy to navigate. All resources will be easy to access and find."
+         }
+      }
+   ],
+   "contentImg_1": ["../images/petTime/petTime_1.png"],
+   "contentList": {
+      "title": "Four sections",
+      "listItems": [
+         {
+            "title": "Discover",
+            "description": "Users are recommended interesting content about their pet."
+         },
+         {
+            "title": "Learn",
+            "description": "Users can follow an educational track and test and improve their knowledge on pets."
+         },
+         {
+            "title": "Maps",
+            "description": "Users can find pet shops, veterinary clinics, pet friendly venues and places for pet care."
+         },
+         {
+            "title": "Profile",
+            "description": "Section that includes the User's history of content consumption, their favorites, their achievements, and some settings."
+         }
+      ]
+   },
+   "contentImg_2": [],
+   "content_2": [
+      {
+         "id": "section-1",
+         "aside": {
+            "title": "User flow",
+            "list": [""]
+         },
+         "main": {
+            "title": "User flow",
+            "body": "After the initial Log in / Sign Up, the user is presented with the Home screen where they can browse the most important topics regarding the care of their beloved pets. After choosing their subject of interest, they are presented with all the available resources and content focused on that particular topic."
+         }
+      }
+   ],
+   "contentImg_3": [
+      "../images/petTime/petTime_3.png",
+      "../images/petTime/petTime_4.png",
+      "../images/petTime/petTime_2.png"
+   ]
+}

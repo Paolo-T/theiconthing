@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   h1 {
+      @apply font-header font-semibold
+      text-5xl sm:text-5xl md:text-6xl md_2:text-6xl lg:text-7xl xl:text-7xl 2xl:text-8xl 3xl:text-8xl
+      tracking-tight
+      md:my-0 md:mb-5 lg:mb-0;
+   }
+
+   .h1-page {
+      @apply text-4xl md:text-6xl mb-1 md:mb-2;
+   }
+
+   h2 {
+      @apply font-header tracking-normal text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-bold mb-6;
+   }
+
+   h3 {
+      @apply font-header text-xl text-xl md:text-3xl lg:text-3xl font-bold
+      tracking-normal leading-none md:leading-tight
+      mb-4 md:mb-6;
+   }
+
+   h4 {
+      @apply font-header text-sm md:text-base font-bold uppercase tracking-widest;
+   }
+
+   h5 {
+      @apply font-header text-base md:text-2xl mb-1 tracking-wider font-bold;
+   }
+
+   p {
+      @apply font-sans font-normal text-base md:text-xl leading-7 md:leading-8 tracking-wide;
+   }
+
+   li {
+      @apply font-sans text-base md:text-xl;
+   }
+
+   .a {
+      @apply font-sans text-base md:text-xl;
+   }
+
+   .span {
+      @apply font-sans text-base;
+   }
+}
+
+@layer utilities {
+   .container {
+      @apply w-11/12 max-w-screen-2xl mx-auto;
+   }
+
+   .hero-sub-position {
+      @apply col-start-1 col-end-20 md:col-start-1 md:col-end-17 md_2:col-start-1 md_2:col-end-16 lg:col-start-13 lg:col-end-23 xl:col-start-15 xl:col-end-25 2xl:col-start-15 2xl:col-end-25 3xl:col-start-13 3xl:col-end-24;
+   }
+}

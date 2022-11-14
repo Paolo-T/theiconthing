@@ -1,0 +1,39 @@
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: same-origin
+/commons-61da88354209ca83998b.js
+  Cache-Control: public, max-age=31536000, immutable
+/36cc9e5b57c68a7f4a09a63604d5950225fdb22f-2158280d21ae6f56bfe7.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-project-details-js-5c1e783634d7e63df09f.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-404-js-afeefba2bec2abebce91.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-buzzsumo-js-44dc7b2bdb5917cf6125.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-index-js-c1bbb0ec3d736228b90e.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-shuush-js-2021137d711ba5851e6b.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-space-digest-js-55e66139c8d440519ab5.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-theecoexperts-js-ac527ef30f59c337beda.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-three-js-157baba9ca32186ae010.js
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-d52bcd987a30fb731444.js
+  Cache-Control: public, max-age=31536000, immutable
+/framework-e470ec2943e768a7434c.js
+  Cache-Control: public, max-age=31536000, immutable
+/styles.624f4646b309b5d22ffe.css
+  Cache-Control: public, max-age=31536000, immutable
+/app-2da3b8d80dce29483351.js
+  Cache-Control: public, max-age=31536000, immutable
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/sw.js
+  Cache-Control: no-cache

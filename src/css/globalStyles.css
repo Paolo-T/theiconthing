@@ -1,0 +1,16 @@
+html {
+   scroll-behavior: smooth;
+   /* background-color: #101014; */
+   background-color: #fc351c;
+}
+
+body {
+   text-rendering: auto;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   /* color: #0f1419; */
+   /* color: #e1e1e1; */
+   /* color: #6b7280; */
+   /* color: #6b6d70; */
+   color: #ffffff;
+}
