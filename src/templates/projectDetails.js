@@ -199,7 +199,6 @@ export default function ProjectDetails({ data }) {
                         : "container grid col-span-12"
                   }
                >
-                  {console.log(Array.isArray(contentImg_3))}
                   {Array.isArray(contentImg_3) &&
                      contentImg_3.map((image, i) => (
                         <GatsbyImage

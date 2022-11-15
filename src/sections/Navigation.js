@@ -12,6 +12,10 @@ function Navigation() {
    const linkColor = homePage || fourFourPage ? "text-white" : "text-dark"
    const linkHoverColor = homePage || fourFourPage ? "hover:text-dark" : "hover:text-primary"
 
+   const homepage = location.pathname === "/"
+
+   console.log(homepage)
+
    const navItems = [
       {
          to: "/",
@@ -22,11 +26,11 @@ function Navigation() {
          text: "Who?",
       },
       {
-         to: "/#work",
+         to: "homepage/#work",
          text: "Work",
       },
       {
-         to: "/#contact",
+         to: "#contact",
          text: "Contact",
       },
    ]
@@ -42,7 +46,7 @@ function Navigation() {
                         to={item.to}
                         className={`transition duration-300 ease-in-out ${linkColor} hover:text-dark`}
                      >
-                        <p className="inline-block text-sm md:text-sm font-bold md:pt-2 pb-1 align-baseline ">
+                        <p className="inline-block text-base md:text-base font-bold md:pt-2 pb-1 align-baseline ">
                            {item.text}
                         </p>
                      </Link>
