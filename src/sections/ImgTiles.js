@@ -65,7 +65,7 @@ function ImgTiles({ isPageNav, props }) {
          cta: "View more",
          img: data.buzzsumoImg.childImageSharp.gatsbyImageData,
          id: data.buzzsumoImg.id,
-         linkTo: "/buzzsumo",
+         linkTo: "/projects/buzzsumo",
          imgAlt: "Buzzsumo Web Page",
          isLocked: false,
       },
@@ -131,8 +131,8 @@ function ImgTiles({ isPageNav, props }) {
    ]
 
    return (
-      <section id="work" className={`bg-white ${isPageNav ? null : "bg-white"}`}>
-         {isPageNav && <h2 className="container text-dark pt-16 md:pt-20 mb-15 md:mb-12">Other projects</h2>}
+      <section id="work" className={` ${isPageNav ? "py-10" : "bg-white"}`}>
+         {isPageNav && <h3 className="container text-dark mb-4 md:mb-12">Other projects</h3>}
 
          <div
             className={`container grid ${
