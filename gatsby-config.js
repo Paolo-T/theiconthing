@@ -11,7 +11,6 @@ module.exports = {
       twitterImage: `/images/social/twitter-preview.png`,
       metaOgImage: `/images/social/og-preview.png`,
    },
-   flags: { PRESERVE_WEBPACK_CACHE: true },
    plugins: [
       `gatsby-plugin-netlify`,
       `gatsby-plugin-layout`,

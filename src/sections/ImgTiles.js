@@ -105,7 +105,7 @@ function ImgTiles({ isPageNav, props }) {
 
       {
          label: "UI/UX Design",
-         title: "theecoexperts.co.uk",
+         title: "theecoexperts.co.uk –  Coming soon...",
          subTitle: "Web design",
          cta: "View use case",
          img: data.theEcoExpertsImg.childImageSharp.gatsbyImageData,
