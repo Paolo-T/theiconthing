@@ -8,7 +8,7 @@ function Hero() {
    return (
       <section className="w-full h-screen bg-primary flex">
          <div className="self-end container text-left pb-[9vh] ">
-            <h1 className="lg:w-12/12 xl:w-12/12 2xl:w-12/12 mb-12 sm:mb-12 md:mb-16 lg:mb-12 xl:mb-12 leading-less xl:leading-tight  ">
+            <h1 className="lg:w-12/12 xl:w-12/12 2xl:w-12/12 mb-12 sm:mb-12 md:mb-16 lg:mb-16 xl:mb-16 leading-less xl:leading-tight  ">
                {" "}
                Specialising in human-centred user experience. Tailored pixel perfect visual design solutions.
             </h1>

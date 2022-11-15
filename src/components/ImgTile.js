@@ -43,9 +43,9 @@ function ImgTile({
 
                   {!isPageNav ? (
                      <div
-                        className="group absolute top-0 left-0 md:left-auto md:right-0
+                        className="group absolute top-64 left-0 md:left-auto md:right-0
                      flex justify-between align-bottom
-                     bg-dark/60 backdrop-blur-xs px-3 py-2
+                     bg-dark backdrop-blur-xs pl-3 pr-8 py-2
                   opacity-0 group-hover:opacity-100 transition ease-in-out duration-100"
                      >
                         <p className="text-xs md:text-sm font-bold tracking-more">{title}</p>

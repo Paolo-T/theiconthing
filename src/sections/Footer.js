@@ -37,7 +37,7 @@ function Footer() {
             >
                {footerItems.map((item, i) => (
                   <a key={i} rel="noopener noreferrer" target="_blank" href={item.href}>
-                     <li className="group xl:inline-block flex text-base md:text-base font-bold mb-3 md:mb-0 hover:text-primary transition duration-100 ease-in-out">
+                     <li className="group xl:inline-block flex nline-block text-xs md:text-base lg:text-base 2xl:text-2xl font-bold md:pt-2 pb-1 align-baseline  mb-3 md:mb-0 transition duration-100 ease-in-out">
                         {item.item}
 
                         <svg

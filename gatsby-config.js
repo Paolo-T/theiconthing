@@ -95,9 +95,6 @@ module.exports = {
                families: ["jakarta-sans-title", "Jakarta_sans_body"],
                urls: ["/fonts/fonts.css"],
             },
-            // google: {
-            //    families: [""],
-            // },
          },
       },
    ],

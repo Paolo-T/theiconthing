@@ -116,18 +116,6 @@ function ImgTiles({ isPageNav, props }) {
          isExternal: false,
          isLocked: true,
       },
-
-      // {
-      //    label: "UI/UX Design",
-      //    title: "Shuush!",
-      //    subTitle: "Minimalist messaging",
-      //    cta: "View use case",
-      //    img: data.shuushImg.childImageSharp.gatsbyImageData,
-      //    id: data.shuushImg.id,
-      //    linkTo: "/shuush",
-      //    imgAlt: "Shuush! App UI Design",
-      //    isLocked: false,
-      // },
    ]
 
    return (
