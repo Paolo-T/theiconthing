@@ -18,15 +18,15 @@ function Navigation() {
          text: "Paolo Todde",
       },
       {
-         to: "#about",
+         to: "/#about",
          text: "Who?",
       },
       {
-         to: "#work",
+         to: "/#work",
          text: "Work",
       },
       {
-         to: "#contact",
+         to: "/#contact",
          text: "Contact",
       },
    ]

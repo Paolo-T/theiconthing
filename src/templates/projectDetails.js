@@ -67,8 +67,6 @@ export const data = graphql`
 `
 
 export default function ProjectDetails({ data }) {
-   console.log("Data", data)
-
    const { title, subtitle } = data.projectDataJson.hero
    const heroImg = getImage(data.projectDataJson.hero.heroImg.childImageSharp.gatsbyImageData)
    const content_1 = data.projectDataJson.content_1
@@ -111,7 +109,7 @@ export default function ProjectDetails({ data }) {
                            {/* Paragraph */}
                            <div className="grid grid-cols-1 md:grid-cols-12 md:gap-y-16 gap-x-0">
                               <div className="hidden md:block col-start-2 col-end-4 md:mt-16">
-                                 <h4 className="mb-2 mt-1.5 text-grey">{section.aside.title}</h4>
+                                 <h4 className="mb-3 mt-1.5 text-grey">{section.aside.title}</h4>
                                  {Object.values(section.aside.list).map((item, i) => (
                                     <p key={i} className="text-grey">
                                        {item}
@@ -196,17 +194,17 @@ export default function ProjectDetails({ data }) {
                {/* Image */}
                <div
                   className={
-                     contentImg_3.length > 3
-                        ? "container grid grid-cols-3 gap-3 md:gap-6 "
+                     Array.isArray(contentImg_3) & (contentImg_3.length > 3)
+                        ? "container grid grid-cols-3 gap-y-6 md:gap-x-6 "
                         : "container grid col-span-12"
                   }
                >
+                  {console.log(Array.isArray(contentImg_3))}
                   {Array.isArray(contentImg_3) &&
                      contentImg_3.map((image, i) => (
                         <GatsbyImage
                            key={i}
                            image={image.childImageSharp.gatsbyImageData}
-                           className="mb-4 md:mb-20"
                            alt={`${title} "presentation image"`}
                            loading="lazy"
                         />

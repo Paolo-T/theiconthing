@@ -14,7 +14,7 @@ function Home() {
       <>
          <SEO
             keywords={[`UI Design`, `UX Design`, `User Experience`, `Web Design`, `Product Design`, `Portfolio`]}
-            title="Paolo Todde | User Interface Designer | Visual Designer"
+            title="Paolo Todde | User Interface Designer | Visual Designe"
          />
          <div>
             <TransitionPageIn>
@@ -23,13 +23,9 @@ function Home() {
                </TransitionInview>
 
                <ImgTiles />
-
                <About />
-
                <Recommendations />
-
                <SideProjects />
-
                <Contact />
             </TransitionPageIn>
          </div>
