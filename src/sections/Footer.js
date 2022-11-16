@@ -15,12 +15,12 @@ function Footer() {
          href: "https://www.linkedin.com/in/paolo-todde/",
       },
       {
-         item: "Github",
+         item: "Designed and built by me",
          href: "https://github.com/Paolo-T",
       },
       {
          item: "Digital art",
-         href: "https://www.instagram.com/roomzeroone/",
+         href: "https://www.instagram.com/paolo__todde/",
       },
       {
          item: "Email",

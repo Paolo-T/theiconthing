@@ -16,7 +16,7 @@ function About() {
 
    return (
       <section className="w-full bg-dark py-6 md:py-36">
-         <div id="about" className="relative container py-10 md:py-10 ">
+         <div id="about" className="relative container py-10 md:py-12 xl:py-16">
             <span
                className="absolute inset-0 bg-ImageBg bg-contain bg-center opacity-80 w-full h-full"
                style={{ opacity: "7%" }}
