@@ -15,10 +15,6 @@ function Footer() {
          href: "https://www.linkedin.com/in/paolo-todde/",
       },
       {
-         item: "Designed and built by me",
-         href: "https://github.com/Paolo-T",
-      },
-      {
          item: "Digital art",
          href: "https://www.instagram.com/paolo__todde/",
       },
@@ -35,10 +31,10 @@ function Footer() {
              border-t border-white
              pt-6 pb-8"
             >
-               {footerItems.map((item, i) => (
-                  <a key={i} rel="noopener noreferrer" target="_blank" href={item.href}>
-                     <li className="group xl:inline-block flex nline-block text-xs md:text-base lg:text-base 2xl:text-2xl font-bold md:pt-2 pb-1 align-baseline  mb-3 md:mb-0 transition duration-100 ease-in-out">
-                        {item.item}
+               {footerItems.map((listItem, i) => (
+                  <a key={i} rel="noopener noreferrer" target="_blank" href={listItem.href}>
+                     <li className="group xl:inline-block flex text-xs md:text-base lg:text-base 2xl:text-2xl font-bold md:pt-2 pb-1 align-baseline mb-3 md:mb-0 transition duration-100 ease-in-out">
+                        {listItem.item}
 
                         <svg
                            className="md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out inline-block transform rotate-45 ml-1 fill-current text-primary"
@@ -59,6 +55,9 @@ function Footer() {
                      </li>
                   </a>
                ))}
+               <li className="flex text-xs md:text-base lg:text-base 2xl:text-2xl font-bold md:pt-2 pb-1 align-baseline mb-3 md:mb-0 transition duration-100 ease-in-out">
+                  © Designed and built
+               </li>
                <li className="hover:text-grey transition duration-200 ease-in-out animate-bounce">
                   <ScrollToTop showBelow="250" />
                </li>
