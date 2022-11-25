@@ -34,14 +34,14 @@ function Navigation() {
    return (
       <header className={`fixed z-50 w-full backdrop-blur-sm bg-transparent`}>
          <nav className="container pt-4 pb-2">
-            <ul className="flex justify-between">
+            <ul className="flex space-x-10">
                {navItems.map((item, i) => (
                   <Link
                      key={i}
                      to={item.to}
                      className={`transition duration-300 ease-in-out ${linkColor} hover:text-dark`}
                   >
-                     <p className="inline-block text- md:text-base lg:text-base 2xl:text-xl font-bold md:pt-2 pb-1 align-baseline ">
+                     <p className="inline-block md:text-base lg:text-base 2xl:text-xl font-bold md:pt-2 pb-1 align-baseline flex ">
                         {item.text}
                      </p>
                   </Link>
