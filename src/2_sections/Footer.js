@@ -56,7 +56,7 @@ function Footer() {
                   </a>
                ))}
                <li className="flex text-xs md:text-base lg:text-base 2xl:text-2xl font-bold md:pt-2 pb-1 align-baseline mb-3 md:mb-0 transition duration-100 ease-in-out">
-                  © Designed and built
+                  © Designed & built
                </li>
                <li className="hover:text-grey transition duration-200 ease-in-out animate-bounce">
                   <ScrollToTop showBelow="250" />
