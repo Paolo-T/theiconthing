@@ -13,7 +13,6 @@ module.exports = {
    },
    plugins: [
       `gatsby-plugin-netlify`,
-      `gatsby-plugin-layout`,
       `gatsby-plugin-eslint`,
       `gatsby-plugin-react-helmet`,
       `gatsby-plugin-styled-components`,
@@ -72,6 +71,12 @@ module.exports = {
                require(`autoprefixer`),
                ...(process.env.NODE_ENV === `production` ? [require(`cssnano`)] : []),
             ],
+         },
+      },
+      {
+         resolve: `gatsby-plugin-layout`,
+         options: {
+            component: require.resolve(`./src/3_layouts/index.js`),
          },
       },
       {
