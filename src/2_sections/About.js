@@ -23,7 +23,7 @@ function About() {
             ></span>
 
             <div className="lg:flex items-center px-8 relative">
-               <div className="relative w-8/12 h-1/4 sm:w-8/12 md:w-3/12 xl:w-3/12 mx-auto ">
+               <div className="relative w-8/12 h-1/4 sm:w-8/12 md:w-3/12 xl:w-3/12 mx-auto  ">
                   <span
                      className="inline-block absolute h-full w-full md:-top-30 left-0 md:left-0 lg:left-0
                   rounded-full

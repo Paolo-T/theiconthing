@@ -42,7 +42,7 @@ function Reccomendations() {
    ]
 
    return (
-      <section className="w-full bg-dark pt-9 md:pt-0 md:pb-10">
+      <section className="w-full bg-dark pt-9 md:pt-0 md:pb-10 relative">
          <div className="container text-center">
             <h2 className="text-xl md:text-4xl lg:text-4xl mb-1 lg:mb-3">Kind recommendations</h2>
             <p className="text-md sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl text-grey mb-10 lg:mb-28">
