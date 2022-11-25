@@ -52,11 +52,11 @@ function Reccomendations() {
                From amazingly talented humans
             </p>
             <div className="md:m-0 lg:flex justify-between mb-10 lg:space-x-14">
-               <div className="flex-1 md:mt-20 md_2:mt-10">
+               <div className="flex-1">
                   {columnOne.map((recommendation, i) => (
                      <TransitionInview key={i}>
                         {
-                           <div className="bg-lessDark px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16 rounded-2xl">
+                           <div className="bg-lessDark px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16">
                               <div className="flex space-x-2 justify-center">
                                  <h5>{recommendation.name}</h5>
                                  <svg
@@ -86,11 +86,11 @@ function Reccomendations() {
                      </TransitionInview>
                   ))}
                </div>
-               <div className="flex-1 text center">
+               <div className="flex-1 md:mt-20 md_2:mt-10">
                   {columnTwo.map((recommendation, i) => (
                      <TransitionInview key={i}>
                         {
-                           <div className="bg-lessDark px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16 text-center rounded-2xl">
+                           <div className="bg-lessDark px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16 text-center rounded-xl">
                               <div className="flex space-x-2 justify-center">
                                  <h5>{recommendation.name}</h5>
                                  <svg
