@@ -2,7 +2,7 @@ import React from "react"
 import TransitionInview from "../1_components/TransitionInview"
 
 function Reccomendations() {
-   const columnOne = [
+   const reccomendations = [
       {
          name: "Rebecca Harrison",
          JobTitle: "Creative Director @ Brandwatch",
@@ -19,11 +19,8 @@ function Reccomendations() {
          name: "Don Steyn",
          JobTitle: "Art Director @ IronDog Studio",
          description:
-            "Paolo is a great person to work with and brings a lightheartedness to the work place. He is motivated, talented, forward thinking and has a great work ethic. It was a pleasure working with him.",
+            "Paolo is a great to work with and brings a lightheartedness to the work place. He is motivated, talented, forward thinking and has a great work ethic. It was a pleasure working with him.",
       },
-   ]
-
-   const columnTwo = [
       {
          name: "Margarita Cruz",
          JobTitle: "Head Of Operations @ 1X2 Network",
@@ -51,75 +48,39 @@ function Reccomendations() {
             <p className="text-md sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl text-grey mb-10 lg:mb-28">
                From amazingly talented humans
             </p>
-            <div className="md:m-0 lg:flex justify-between mb-10 lg:space-x-14">
-               <div className="flex-1">
-                  {columnOne.map((recommendation, i) => (
-                     <TransitionInview key={i}>
-                        {
-                           <div className="bg-lessDark px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16">
-                              <div className="flex space-x-2 justify-center">
-                                 <h5>{recommendation.name}</h5>
-                                 <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-5 w-5 md:h-6 md:w-6 md:mt-o.5"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    stroke-width="2.2"
-                                 >
-                                    <path
-                                       stroke-linecap="round"
-                                       stroke-linejoin="round"
-                                       d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                                    />
-                                 </svg>
-                              </div>
-                              <h4 className="text-xs md:text-base mb-6">{recommendation.JobTitle}</h4>
-
-                              <p className="md:leading-7 max-w-prose text-grey" style={{ whiteSpace: "pre-wrap" }}>
-                                 <span className="text-grey">“</span>
-                                 {recommendation.description}
-                                 <span className="text-grey">”</span>
-                              </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-12">
+               {reccomendations.map((recommendation, i) => (
+                  <TransitionInview key={i}>
+                     {
+                        <div className="bg-lessDark px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16 rounded-2xl">
+                           <div className="flex space-x-2 justify-center">
+                              <h5>{recommendation.name}</h5>
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 className="h-5 w-5 md:h-6 md:w-6 md:mt-o.5"
+                                 fill="none"
+                                 viewBox="0 0 24 24"
+                                 stroke="currentColor"
+                                 stroke-width="2.2"
+                              >
+                                 <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                                 />
+                              </svg>
                            </div>
-                        }
-                     </TransitionInview>
-                  ))}
-               </div>
-               <div className="flex-1 md:mt-20 md_2:mt-10">
-                  {columnTwo.map((recommendation, i) => (
-                     <TransitionInview key={i}>
-                        {
-                           <div className="bg-lessDark px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16 text-center rounded-xl">
-                              <div className="flex space-x-2 justify-center">
-                                 <h5>{recommendation.name}</h5>
-                                 <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-5 w-5 md:h-6 md:w-6 md:mt-o.5"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    stroke-width="2.2"
-                                 >
-                                    <path
-                                       stroke-linecap="round"
-                                       stroke-linejoin="round"
-                                       d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                                    />
-                                 </svg>
-                              </div>
-                              <h4 className="text-xs md:text-base mb-6">{recommendation.JobTitle}</h4>
+                           <h4 className="text-xs md:text-base mb-6">{recommendation.JobTitle}</h4>
 
-                              <p className="md:leading-7 max-w-prose text-grey" style={{ whiteSpace: "pre-wrap" }}>
-                                 <span className="text-grey">“</span>
-                                 {recommendation.description}
-                                 <span className="text-grey">”</span>
-                              </p>
-                           </div>
-                        }
-                     </TransitionInview>
-                  ))}
-               </div>
+                           <p className="md:leading-7 max-w-prose text-grey" style={{ whiteSpace: "pre-wrap" }}>
+                              <span className="text-grey">“</span>
+                              {recommendation.description}
+                              <span className="text-grey">”</span>
+                           </p>
+                        </div>
+                     }
+                  </TransitionInview>
+               ))}
             </div>
          </div>
       </section>
