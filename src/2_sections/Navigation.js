@@ -34,7 +34,7 @@ function Navigation() {
    return (
       <header className={`fixed z-50 w-full backdrop-blur-sm bg-transparent`}>
          <nav className="container pt-4 pb-2">
-            <ul className="flex space-x-10 space-between">
+            <ul className="flex sm:space-between md:flex md:space-x-32 ">
                {navItems.map((item, i) => (
                   <Link
                      key={i}
