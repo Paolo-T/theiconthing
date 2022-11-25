@@ -50,7 +50,7 @@ function SideProjects() {
                         />
                      </Link>
                   </div>
-                  <h4 className="mt-4 text-grey">3DC ( Visual Brand )</h4>
+                  <h4 className="mt-4 text-grey">3DC</h4>
                </div>
             </div>
          </div>

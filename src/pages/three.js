@@ -52,11 +52,10 @@ function Three() {
                   </h2>
                </div>
             </a> */}
-
-            <div className="pt-20">
-               <ImgTiles isPageNav={true} />
-            </div>
          </section>
+         <div className="pt-20">
+            <ImgTiles isPageNav={true} />
+         </div>
       </>
    )
 }
