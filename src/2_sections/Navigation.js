@@ -12,17 +12,15 @@ function Navigation() {
 
    const homepage = location.pathname === "/"
 
-   console.log(homepage)
-
    const navItems = [
       {
          to: "/",
          text: "Paolo Todde",
       },
-      {
-         to: "/#about",
-         text: "Who?",
-      },
+      // {
+      //    to: "/#about",
+      //    text: "Who?",
+      // },
       // {
       //    to: "/#work",
       //    text: "Work",
