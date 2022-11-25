@@ -1,5 +1,5 @@
 import React from "react"
-import TransitionInview from "../components/TransitionInview"
+import TransitionInview from "../1_components/TransitionInview"
 
 function Reccomendations() {
    const columnOne = [

@@ -1,9 +1,9 @@
 import React from "react"
-import SEO from "../components/Seo"
+import SEO from "../1_components/Seo"
 import { graphql, useStaticQuery } from "gatsby"
-import TransitionPageIn from "../components/TransitionPageIn"
+import TransitionPageIn from "../1_components/TransitionPageIn"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import ImgTiles from "../sections/ImgTiles"
+import ImgTiles from "../2_sections/ImgTiles"
 
 export const data = graphql`
    query ($slug: String!) {

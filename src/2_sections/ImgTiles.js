@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import ImgTile from "../components/ImgTile"
-import TransitionInview from "../components/TransitionInview"
+import ImgTile from "../1_components/ImgTile"
+import TransitionInview from "../1_components/TransitionInview"
 
 function ImgTiles({ isPageNav, props }) {
    const data = useStaticQuery(graphql`

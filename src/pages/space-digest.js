@@ -1,9 +1,9 @@
 import React from "react"
-import SEO from "../components/Seo"
+import SEO from "../1_components/Seo"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import TransitionPageIn from "../components/TransitionPageIn"
-import ImgTiles from "../sections/ImgTiles"
+import TransitionPageIn from "../1_components/TransitionPageIn"
+import ImgTiles from "../2_sections/ImgTiles"
 
 function spaceDigest() {
    const data = useStaticQuery(graphql`

@@ -1,13 +1,11 @@
 import React from "react"
-import SEO from "../components/Seo"
-import TransitionPageIn from "../components/TransitionPageIn"
-import TransitionInview from "../components/TransitionInview"
-import ImgTiles from "../sections/ImgTiles"
-import About from "../sections/About"
-import Recommendations from "../sections/Recommendations"
-import SideProjects from "../sections/SideProjects"
-import Hero from "../sections/Hero"
-import Contact from "../sections/Contact"
+import SEO from "../1_components/Seo"
+import ImgTiles from "../2_sections/ImgTiles"
+import About from "../2_sections/About"
+import Recommendations from "../2_sections/Recommendations"
+import SideProjects from "../2_sections/SideProjects"
+import Hero from "../2_sections/Hero"
+import Contact from "../2_sections/Contact"
 
 function Home() {
    return (
@@ -17,17 +15,12 @@ function Home() {
             title="Paolo Todde | User Interface Designer | Visual Designe"
          />
          <div>
-            <TransitionPageIn>
-               <TransitionInview>
-                  <Hero />
-               </TransitionInview>
-
-               <ImgTiles />
-               <About />
-               <Recommendations />
-               <SideProjects />
-               <Contact />
-            </TransitionPageIn>
+            <Hero />
+            <ImgTiles />
+            <About />
+            <Recommendations />
+            <SideProjects />
+            <Contact />
          </div>
       </>
    )

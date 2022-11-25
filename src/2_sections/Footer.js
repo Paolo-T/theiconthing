@@ -1,7 +1,7 @@
 import React from "react"
 import { useLocation } from "@reach/router"
-import TransitionPageIn from "../components/TransitionPageIn"
-import ScrollToTop from "../components/ScrollToTop"
+import TransitionPageIn from "../1_components/TransitionPageIn"
+import ScrollToTop from "../1_components/ScrollToTop"
 
 function Footer() {
    const location = useLocation()

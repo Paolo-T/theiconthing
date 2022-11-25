@@ -1,7 +1,7 @@
 import React from "react"
-import SEO from "../components/Seo"
+import SEO from "../1_components/Seo"
 import { Link } from "gatsby"
-import TransitionPageIn from "../components/TransitionPageIn"
+import TransitionPageIn from "../1_components/TransitionPageIn"
 
 function NotFoundPage() {
    return (
