@@ -35,7 +35,7 @@ function Navigation() {
    ]
 
    return (
-      <header className={`fixed z-50 w-full backdrop-blur-sm bg-transparent`}>
+      <header className={`fixed z-50 w-full bg-transparent`}>
          <TransitionInview>
             <nav className="container pt-4 pb-2">
                <ul className="flex justify-between">
