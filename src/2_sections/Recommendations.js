@@ -56,7 +56,7 @@ function Reccomendations() {
                   {columnOne.map((recommendation, i) => (
                      <TransitionInview key={i}>
                         {
-                           <div className="bg-lessDark px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16">
+                           <div className="bg-lessDark px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16 rounded-2xl">
                               <div className="flex space-x-2 justify-center">
                                  <h5>{recommendation.name}</h5>
                                  <svg
@@ -90,7 +90,7 @@ function Reccomendations() {
                   {columnTwo.map((recommendation, i) => (
                      <TransitionInview key={i}>
                         {
-                           <div className="bg-lessDark px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16 text-center">
+                           <div className="bg-lessDark px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16 text-center rounded-2xl">
                               <div className="flex space-x-2 justify-center">
                                  <h5>{recommendation.name}</h5>
                                  <svg
