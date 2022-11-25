@@ -16,7 +16,7 @@ function About() {
 
    return (
       <section className="w-full bg-dark py-6 md:py-36">
-         <div id="about" className="relative container py-10 md:py-12 xl:py-16">
+         <div id="about" className="relative container py-36">
             <span
                className="absolute inset-0 bg-ImageBg bg-contain bg-center opacity-80 w-full h-full"
                style={{ opacity: "7%" }}
@@ -50,16 +50,16 @@ function About() {
                      <br></br>
                      Currently designing with&nbsp;
                      <a
-                        className="cursor-pointer underline underline-offset-2  hover:text-grey transition duration-300"
+                        className="cursor-pointer underline underline-offset-4 decoration-1  hover:text-grey transition duration-300"
                         rel="noopener noreferrer"
-                        href="https://www.johnlewispartnership.co.uk/"
+                        href="https://www.johnlewis.com/"
                         target="_blank"
                      >
-                        John Lewis Partnership
+                        John Lewis & Partners
                      </a>
                      &nbsp;and&nbsp; jury member at&nbsp;
                      <a
-                        className="cursor-pointer underline underline-offset-2  hover:text-grey transition duration-300"
+                        className="cursor-pointer underline underline-offset-4 decoration-1  hover:text-grey transition duration-300"
                         rel="noopener noreferrer"
                         href="https://www.cssdesignawards.com/"
                         target="_blank"
@@ -72,7 +72,7 @@ function About() {
                   <h4 className="mt-16 mb-4">Focusing on:</h4>
                   <ul className="md:flex text-5xl justify-between pr-10">
                      <li>UX/UI</li>
-                     <li>Interactions</li>
+                     <li>Interaction & Motion</li>
                      <li>Design Systems</li>
                   </ul>
                </div>
