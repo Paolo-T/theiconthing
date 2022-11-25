@@ -23,10 +23,10 @@ function Navigation() {
          to: "/#about",
          text: "Who?",
       },
-      {
-         to: "/#work",
-         text: "Work",
-      },
+      // {
+      //    to: "/#work",
+      //    text: "Work",
+      // },
       {
          to: "#contact",
          text: "Contact",

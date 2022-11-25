@@ -8,8 +8,9 @@ function Hero() {
    const home = location.pathname === "/"
 
    return (
-      <section className="w-full h-screen bg-primary flex">
-         <div className="self-end container text-left pb-[9vh] ">
+      <section className="w-full h-screen bg-primary flex relative">
+         ß{" "}
+         <div className="self-end container text-left pb-[9vh] relative">
             <TransitionInview>
                <h1 className="lg:w-12/12 xl:w-12/12 2xl:w-12/12 mb-12 sm:mb-12 md:mb-16 lg:mb-16 xl:mb-16 leading-less xl:leading-tight  ">
                   {" "}
