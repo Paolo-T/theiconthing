@@ -25,7 +25,7 @@ function Footer() {
    ]
    return (
       <TransitionPageIn>
-         <footer className={`w-full mb-1 md:mt-0 ${redBackground}`}>
+         <footer className={`w-full pb-6 md:mt-0 ${redBackground}`}>
             <ul
                className="container flex text-center justify-between
              border-t border-white

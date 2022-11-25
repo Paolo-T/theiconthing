@@ -2,10 +2,10 @@ import React from "react"
 
 function Contact() {
    return (
-      <div className="relative group bg-dark pt-10 md:pt-24 pb-10">
+      <div className="relative group bg-dark pt-10 pb-10 md:pb-28">
          <div
             id="contact"
-            className="relative container bg-Dark
+            className="relative container bg-dark
                      p-6 md:px-20 my-10 md:py-32 md:flex justify-between text-left
                      bg-ImageBg bg-contain bg-center"
          >
@@ -18,10 +18,10 @@ function Contact() {
             <div className="relative md:w-6/12 lg:w-6/12 text-center md:text-left">
                <h4 className="mb-4">Say Hello</h4>
                <h3
-                  className="text-2xl md:text-4xl leading-normal md:leading-less mb-6
+                  className="md:w-[90%] text-2xl md:text-4xl leading-normal md:leading-less mb-6
                   group-hover:text-transparent bg-gradient-to-l from-green-600 via-blue-500 to-purple-600 bg-clip-text transition duration-500 group-hover:duration-200 group-hover:animate-pulse"
                >
-                  <a rel="noopener noreferrer" target="_blank" href="mailto:iampaolotodde@gmail.com" className="">
+                  <a rel="noopener noreferrer" target="_blank" href="mailto:iampaolotodde@gmail.com">
                      I'd love to collaborate with you. Let's talk.
                   </a>
                </h3>

@@ -12,14 +12,14 @@ function Home() {
       <>
          <SEO
             keywords={[`UI Design`, `UX Design`, `User Experience`, `Web Design`, `Product Design`, `Portfolio`]}
-            title="Paolo Todde | User Interface Designer | Visual Designe"
+            title="Paolo Todde | Product Designer | Visual Design"
          />
          <div>
             <Hero />
             {/* <ImgTiles /> */}
             <About />
             <Recommendations />
-            <SideProjects />
+            {/* <SideProjects /> */}
             <Contact />
          </div>
       </>
