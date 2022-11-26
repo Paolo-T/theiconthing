@@ -71,6 +71,19 @@ function ImgTiles({ isPageNav, props }) {
       },
       {
          label: "UI/UX Design",
+         title: "theecoexperts.co.uk –  Coming soon...",
+         subTitle: "Web design",
+         cta: "View use case",
+         img: data.theEcoExpertsImg.childImageSharp.gatsbyImageData,
+         id: data.theEcoExpertsImg.id,
+         linkTo: "/theecoexperts",
+         // hRef: "https://www.theecoexperts.co.uk/",
+         imgAlt: "DIY tool rental",
+         isExternal: false,
+         isLocked: true,
+      },
+      {
+         label: "UI/UX Design",
          title: "Pet Time",
          subTitle: "Pet management",
          cta: "View use case",
@@ -102,20 +115,6 @@ function ImgTiles({ isPageNav, props }) {
          imgAlt: "classica app ui design",
          isLocked: false,
       },
-
-      {
-         label: "UI/UX Design",
-         title: "theecoexperts.co.uk –  Coming soon...",
-         subTitle: "Web design",
-         cta: "View use case",
-         img: data.theEcoExpertsImg.childImageSharp.gatsbyImageData,
-         id: data.theEcoExpertsImg.id,
-         linkTo: "/theecoexperts",
-         // hRef: "https://www.theecoexperts.co.uk/",
-         imgAlt: "DIY tool rental",
-         isExternal: false,
-         isLocked: true,
-      },
    ]
 
    return (
@@ -144,7 +143,7 @@ function ImgTiles({ isPageNav, props }) {
                      hRef={tile.hRef}
                      marginTop={tile.marginTop}
                      marginBottom={tile.marginBottom}
-                     rounded="0"
+                     rounded={true}
                      isPageNav={isPageNav}
                      isExternal={tile.isExternal}
                      isLocked={tile.isLocked}

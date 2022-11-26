@@ -16,7 +16,7 @@ function Home() {
          />
          <div>
             <Hero />
-            {/* <ImgTiles /> */}
+            <ImgTiles />
             <About />
             <Recommendations />
             {/* <SideProjects /> */}

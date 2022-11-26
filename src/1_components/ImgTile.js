@@ -18,11 +18,12 @@ function ImgTile({
 }) {
    return (
       <div>
+         {console.log(rounded)}
          <Link to={!isLocked && linkTo}>
             <a href={isExternal && hRef} target="_blank" rel="noopener noreferrer">
                <div
                   className={`relative group w-full transition duration-500 transform
-               rounded-${rounded ? rounded : 0} overflow-hidden
+                  rounded-${rounded ? "2xl" : "0"} overflow-hidden
                   ${
                      isPageNav
                         ? "transition duration-500 transform cursor-pointer group-hover:scale-[1.1] group-hover:rotate-[0.5deg"
@@ -42,12 +43,7 @@ function ImgTile({
                   />
 
                   {!isPageNav ? (
-                     <div
-                        className="group absolute top-64 left-0 md:left-auto md:right-0
-                     flex justify-between align-bottom
-                     bg-dark backdrop-blur-xs pl-3 pr-8 py-2
-                  opacity-0 group-hover:opacity-100 transition ease-in-out duration-100"
-                     >
+                     <div className="group absolute top-0 left-0 md:left-auto md:right-0 flex justify-between align-bottom bg-dark pl-3 pr-8 py-2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-100">
                         <p className="text-xs md:text-sm font-bold tracking-more">{title}</p>
                         <p className="text-xs md:text-xs mx-1 align-baseline md:mx-3">|</p>
                         {isLocked ? (
