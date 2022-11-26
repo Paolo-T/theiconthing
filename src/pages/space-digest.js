@@ -3,7 +3,7 @@ import SEO from "../1_components/Seo"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import TransitionPageIn from "../1_components/TransitionPageIn"
-import ImgTiles from "../2_sections/ImgTiles"
+import ProjectsTiles from "../2_sections/ProjectsTiles"
 
 function spaceDigest() {
    const data = useStaticQuery(graphql`
@@ -148,7 +148,7 @@ function spaceDigest() {
                </div>
 
                <div className="w-10/12 md:w-8/12 lg:w-8/12 xl:w-7/12 max-w-screen-xl mx-auto">
-                  <ImgTiles isPageNav={true} />
+                  <ProjectsTiles isPageNav={true} />
                </div>
             </TransitionPageIn>
          </div>

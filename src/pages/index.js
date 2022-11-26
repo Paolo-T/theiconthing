@@ -1,6 +1,6 @@
 import React from "react"
 import SEO from "../1_components/Seo"
-import ImgTiles from "../2_sections/ImgTiles"
+import ProjectsTiles from "../2_sections/ProjectsTiles"
 import About from "../2_sections/About"
 import Recommendations from "../2_sections/Recommendations"
 import SideProjects from "../2_sections/SideProjects"
@@ -16,7 +16,7 @@ function Home() {
          />
          <div>
             <Hero />
-            <ImgTiles />
+            <ProjectsTiles />
             <About />
             <Recommendations />
             <SideProjects />

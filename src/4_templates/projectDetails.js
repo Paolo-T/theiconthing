@@ -3,7 +3,7 @@ import SEO from "../1_components/Seo"
 import { graphql, useStaticQuery } from "gatsby"
 import TransitionPageIn from "../1_components/TransitionPageIn"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import ImgTiles from "../2_sections/ImgTiles"
+import ProjectsTiles from "../2_sections/ProjectsTiles"
 
 export const data = graphql`
    query ($slug: String!) {
@@ -210,7 +210,7 @@ export default function ProjectDetails({ data }) {
                      ))}{" "}
                   {/* Other projects */}
                </div>
-               <ImgTiles isPageNav={true} />
+               <ProjectsTiles isPageNav={true} />
             </TransitionPageIn>
          </div>
       </>

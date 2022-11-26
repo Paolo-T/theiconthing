@@ -3,7 +3,7 @@ import SEO from "../1_components/Seo"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import TransitionPageIn from "../1_components/TransitionPageIn"
-import ImgTiles from "../2_sections/ImgTiles"
+import ProjectsTiles from "../2_sections/ProjectsTiles"
 
 function Shuush() {
    const imageData = useStaticQuery(graphql`
@@ -128,7 +128,7 @@ function Shuush() {
                      className="container bg-white"
                   />
 
-                  <ImgTiles isPageNav={true} />
+                  <ProjectsTiles isPageNav={true} />
                </TransitionPageIn>
             </div>
          </section>
