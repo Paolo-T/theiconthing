@@ -51,9 +51,9 @@ function SideProjects() {
    ]
    console.log(tilesData)
    return (
-      <section className="w-full bg-white py-16 md:pb-36 md:pt-32">
+      <section className="w-full bg-white py-16 md:py-60">
          <div className="container">
-            <h2 className="text-dark mb-0 md:mb-8">Side projects</h2>
+            <h2 className="text-dark mb-10">Side projects</h2>
             <div className="grid md:grid-cols-2 gap-12">
                {tilesData.map((tile, i) => (
                   <ImgTile
@@ -71,8 +71,8 @@ function SideProjects() {
                      hRef={tile.hRef}
                      marginTop={tile.marginTop}
                      marginBottom={tile.marginBottom}
-                     rounded={true}
-                     isPageNav=""
+                     rounded={false}
+                     isPageNav={false}
                      isExternal={tile.isExternal}
                      isLocked={tile.isLocked}
                   />

@@ -40,7 +40,7 @@ function About() {
                   />
                </div>
 
-               <div className="w-full lg:w-7/12 md:pl-10 xl:pl-0 mt-10 lg:mt-0 md:pr-10 xl:pr-20 2xl:pr-52">
+               <div className="w-full lg:w-7/12 md:pl-10 xl:pl-0 mt-10 lg:mt-0 md:pr-10 xl:pr-20">
                   <h2 className="mb-5">Hey there</h2>
                   <p className="mt-2">
                      I am a designer specializing in web and mobile experiences. Passionate about visual communication,

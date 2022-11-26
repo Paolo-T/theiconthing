@@ -10,11 +10,11 @@ function Hero() {
    return (
       <section className="w-full h-screen bg-primary flex relative">
          ß{" "}
-         <div className="self-end container text-left pb-[12vh] relative">
+         <div className="self-end container text-left pb-[11vh] relative">
             <TransitionInview>
                <h1 className="lg:w-12/12 xl:w-12/12 2xl:w-12/12 mb-12 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-28 leading-less xl:leading-tight ">
                   {" "}
-                  Specialising in human-centred user experience. Tailored pixel perfect visual design solutions.
+                  Human-centred user experience. Tailored pixel perfect visual design solutions.
                </h1>
             </TransitionInview>
 

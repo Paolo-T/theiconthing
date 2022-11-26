@@ -18,8 +18,8 @@ function Home() {
             <Hero />
             <ProjectsTiles />
             <About />
-            <Recommendations />
             <SideProjects />
+            <Recommendations />
             <Contact />
          </div>
       </>
