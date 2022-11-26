@@ -5,9 +5,7 @@ function Contact() {
       <div className="relative group bg-dark pt-10 pb-10 md:pb-28">
          <div
             id="contact"
-            className="relative container bg-dark
-                     p-6 md:px-20 my-10 md:py-32 md:flex justify-between text-left
-                     bg-ImageBg bg-contain bg-center"
+            className="relative container bg-lessDark p-6 md:px-20 my-10 md:py-32 md:flex justify-between text-left"
          >
             <span className="bg-dark absolute inset-0" style={{ opacity: "90%" }}></span>
             <span

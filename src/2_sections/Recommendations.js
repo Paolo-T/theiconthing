@@ -42,17 +42,23 @@ function Reccomendations() {
    ]
 
    return (
-      <section className="w-full bg-dark pt-9 md:pt-0 md:pb-10 relative">
+      <section className="w-full bg-dark py-20 md:py-32 relative">
+         <span
+            className="absolute inset-0 bg-ImageBg bg-contain bg-center opacity-80 w-full h-full"
+            style={{ opacity: "7%" }}
+         ></span>
          <div className="container text-center">
-            <h2 className="text-xl md:text-4xl lg:text-4xl mb-1 lg:mb-3">Kind recommendations</h2>
-            <p className="text-md sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl text-grey mb-10 lg:mb-28">
-               From amazingly talented humans
-            </p>
+            <div>
+               <h2 className="text-xl md:text-4xl lg:text-4xl mb-1 lg:mb-3">Kind recommendations</h2>
+               <p className="text-md sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl text-grey mb-10 lg:mb-28">
+                  From amazingly talented humans
+               </p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-12">
                {reccomendations.map((recommendation, i) => (
                   <TransitionInview key={i}>
                      {
-                        <div className="bg-lessDark px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16 rounded-2xl">
+                        <div className="bg-lessDark backdrop-blur-sm px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16 rounded-2xl">
                            <div className="flex space-x-2 justify-center">
                               <h5>{recommendation.name}</h5>
                               <svg

@@ -15,14 +15,14 @@ function About() {
    `)
 
    return (
-      <section className="w-full bg-dark py-6 md:py-36">
-         <div id="about" className="relative container py-36">
-            <span
+      <section className="w-full bg-dark py-20 md:py-52">
+         <div id="about" className="relative container bg-dark">
+            {/* <span
                className="absolute inset-0 bg-ImageBg bg-contain bg-center opacity-80 w-full h-full"
                style={{ opacity: "7%" }}
-            ></span>
+            ></span> */}
 
-            <div className="lg:flex items-center px-8 relative">
+            <div className="relative lg:flex items-center px-8">
                <div className="relative w-8/12 h-1/4 sm:w-8/12 md:w-3/12 xl:w-3/12 mx-auto  ">
                   <span
                      className="inline-block absolute h-full w-full md:-top-30 left-0 md:left-0 lg:left-0
@@ -69,7 +69,7 @@ function About() {
                      .
                   </p>
 
-                  <h4 className="mt-16 mb-4">Focusing on:</h4>
+                  <h4 className="mt-16 mb-4 text-grey">Focusing on:</h4>
                   <ul className="md:flex text-5xl justify-between pr-10">
                      <li>UX/UI</li>
                      <li>Interaction & Motion</li>
