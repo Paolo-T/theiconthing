@@ -19,6 +19,7 @@ module.exports = {
          4: "4px",
       },
       colors: ({ colors }) => ({
+         // primary: "#EB4C2E",
          primary: "#fc351c",
          secondary: "#D4D0C9",
          grey: "#9ca3af",
