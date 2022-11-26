@@ -4,7 +4,7 @@ import TransitionInview from "../1_components/TransitionInview"
 import ImgTile from "../1_components/ImgTile"
 
 function SideProjects() {
-   const data = useStaticQuery(graphql`
+   const images = useStaticQuery(graphql`
       query sideProjects {
          threeImg: file(relativePath: { eq: "three/three_1.png" }) {
             id
@@ -27,7 +27,7 @@ function SideProjects() {
          title: "Digital art",
          subTitle: "Illustration",
          cta: "",
-         img: data.digitalArtImg.childImageSharp.gatsbyImageData,
+         img: images.digitalArtImg.childImageSharp.gatsbyImageData,
          id: "",
          // linkTo: "",
          hRef: "https://www.instagram.com/paolo__todde/",
@@ -40,7 +40,7 @@ function SideProjects() {
          title: "3dc designs",
          subTitle: "Branding",
          cta: "",
-         img: data.threeImg.childImageSharp.gatsbyImageData,
+         img: images.threeImg.childImageSharp.gatsbyImageData,
          id: "",
          linkTo: "/three/",
          // hRef: "",

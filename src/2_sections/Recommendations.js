@@ -21,17 +21,18 @@ function Reccomendations() {
          description:
             "Paolo is a great to work with and brings a lightheartedness to the work place. He is motivated, talented, forward thinking and has a great work ethic. It was a pleasure working with him.",
       },
+
+      {
+         name: "Pete Rundle",
+         JobTitle: "Senior Developer & Designer @ Brandwatch",
+         description:
+            "I was Paolo’s line manager for around 2 years. During that time Paolo was always pushing to improve, and his enthusiasm for both UI/UX and code was always tangible. He designed and coded many of our design system’s front-end components, which were always slick and on brand. As well as code, he also managed and maintained the team Figma library - enabling other designers to use our front-end components and speak the same language as developers.",
+      },
       {
          name: "Margarita Cruz",
          JobTitle: "Head Of Operations @ 1X2 Network",
          description:
             "Paolo is a highly skilled Designer. He is very creative, honest, reliable and approachable to work with. Full of creative energy, he thrives on any challenge, making him to get work delivered with thought, insight, speed and most importantly, always to a high standard. A pleasure to work with Paolo.",
-      },
-      {
-         name: "Pete Rundle",
-         JobTitle: "Senior Developer & Designer @ Brandwatch",
-         description:
-            "I was Paolo’s line manager for around 2 years. During that time Paolo was always pushing to improve, and his enthusiasm for both UI/UX and code was always tangible. He designed and coded many of our design system’s front-end components, which were always slick and on brand. As well as code, he also managed and maintained the team Figma library - enabling other designers to use our front-end components and speak the same language as developers.\n\nPaolo is a great person to work with day to day - positive, down to earth and extremely humble. Looking forward to seeing what Paolo will do next!",
       },
       {
          name: "Monica Salis",
@@ -54,11 +55,14 @@ function Reccomendations() {
                   From amazingly talented humans
                </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-12">
+            <div className="columns-1 md:columns-2 lg:columns-md gap-2 md:gap-12">
                {reccomendations.map((recommendation, i) => (
-                  <TransitionInview key={i}>
+                  <TransitionInview>
                      {
-                        <div className="bg-lessDark backdrop-blur-sm px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 mb-6 lg:mb-16 rounded-2xl">
+                        <div
+                           key={i}
+                           className="bg-lessDark backdrop-blur-sm px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 rounded-2xl mb-12"
+                        >
                            <div className="flex space-x-2 justify-center">
                               <h5>{recommendation.name}</h5>
                               <svg

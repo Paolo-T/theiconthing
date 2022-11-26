@@ -3,20 +3,15 @@ import React from "react"
 function Contact() {
    return (
       <div className="relative group bg-dark pt-10 pb-10 md:pb-28">
-         <div
-            id="contact"
-            className="relative container bg-lessDark p-6 md:px-20 my-10 md:py-32 md:flex justify-between text-left"
-         >
-            <span className="bg-dark absolute inset-0" style={{ opacity: "90%" }}></span>
+         <div id="contact" className="relative container p-6 md:px-20 my-10 md:py-32 text-left">
             <span
-               className="absolute inset-0 z-0
-            bg-gradient-to-t from-dark to-transparent animate-pulse"
+               className="absolute inset-0 z-0 bg-gradient-to-t from-dark to-transparent animate-pulse"
                style={{ opacity: "95%" }}
             ></span>
             <div className="relative md:w-6/12 lg:w-6/12 text-center md:text-left">
                <h4 className="mb-4">Say Hello</h4>
                <h3
-                  className="md:w-[90%] text-2xl md:text-4xl leading-normal md:leading-less mb-6
+                  className="md:w-[90%] text-2xl md:text-4xl leading-normal md:leading-less mb-12
                   group-hover:text-transparent bg-gradient-to-l from-green-600 via-blue-500 to-purple-600 bg-clip-text transition duration-500 group-hover:duration-200 group-hover:animate-pulse"
                >
                   <a rel="noopener noreferrer" target="_blank" href="mailto:iampaolotodde@gmail.com">
@@ -25,7 +20,7 @@ function Contact() {
                </h3>
             </div>
 
-            <div className="relative container md:mx-0 md:w-4/12 flex items-center justify-between md:justify-around md:pt-5">
+            <div className="relative container md:mx-0 md:w-4/12 flex items-center justify-between">
                <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/paolo-todde/">
                   <svg
                      viewBox="0 0 24 24"
