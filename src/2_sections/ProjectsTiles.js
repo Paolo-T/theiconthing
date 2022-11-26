@@ -54,6 +54,18 @@ function ImgTiles({ isPageNav, props }) {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
+         threeImg: file(relativePath: { eq: "three/three_1.png" }) {
+            id
+            childImageSharp {
+               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
+            }
+         }
+         digitalArtImg: file(relativePath: { eq: "about/digitalArtThumb.png" }) {
+            id
+            childImageSharp {
+               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
+            }
+         }
       }
    `)
 
@@ -71,7 +83,7 @@ function ImgTiles({ isPageNav, props }) {
       },
       {
          label: "UI/UX Design",
-         title: "theecoexperts.co.uk – Coming soon...",
+         title: "The eco experts",
          subTitle: "Web design",
          cta: "View use case",
          img: data.theEcoExpertsImg.childImageSharp.gatsbyImageData,
@@ -115,15 +127,41 @@ function ImgTiles({ isPageNav, props }) {
          imgAlt: "classica app ui design",
          isLocked: false,
       },
+      {
+         label: "",
+         title: "Digital art",
+         subTitle: "Illustration",
+         cta: "",
+         img: data.digitalArtImg.childImageSharp.gatsbyImageData,
+         id: "",
+         // linkTo: "",
+         hRef: "https://www.instagram.com/paolo__todde/",
+         imgAlt: "",
+         isExternal: true,
+         isLocked: false,
+      },
+      {
+         label: "",
+         title: "3dc designs",
+         subTitle: "Branding",
+         cta: "",
+         img: data.threeImg.childImageSharp.gatsbyImageData,
+         id: "",
+         linkTo: "/three/",
+         // hRef: "",
+         imgAlt: "",
+         isExternal: false,
+         isLocked: false,
+      },
    ]
 
    return (
       <section id="work" className={` ${isPageNav ? "bg-white py-24 " : "py-4 md:py-16"}`}>
-         {isPageNav && <h3 className="container text-dark mb-4 md:mb-12">Other projects</h3>}
+         {isPageNav && <h3 className="container text-dark mb-4">Other projects</h3>}
 
          <div
             className={`container grid ${
-               isPageNav ? "grid-cols-1 md:grid-cols-3 gap-5" : "grid-cols-1 gap-4 md:gap-16 "
+               isPageNav ? "grid-cols-1 md:grid-cols-4 gap-5" : "grid-cols-1 gap-4 md:gap-16 "
             }`}
          >
             {tilesData.map((tile) => (

@@ -11,7 +11,7 @@
    }
 
    .h1-page {
-      @apply text-4xl md:text-6xl mb-1 md:mb-4;
+      @apply text-4xl md:text-6xl mb-1 md:mb-3;
    }
 
    h2 {
