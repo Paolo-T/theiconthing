@@ -17,14 +17,14 @@ function Navigation() {
          to: "/",
          text: "Paolo Todde",
       },
-      // {
-      //    to: "/#about",
-      //    text: "Who?",
-      // },
-      // {
-      //    to: "/#work",
-      //    text: "Work",
-      // },
+      {
+         to: "/#about",
+         text: "Who?",
+      },
+      {
+         to: "/#work",
+         text: "Work",
+      },
       {
          to: "#contact",
          text: "Contact",
@@ -34,7 +34,7 @@ function Navigation() {
    return (
       <header className={`fixed z-50 w-full backdrop-blur-sm bg-transparent`}>
          <nav className="container pt-4 pb-2">
-            <ul className="flex sm:space-between md:flex md:space-x-32 ">
+            <ul className="flex justify-between">
                {navItems.map((item, i) => (
                   <Link
                      key={i}

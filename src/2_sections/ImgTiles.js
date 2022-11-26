@@ -71,7 +71,7 @@ function ImgTiles({ isPageNav, props }) {
       },
       {
          label: "UI/UX Design",
-         title: "theecoexperts.co.uk –  Coming soon...",
+         title: "theecoexperts.co.uk – Coming soon...",
          subTitle: "Web design",
          cta: "View use case",
          img: data.theEcoExpertsImg.childImageSharp.gatsbyImageData,
@@ -85,7 +85,7 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "UI/UX Design",
          title: "Pet Time",
-         subTitle: "Pet management",
+         subTitle: "Pet management – concept",
          cta: "View use case",
          img: data.petImg.childImageSharp.gatsbyImageData,
          id: data.petImg.id,
@@ -96,7 +96,7 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "UI/UX Design",
          title: "Homely.",
-         subTitle: "DIY tool rental",
+         subTitle: "DIY tool rental – concept",
          cta: "View use case",
          img: data.homelyImg.childImageSharp.gatsbyImageData,
          id: data.homelyImg.id,
@@ -107,7 +107,7 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "UI/UX Design",
          title: "Classica",
-         subTitle: "Classical Music Player",
+         subTitle: "Classical Music Player – concept",
          cta: "View use case",
          img: data.classicaImg.childImageSharp.gatsbyImageData,
          id: data.classicaImg.id,

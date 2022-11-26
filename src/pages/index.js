@@ -19,7 +19,7 @@ function Home() {
             <ImgTiles />
             <About />
             <Recommendations />
-            {/* <SideProjects /> */}
+            <SideProjects />
             <Contact />
          </div>
       </>
