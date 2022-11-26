@@ -19,7 +19,7 @@ function Reccomendations() {
          name: "Don Steyn",
          JobTitle: "Art Director @ IronDog Studio",
          description:
-            "Paolo is a great to work with and brings a lightheartedness to the work place. He is motivated, talented, forward thinking and has a great work ethic. It was a pleasure working with him.",
+            "Paolo is a great to work with and brings a lightheartedness to the work place. Motivated, talented, forward thinking and has a great work ethic. It was a pleasure working with him.",
       },
 
       {
