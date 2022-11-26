@@ -15,8 +15,8 @@ function About() {
    `)
 
    return (
-      <section className="w-full bg-dark py-20 md:py-52">
-         <div id="about" className="relative container bg-dark">
+      <section className="w-full py-32 md:py-64 bg-gradient-to-b from-zinc-900 to-dark">
+         <div id="about" className="relative container">
             {/* <span
                className="absolute inset-0 bg-ImageBg bg-contain bg-center opacity-80 w-full h-full"
                style={{ opacity: "7%" }}
