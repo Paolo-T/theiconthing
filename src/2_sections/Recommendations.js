@@ -43,7 +43,7 @@ function Reccomendations() {
    ]
 
    return (
-      <section className="w-full bg-dark py-20 md:py-32 relative">
+      <section className="w-full bg-dark py-10 md:py-32 relative">
          <span
             className="absolute inset-0 bg-ImageBg bg-contain bg-center opacity-80 w-full h-full"
             style={{ opacity: "7%" }}
@@ -55,13 +55,13 @@ function Reccomendations() {
                   From amazingly talented humans
                </p>
             </div>
-            <div className="columns-1 md:columns-2 lg:columns-md gap-2 md:gap-12">
+            <div className="md:columns-2 lg:columns-md gap-2 md:gap-12">
                {reccomendations.map((recommendation, i) => (
                   <TransitionInview>
                      {
                         <div
                            key={i}
-                           className="bg-lessDark backdrop-blur-sm px-8 py-7 md:px-12 lg:px-18 md:py-14 lg:py-18 rounded-2xl mb-12"
+                           className="bg-lessDark backdrop-blur-sm py-7 px-6  md:px-12 lg:px-18 md:py-14 lg:py-18 rounded-2xl mb-8 md:mb-12"
                         >
                            <div className="flex space-x-2 justify-center">
                               <h5>{recommendation.name}</h5>

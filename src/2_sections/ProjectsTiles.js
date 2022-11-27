@@ -156,12 +156,12 @@ function ImgTiles({ isPageNav, props }) {
    ]
 
    return (
-      <section id="work" className={` ${isPageNav ? "bg-white py-24 " : "py-4 md:py-16"}`}>
+      <section id="work" className={` ${isPageNav ? "bg-white py-24 " : "py-10 md:py-16"}`}>
          {isPageNav && <h3 className="container text-dark mb-4">Other projects</h3>}
 
          <div
             className={`container grid ${
-               isPageNav ? "grid-cols-1 md:grid-cols-4 gap-5" : "grid-cols-1 gap-4 md:gap-16 "
+               isPageNav ? "grid-cols-1 md:grid-cols-4 gap-5" : "grid-cols-1 gap-6 md:gap-16 "
             }`}
          >
             {tilesData.map((tile) => (

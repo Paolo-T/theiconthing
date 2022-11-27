@@ -15,15 +15,10 @@ function About() {
    `)
 
    return (
-      <section className="w-full py-32 md:py-64 bg-gradient-to-b from-zinc-900 to-dark">
+      <section className="w-full py-20 md:py-64 bg-gradient-to-b from-zinc-900 to-dark">
          <div id="about" className="relative container">
-            {/* <span
-               className="absolute inset-0 bg-ImageBg bg-contain bg-center opacity-80 w-full h-full"
-               style={{ opacity: "7%" }}
-            ></span> */}
-
-            <div className="relative lg:flex items-center px-8">
-               <div className="relative w-8/12 h-1/4 sm:w-8/12 md:w-3/12 xl:w-3/12 mx-auto  ">
+            <div className="relative lg:flex items-center px-0 md:px-8">
+               <div className="relative w-6/12 h-1/4 sm:w-8/12 md:w-3/12 xl:w-3/12 mx-auto  ">
                   <span
                      className="inline-block absolute h-full w-full md:-top-30 left-0 md:left-0 lg:left-0
                   rounded-full
