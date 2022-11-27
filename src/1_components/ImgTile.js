@@ -44,9 +44,9 @@ function ImgTile({
                </div>
             </a>
          </Link>
-         <div className="flex justify-between mt-2 md:mt-8 text-left">
+         <div className="grid grid-cols-2 gap-6 items-baseline mt-2 md:mt-8 text-left">
             <h2 className="text-dark mb-0 uppercase">{title}</h2>
-            <span className="mb-0.5">{subTitle}</span>
+            <p className="mb-0.5">{subTitle}</p>
          </div>
       </div>
    )

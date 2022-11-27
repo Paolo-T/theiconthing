@@ -32,7 +32,7 @@
    }
 
    p {
-      @apply font-sans font-normal text-base md:text-xl leading-7 md:leading-8 tracking-normal;
+      @apply font-sans font-normal text-base md:text-xl leading-7 md:leading-8 tracking-more;
    }
 
    li {

@@ -84,7 +84,7 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "UI/UX Design",
          title: "The eco experts",
-         subTitle: "Web design",
+         subTitle: "Style library + Home page design for theecoexperts.co.uk",
          cta: "View use case",
          img: data.theEcoExpertsImg.childImageSharp.gatsbyImageData,
          id: data.theEcoExpertsImg.id,
@@ -97,7 +97,7 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "UI/UX Design",
          title: "Pet Time",
-         subTitle: "Pet management – concept",
+         subTitle: "Concept design for a Pet management product",
          cta: "View use case",
          img: data.petImg.childImageSharp.gatsbyImageData,
          id: data.petImg.id,
@@ -108,7 +108,7 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "UI/UX Design",
          title: "Homely",
-         subTitle: "DIY tool rental – concept",
+         subTitle: "Concept design for a DIY tool rental product",
          cta: "View use case",
          img: data.homelyImg.childImageSharp.gatsbyImageData,
          id: data.homelyImg.id,
@@ -119,7 +119,7 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "UI/UX Design",
          title: "Classica",
-         subTitle: "Classical Music Player – concept",
+         subTitle: "Concept design for a classical Music Player product",
          cta: "View use case",
          img: data.classicaImg.childImageSharp.gatsbyImageData,
          id: data.classicaImg.id,
@@ -130,7 +130,7 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "",
          title: "Digital art",
-         subTitle: "Illustration",
+         subTitle: "My personal Artwork illustration project",
          cta: "",
          img: data.digitalArtImg.childImageSharp.gatsbyImageData,
          id: "",
@@ -143,7 +143,7 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "",
          title: "3DC",
-         subTitle: "Branding",
+         subTitle: "Visual Branding excersise",
          cta: "",
          img: data.threeImg.childImageSharp.gatsbyImageData,
          id: "",

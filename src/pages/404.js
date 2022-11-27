@@ -22,8 +22,8 @@ function NotFoundPage() {
 
          <TransitionPageIn>
             <div className="h-screen pt-32 sm:pt-32 bg-primary">
-               <div className="container">
-                  <h1 className="lg:w-12/12 xl:w-12/12 2xl:w-12/12 mb-12 sm:mb-12 md:mb-20 lg:mb-16 xl:mb-16 md:mt-20 xl:mt-32 leading-less xl:leading-tight">
+               <div className="container ">
+                  <h1 className="container-content lg:w-12/12 xl:w-12/12 2xl:w-12/12 mb-12 sm:mb-12 md:mb-20 lg:mb-16 xl:mb-16 md:mt-20 xl:mt-32 leading-less xl:leading-tight">
                      {" "}
                      Looks like the page you are looking for is not here...
                   </h1>
