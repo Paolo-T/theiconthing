@@ -31,7 +31,7 @@ function Navigation() {
       <header className={`fixed z-50 w-full backdrop-blur bg-transparent`}>
          <nav className="container flex justify-between pt-10 pb-2">
             <Link to="/" className="text-hover">
-               <p className="md:text-base lg:text-base 2xl:text-2xl font-bold">/ˈpa.o.lo + 'to.dde/</p>
+               <p className="md:text-base lg:text-base 2xl:text-2xl font-bold">/ˈpa.o.lo 'to.dde /</p>
             </Link>
             <ul className="flex space-x-6 align-baseline">
                {navItems.map((item, i) => (
