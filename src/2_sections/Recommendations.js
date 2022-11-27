@@ -49,11 +49,11 @@ function Reccomendations() {
             style={{ opacity: "4%" }}
          ></span>
          <div className="container-content">
-            <div className="container mb-16">
+            <div className="mb-16">
                <h2 className="mb-6 uppercase">Kind recommendations</h2>
                <p className="">From amazingly talented humans</p>
             </div>
-            <div className="container grid grid-cols-2 gap-6 md:gap-8 text-white text-center">
+            <div className="grid grid-cols-2 gap-6 items-center md:gap-8 text-white text-center">
                {reccomendations.map((recommendation, i) => (
                   <TransitionInview>
                      {

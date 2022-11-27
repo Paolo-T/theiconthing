@@ -156,7 +156,7 @@ function ImgTiles({ isPageNav, props }) {
    ]
 
    return (
-      <section id="work" className={` ${isPageNav ? "bg-white py-24 " : "container-content pb-20"}`}>
+      <section id="work" className={` ${isPageNav ? "bg-white py-24 " : "container-content pt-16 pb-20"}`}>
          {isPageNav && <h3 className="text-dark mb-4">Other projects</h3>}
 
          <div className={`${isPageNav ? "container flex flex-row  flex-wrap" : "flex flex-col space-y-32 "}`}>

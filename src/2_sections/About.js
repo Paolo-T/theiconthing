@@ -37,9 +37,8 @@ function About() {
             <div className="flex-1 text-white pr-16">
                <h2 className="mb-5 uppercase">Hey there!</h2>
                <p className="mt-2">
-                  I am a designer specializing in web and mobile experiences. Passionate about visual communication,
-                  creating and developing well crafted designs, user focused utilitarian interfaces. Contributing to the
-                  web ecosystem to create meaningful human experiences.<br></br>
+                  I'm Paolo. A product designer specializing in web and mobile experiences. Passionate about visual
+                  communication, striving to design high quality user focused utilitarian interfaces.<br></br>
                   <br></br>Currently designing with&nbsp;
                   <a
                      className="cursor-pointer underline underline-offset-4 decoration-1  hover:text-grey transition duration-300"
@@ -61,8 +60,8 @@ function About() {
                   .
                </p>
 
-               <h4 className="mt-16 mb-4 text-grey">Focusing on:</h4>
-               <ul className="md:flex text-5xl justify-between pr-10">
+               <h4 className="mt-16 mb-4 text-grey">Passionate about:</h4>
+               <ul className="md:flex text-5xl justify-between pr-8">
                   <li>UX/UI</li>
                   <li>Interaction & Motion</li>
                   <li>Design Systems</li>
