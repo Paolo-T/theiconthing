@@ -15,27 +15,24 @@ function ImgTile({
    isExternal,
    hRef,
    isLocked,
+   classes,
 }) {
    return (
       <div>
-         <div className="page-header mb-2 md:mb-5">
-            <h2 className="w-full text-dark">{title}</h2>
-            <span className="subtitle text-grey">{subTitle}</span>
-         </div>
          <Link to={!isLocked && linkTo}>
             <a href={isExternal && hRef} target="_blank" rel="noopener noreferrer">
                <div
-                  className={`relative group w-full transition duration-500 transform
+                  className={`relative group transition duration-500 transform
                   rounded-${rounded ? "2xl" : "0"} overflow-hidden
                   ${
                      isPageNav
                         ? "transition duration-500 transform cursor-pointer group-hover:scale-[1.1] group-hover:rotate-[0.5deg"
                         : ""
                   }
-                  md:mt-${marginTop} md:mb-${marginBottom}`}
+                  md:mt-${marginTop} md:mb-${marginBottom} ${classes}`}
                >
                   <GatsbyImage
-                     className={`transition duration-500 transform ${
+                     className={`w-2/3 aspect-auto object-cover transition duration-500 transform ${
                         !isLocked
                            ? "cursor-pointer group-hover:scale-[1.03] group-hover:rotate-[0.5deg]"
                            : "cursor-default"
@@ -44,36 +41,13 @@ function ImgTile({
                      alt={imgAlt}
                      loading={"eager"}
                   />
-
-                  {/* {!isPageNav ? (
-                     <div className="group absolute top-1/2 right-0 flex justify-between align-bottom bg-dark pl-6 pr-10 py-4 rounded-l-md opacity-0 group-hover:opacity-100 transition ease-in-out duration-100">
-                        <p className="text-xs md:text-sm font-bold tracking-more">{title}</p>
-                        <p className="text-xs md:text-xs mx-1 align-baseline md:mx-3">|</p>
-                        {isLocked ? (
-                           <div className="w-6 md:w-4">
-                              <svg
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 fill="none"
-                                 viewBox="0 0 24 24"
-                                 className="hover:text-grey"
-                              >
-                                 <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    stroke="currentColor"
-                                    strokeWidth={1.5}
-                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                                 />
-                              </svg>
-                           </div>
-                        ) : (
-                           <p className="text-xs md:text-sm tracking-more">{subTitle}</p>
-                        )}
-                     </div>
-                  ) : null} */}
                </div>
             </a>
          </Link>
+         <div className="flex justify-between mt-2 md:mt-5 text-left">
+            <h2 className="text-dark mb-0">{title}</h2>
+            <span className="mb-0.5">{subTitle}</span>
+         </div>
       </div>
    )
 }

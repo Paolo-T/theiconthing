@@ -15,8 +15,8 @@ function About() {
    `)
 
    return (
-      <section className="w-full py-20 md:py-64 bg-gradient-to-b from-zinc-900 to-dark">
-         <div id="about" className="relative container">
+      <section className="w-full py-20 md:py-64 bg-secondary">
+         <div id="about" className="relative container-right">
             <div className="relative lg:flex items-center px-0 md:px-8">
                <div className="relative w-6/12 h-1/4 sm:w-8/12 md:w-3/12 xl:w-3/12 mx-auto  ">
                   <span
@@ -36,7 +36,7 @@ function About() {
                </div>
 
                <div className="w-full lg:w-7/12 md:pl-10 xl:pl-0 mt-10 lg:mt-0 md:pr-10 xl:pr-20">
-                  <h2 className="mb-5">Hey there</h2>
+                  <h3 className="mb-5">Hey there</h3>
                   <p className="mt-2">
                      I am a designer specializing in web and mobile experiences. Passionate about visual communication,
                      creating and developing well crafted designs, user focused utilitarian interfaces. Contributing to

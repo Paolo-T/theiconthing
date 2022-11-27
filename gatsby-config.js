@@ -97,7 +97,7 @@ module.exports = {
          resolve: "gatsby-plugin-web-font-loader",
          options: {
             custom: {
-               families: ["jakarta-sans-title", "Jakarta_sans_body"],
+               families: ["jakarta-sans-title", "Jakarta_sans_body", ""],
                urls: ["/fonts/fonts.css"],
             },
          },

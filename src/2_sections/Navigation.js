@@ -7,8 +7,8 @@ function Navigation() {
    const homePage = location.pathname === "/"
    const fourFourPage = location.pathname === "/404"
 
-   const linkColor = homePage || fourFourPage ? "text-white" : "text-dark"
-   const linkHoverColor = homePage || fourFourPage ? "hover:text-dark" : "hover:text-primary"
+   // const linkColor = homePage || fourFourPage ? "text-white" : "text-dark"
+   // const linkHoverColor = homePage || fourFourPage ? "hover:text-dark" : "hover:text-primary"
 
    const homepage = location.pathname === "/"
 
@@ -36,12 +36,8 @@ function Navigation() {
          <nav className="container pt-4 pb-2">
             <ul className="flex justify-between">
                {navItems.map((item, i) => (
-                  <Link
-                     key={i}
-                     to={item.to}
-                     className={`transition duration-300 ease-in-out ${linkColor} hover:text-dark`}
-                  >
-                     <p className="inline-block md:text-base lg:text-base 2xl:text-xl font-bold md:pt-2 pb-1 align-baseline flex ">
+                  <Link key={i} to={item.to} className="text-hover">
+                     <p className="md:text-base lg:text-base 2xl:text-xl font-bold md:pt-2 pb-1 align-baseline flex ">
                         {item.text}
                      </p>
                   </Link>

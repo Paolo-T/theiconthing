@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import ProjectsTiles from "../2_sections/ProjectsTiles"
 
 export const data = graphql`
-   query ($slug: String!) {
+   query($slug: String!) {
       projectDataJson(slug: { eq: $slug }) {
          slug
          hero {
@@ -117,7 +117,7 @@ export default function ProjectDetails({ data }) {
                                  ))}
                               </div>
                               <div className="mt-10 md:mt-0 col-start-5 col-end-11">
-                                 <h3>{section.main.title}</h3>
+                                 <h2>{section.main.title}</h2>
                                  <p>{section.main.body}</p>
                               </div>
                            </div>
@@ -139,9 +139,9 @@ export default function ProjectDetails({ data }) {
                {/* Content list */}
                {contentListist.title && (
                   <section className="container mx-auto grid grid-cols-4 md:grid-cols-12 gap-y-6 md:gap-y-6 gap-x-0 py-10 md:py-24 text-dark">
-                     <h3 className="col-start-1 col-end-5 md:col-start-2 md:col-end-4 mb-0 md:mb-4 ">
+                     <h2 className="col-start-1 col-end-5 md:col-start-2 md:col-end-4 mb-0 md:mb-4 ">
                         {contentListist.title}
-                     </h3>
+                     </h2>
                      {Array.isArray(contentListist.listItems) &&
                         contentListist.listItems.map((listItem, i) => (
                            <div key={i} className="col-start-1 col-end-5 md:col-start-5 md:col-end-11">

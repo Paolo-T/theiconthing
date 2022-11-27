@@ -4,10 +4,7 @@
 
 @layer base {
    h1 {
-      @apply font-header font-semibold
-      text-5xl sm:text-5xl md:text-6xl md_2:text-6xl lg:text-7xl xl:text-7xl 2xl:text-8xl 3xl:text-8xl
-      tracking-tight
-      md:my-0 md:mb-5 lg:mb-0;
+      @apply font-semibold text-5xl sm:text-5xl md:text-6xl md_2:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl 3xl:text-6xl tracking-tight leading-tight md:my-0 md:mb-5 lg:mb-0;
    }
 
    .h1-page {
@@ -15,7 +12,9 @@
    }
 
    h2 {
-      @apply font-header tracking-normal leading-tight text-2xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-0 md:mb-3;
+      @apply font-header text-xl md:text-3xl lg:text-3xl font-bold
+      tracking-normal leading-none md:leading-tight
+      mb-4 md:mb-6;
    }
 
    h3 {
@@ -51,9 +50,18 @@
 
 @layer utilities {
    .container {
-      @apply w-11/12 md:w-10/12 max-w-screen-xl mx-auto;
+      @apply w-11/12 max-w-screen-2xl mx-auto;
    }
+
+   .container-content {
+      @apply w-8/12 max-w-screen-2xl mr-auto;
+   }
+
    .subtitle {
       @apply font-sans font-normal text-base md:text-2xl leading-7 md:leading-8;
+   }
+
+   .text-hover {
+      @apply transition duration-200 ease-in-out hover:text-secondary;
    }
 }
