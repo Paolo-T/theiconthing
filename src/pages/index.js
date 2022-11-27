@@ -15,12 +15,14 @@ function Home() {
             title="Paolo Todde | Product Designer | Visual Design"
          />
          <div className="bg-primary">
-            <Hero />
-            <ProjectsTiles />
-            <About />
-            {/* <SideProjects /> */}
-            <Recommendations />
-            <Contact />
+            <div className="container">
+               <Hero />
+               <ProjectsTiles />
+               <About />
+               {/* <SideProjects /> */}
+               <Recommendations />
+               <Contact />
+            </div>
          </div>
       </>
    )

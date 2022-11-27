@@ -159,11 +159,7 @@ function ImgTiles({ isPageNav, props }) {
       <section id="work" className={` ${isPageNav ? "bg-white py-24 " : "container-content pb-20"}`}>
          {isPageNav && <h3 className="text-dark mb-4">Other projects</h3>}
 
-         <div
-            className={`grid ${
-               isPageNav ? "container grid-cols-1 md:grid-cols-4 gap-5" : "container grid-cols-1 gap-6 md:gap-32 "
-            }`}
-         >
+         <div className={`${isPageNav ? "container flex flex-row  flex-wrap" : "flex flex-col space-y-32 "}`}>
             {tilesData.map((tile) => (
                // pageLocation !== tile.linkTo && (
                <TransitionInview key={tile.id}>

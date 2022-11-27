@@ -26,7 +26,7 @@ function ImgTile({
                   rounded-${rounded ? "2xl" : "0"} overflow-hidden
                   ${
                      isPageNav
-                        ? "transition duration-500 transform cursor-pointer group-hover:scale-[1.1] group-hover:rotate-[0.5deg"
+                        ? "transition duration-500 transform cursor-pointer group-hover:scale-[1.1] group-hover:rotate-[0.5deg]"
                         : ""
                   }
                   md:mt-${marginTop} md:mb-${marginBottom} ${classes}`}

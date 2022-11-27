@@ -19,7 +19,7 @@ const ScrollToTop = (showBelow) => {
    }, [])
 
    const handleClick = () => {
-      window[`scrollTo`]({ top: 0})
+      window[`scrollTo`]({ top: 0 })
    }
 
    return (
@@ -32,12 +32,7 @@ const ScrollToTop = (showBelow) => {
             height="20"
             viewBox="0 0 20 20"
             fill="currentColor"
-            stroke="#fffff"
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
             stroke="currentColor"
          >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
