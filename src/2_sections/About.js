@@ -16,8 +16,11 @@ function About() {
 
    return (
       <section className="w-full bg-primary">
-         <div id="about" className="flex items-center container-content bg-dark py-20">
-            <div className="relative w-6/12 sm:w-8/12 md:w-3/12 xl:w-3/12 h-1/2 mx-16">
+         <div
+            id="about"
+            className="md:container-content flex flex-col md:fex-row items-center space-y-10 px-6 bg-dark py-16 py-20"
+         >
+            <div className="relative w-6/12 sm:w-8/12 md:w-3/12 xl:w-3/12 h-1/2 mx-20 md:mx-0">
                <span
                   className="absolute h-full w-full rounded-full
 
@@ -34,7 +37,7 @@ function About() {
                />
             </div>
 
-            <div className="flex-1 text-white pr-16">
+            <div className="flex-1 text-white md:pr-16">
                <h2 className="mb-5 uppercase">Hey there!</h2>
                <p className="mt-2">
                   I'm Paolo. A product designer specializing in web and mobile experiences. Passionate about visual

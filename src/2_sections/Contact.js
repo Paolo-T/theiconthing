@@ -4,18 +4,18 @@ function Contact() {
    return (
       <div
          id="contact"
-         className="container-content grid grid-cols-2 gap-6 items-baseline group bg-primary pb-10 md:pb-28 "
+         className="md:container-content md:grid grid-cols-2 gap-6 items-baseline group bg-primary pb-10 md:pb-28 "
       >
-         <h4 className="">01_</h4>
-         <div className="pl-2">
+         <h4 className="mb-3 md:mb-0">01_</h4>
+         <div className="md:pl-2">
             <h2 className="mb-4 uppercase">Say Hello</h2>
-            <h3>
+            <h3 className="mb-6 md:mb-6">
                <a rel="noopener noreferrer" target="_blank" href="mailto:iampaolotodde@gmail.com">
                   I'd love to collaborate with you.<br></br>Let's talk!
                </a>
             </h3>
 
-            <div className="md:mx-0 md:w-4/12 flex items-center justify-between">
+            <div className="md:mx-0 md:w-4/12 flex items-center space-x-10 md:justify-between">
                <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/paolo-todde/">
                   <svg
                      viewBox="0 0 24 24"
