@@ -11,7 +11,7 @@ function Contact() {
             <h2 className="mb-4 uppercase">Say Hello</h2>
             <h3>
                <a rel="noopener noreferrer" target="_blank" href="mailto:iampaolotodde@gmail.com">
-                  I'd love to collaborate with you. Let's talk!
+                  I'd love to collaborate with you.<br></br>Let's talk!
                </a>
             </h3>
 

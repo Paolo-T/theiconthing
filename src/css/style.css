@@ -50,11 +50,11 @@
 
 @layer utilities {
    .container {
-      @apply w-11/12 max-w-screen-2xl mx-auto;
+      @apply w-[94%] max-w-screen-3xl mx-auto;
    }
 
    .container-content {
-      @apply w-9/12 max-w-screen-2xl mr-auto;
+      @apply w-9/12 max-w-screen-3xl mr-auto;
    }
 
    .subtitle {
