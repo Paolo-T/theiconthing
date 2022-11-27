@@ -18,7 +18,7 @@ function About() {
       <section className="w-full bg-primary">
          <div
             id="about"
-            className="md:container-content flex flex-col md:fex-row items-center space-y-10 px-6 bg-dark py-16 py-20"
+            className="md:container-content flex flex-col md:fex-row items-center space-y-10 px-6 bg-dark py-20"
          >
             <div className="relative w-6/12 sm:w-8/12 md:w-3/12 xl:w-3/12 h-1/2 mx-20 md:mx-0">
                <span

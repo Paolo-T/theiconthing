@@ -31,7 +31,7 @@ function Footer() {
                   </li>
                   {footerItems.map((listItem, i) => (
                      <a key={i} rel="noopener noreferrer" target="_blank" href={listItem.href}>
-                        <li className="group text-xs md:text-base lg:text-base 2xl:text-2xl font-bold md:pt-2 pb-1 align-baseline mb-3 md:mb-0 transition duration-100 ease-in-out underline underline-offset-4">
+                        <li className="group text-md md:text-base lg:text-base 2xl:text-2xl font-bold md:pt-2 pb-1 align-baseline mb-3 md:mb-0 transition duration-100 ease-in-out underline underline-offset-4">
                            {listItem.item}
                         </li>
                      </a>

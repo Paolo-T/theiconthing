@@ -11,7 +11,7 @@ function Hero() {
       <section className="bg-primary">
          <div className="text-left pt-32 md:pt-72 pb-16 relative md:pr-60">
             <TransitionInview>
-               <h1 className="mb-12 sm:mb-12 md:mb-16 lg:mb-20 leading-less xl:leading-tight">
+               <h1 className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 leading-less xl:leading-tight">
                   {" "}
                   Specialising in human-centred user experience. Tailored pixel perfect visual design solutions.Bold
                   visual communication.

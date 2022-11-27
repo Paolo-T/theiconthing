@@ -49,7 +49,7 @@ function Reccomendations() {
             style={{ opacity: "4%" }}
          ></span>
          <div className="md:container-content">
-            <div className="mb-8 md:mb-16">
+            <div className="mb-3 md:mb-16">
                <h2 className="mb-3 md:mb-6 uppercase">Kind recommendations</h2>
                <p className="">From amazingly talented humans</p>
             </div>

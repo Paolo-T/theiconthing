@@ -156,13 +156,14 @@ function ImgTiles({ isPageNav, props }) {
    ]
 
    return (
-      <section id="work" className={` ${isPageNav ? "bg-white py-24 " : "md:container-content md:pt-16 pb-20"}`}>
+      <section
+         id="work"
+         className={` ${isPageNav ? "bg-white py-24 " : "md:container-content pb-12 md:pt-16 md:pb-20"}`}
+      >
          {isPageNav && <h3 className="text-dark mb-4">Other projects</h3>}
 
          <div
-            className={`${
-               isPageNav ? "container flex flex-row  flex-wrap" : "flex flex-col space-y-16 md:space-y-32 "
-            }`}
+            className={`${isPageNav ? "container flex flex-row  flex-wrap" : "flex flex-col space-y-8 md:space-y-32"}`}
          >
             {tilesData.map((tile) => (
                // pageLocation !== tile.linkTo && (
