@@ -18,9 +18,9 @@ function ImgTile({
 }) {
    return (
       <div>
-         <div className="page-header mb-5">
-            <h1 className="h1-page w-full text-dark">{title}</h1>
-            <p className="text-xl md:text-2xl text-grey">{subTitle}</p>
+         <div className="page-header mb-2 md:mb-5">
+            <h2 className="w-full text-dark">{title}</h2>
+            <span className="subtitle text-grey">{subTitle}</span>
          </div>
          <Link to={!isLocked && linkTo}>
             <a href={isExternal && hRef} target="_blank" rel="noopener noreferrer">
