@@ -9,11 +9,12 @@ function Hero() {
 
    return (
       <section className="bg-primary">
-         <div className="container text-left pt-72 pb-32 relative pr-98">
+         <div className="container text-left pt-72 pb-32 relative pr-60">
             <TransitionInview>
-               <h1 className="lg:w-12/12 xl:w-12/12 2xl:w-12/12 mb-12 sm:mb-12 md:mb-16 lg:mb-20 leading-less xl:leading-tight">
+               <h1 className="mb-12 sm:mb-12 md:mb-16 lg:mb-20 leading-less xl:leading-tight">
                   {" "}
-                  Specialising in human-centred user experience. Tailored pixel perfect visual design solutions.
+                  Specialising in human-centred user experience. Tailored pixel perfect visual design solutions.Bold
+                  visual communication.
                </h1>
             </TransitionInview>
 

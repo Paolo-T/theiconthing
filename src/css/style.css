@@ -54,7 +54,7 @@
    }
 
    .container-content {
-      @apply w-8/12 max-w-screen-2xl mr-auto;
+      @apply w-9/12 max-w-screen-2xl mr-auto;
    }
 
    .subtitle {

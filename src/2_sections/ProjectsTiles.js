@@ -73,7 +73,7 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "Web Design",
          title: "BuzzSumo",
-         subTitle: "Web Design Marketing",
+         subTitle: "Web Design and marketing collateral for Buzzsumo.",
          cta: "View more",
          img: data.buzzsumoImg.childImageSharp.gatsbyImageData,
          id: data.buzzsumoImg.id,
@@ -107,7 +107,7 @@ function ImgTiles({ isPageNav, props }) {
       },
       {
          label: "UI/UX Design",
-         title: "Homely.",
+         title: "Homely",
          subTitle: "DIY tool rental – concept",
          cta: "View use case",
          img: data.homelyImg.childImageSharp.gatsbyImageData,
@@ -142,7 +142,7 @@ function ImgTiles({ isPageNav, props }) {
       },
       {
          label: "",
-         title: "3dc designs",
+         title: "3DC",
          subTitle: "Branding",
          cta: "",
          img: data.threeImg.childImageSharp.gatsbyImageData,
@@ -156,19 +156,19 @@ function ImgTiles({ isPageNav, props }) {
    ]
 
    return (
-      <section id="work" className={` ${isPageNav ? "bg-white py-24 " : " bg-primary py-10 md:py-16"}`}>
+      <section id="work" className={` ${isPageNav ? "bg-white py-24 " : "container-content pb-20"}`}>
          {isPageNav && <h3 className="text-dark mb-4">Other projects</h3>}
 
          <div
             className={`grid ${
-               isPageNav ? "container grid-cols-1 md:grid-cols-4 gap-5" : "container grid-cols-1 gap-6 md:gap-16 "
+               isPageNav ? "container grid-cols-1 md:grid-cols-4 gap-5" : "container grid-cols-1 gap-6 md:gap-32 "
             }`}
          >
             {tilesData.map((tile) => (
                // pageLocation !== tile.linkTo && (
                <TransitionInview key={tile.id}>
                   <ImgTile
-                     classes={`mb-1 grayscale hover:filter-none `}
+                     classes={""}
                      alt={tile.title}
                      loading={"eager"}
                      img={tile.img}

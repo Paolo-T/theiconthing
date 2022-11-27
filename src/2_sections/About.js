@@ -15,14 +15,14 @@ function About() {
    `)
 
    return (
-      <section className="w-full py-20 md:py-64 bg-secondary">
-         <div id="about" className="relative container-right">
-            <div className="relative lg:flex items-center px-0 md:px-8">
+      <section className="w-full bg-primary">
+         <div id="about" className="container-content bg-dark py-20">
+            <div className="lg:flex items-center px-0 md:px-8">
                <div className="relative w-6/12 h-1/4 sm:w-8/12 md:w-3/12 xl:w-3/12 mx-auto  ">
                   <span
                      className="inline-block absolute h-full w-full md:-top-30 left-0 md:left-0 lg:left-0
                   rounded-full
-                  bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800
+                  bg-gradient-to-r from-primary/40 to-primary
                   animate-pulse
                   "
                   ></span>
@@ -35,15 +35,13 @@ function About() {
                   />
                </div>
 
-               <div className="w-full lg:w-7/12 md:pl-10 xl:pl-0 mt-10 lg:mt-0 md:pr-10 xl:pr-20">
-                  <h3 className="mb-5">Hey there</h3>
+               <div className="w-full lg:w-7/12 md:pl-10 xl:pl-0 mt-10 lg:mt-0 md:pr-10 xl:pr-20 text-white">
+                  <h2 className="mb-5 uppercase">Hey there!</h2>
                   <p className="mt-2">
                      I am a designer specializing in web and mobile experiences. Passionate about visual communication,
                      creating and developing well crafted designs, user focused utilitarian interfaces. Contributing to
-                     the web ecosystem to create meaningful human experiences.
-                     <br></br>
-                     <br></br>
-                     Currently designing with&nbsp;
+                     the web ecosystem to create meaningful human experiences.<br></br>
+                     <br></br>Currently designing with&nbsp;
                      <a
                         className="cursor-pointer underline underline-offset-4 decoration-1  hover:text-grey transition duration-300"
                         rel="noopener noreferrer"

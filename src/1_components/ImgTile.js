@@ -32,7 +32,7 @@ function ImgTile({
                   md:mt-${marginTop} md:mb-${marginBottom} ${classes}`}
                >
                   <GatsbyImage
-                     className={`w-2/3 aspect-auto object-cover transition duration-500 transform ${
+                     className={`transition duration-500 transform ${
                         !isLocked
                            ? "cursor-pointer group-hover:scale-[1.03] group-hover:rotate-[0.5deg]"
                            : "cursor-default"
@@ -44,8 +44,8 @@ function ImgTile({
                </div>
             </a>
          </Link>
-         <div className="flex justify-between mt-2 md:mt-5 text-left">
-            <h2 className="text-dark mb-0">{title}</h2>
+         <div className="flex justify-between mt-2 md:mt-8 text-left">
+            <h2 className="text-dark mb-0 uppercase">{title}</h2>
             <span className="mb-0.5">{subTitle}</span>
          </div>
       </div>

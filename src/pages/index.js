@@ -14,7 +14,7 @@ function Home() {
             keywords={[`UI Design`, `UX Design`, `User Experience`, `Web Design`, `Product Design`, `Portfolio`]}
             title="Paolo Todde | Product Designer | Visual Design"
          />
-         <div>
+         <div className="bg-primary">
             <Hero />
             <ProjectsTiles />
             <About />
