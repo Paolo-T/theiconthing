@@ -40,7 +40,7 @@ function About() {
             <div className="flex-1 text-white md:pr-16">
                <h2 className="mb-5 uppercase">Hey there!</h2>
                <p className="mt-2">
-                  I'm Paolo. A product designer specializing in web and mobile experiences. Passionate about visual
+                  I'm Paolo. A product designer specialising in web and mobile experiences. Passionate about visual
                   communication, striving to design high quality user focused utilitarian interfaces.<br></br>
                   <br></br>Currently designing with&nbsp;
                   <a
@@ -53,7 +53,7 @@ function About() {
                   </a>
                   &nbsp;and&nbsp; jury member at&nbsp;
                   <a
-                     className="cursor-pointer underline underline-offset-4 decoration-1  hover:text-grey transition duration-300"
+                     className="cursor-pointer underline underline-offset-4 decoration-1 hover:text-grey transition duration-300"
                      rel="noopener noreferrer"
                      href="https://www.cssdesignawards.com/"
                      target="_blank"
