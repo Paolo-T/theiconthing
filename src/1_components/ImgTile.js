@@ -45,7 +45,7 @@ function ImgTile({
             </a>
          </Link>
          <div className="md:flex justify-between mt-5 md:mt-8 text-left">
-            <h2 className="text-dark mb-3 uppercase">{title}</h2>
+            <h2 className="text-dark mb-1 md:mb-3 uppercase">{title}</h2>
             <p className="mb-0.5">{subTitle}</p>
          </div>
       </div>
