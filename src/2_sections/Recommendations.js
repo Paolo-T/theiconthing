@@ -43,49 +43,47 @@ function Reccomendations() {
    ]
 
    return (
-      <section className="w-full py-10 md:py-32 relative">
-         <span
-            className="absolute inset-0 bg-ImageBg bg-contain bg-center opacity-80 w-full h-full"
-            style={{ opacity: "4%" }}
-         ></span>
-         <div className="md:container-content">
-            <div className="mb-3 md:mb-16">
-               <h2 className="mb-3 md:mb-6 uppercase">Kind recommendations</h2>
-               <p className="">From amazingly talented humans</p>
-            </div>
-            <div className="md:grid grid-cols-2 gap-6 items-center md:gap-8 text-white text-center">
-               {reccomendations.map((recommendation, i) => (
-                  <TransitionInview>
-                     {
-                        <div key={i} className="bg-dark py-7 px-6  md:px-12 lg:px-18 md:py-14 lg:py-18">
-                           <div className="flex space-x-2 justify-center">
-                              <h5>{recommendation.name}</h5>
-                              <svg
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 className="h-5 w-5 md:h-6 md:w-6 md:mt-o.5"
-                                 fill="none"
-                                 viewBox="0 0 24 24"
-                                 stroke="currentColor"
-                                 stroke-width="2.2"
-                              >
-                                 <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                                 />
-                              </svg>
-                           </div>
-                           <h4 className="text-xs md:text-base mb-6">{recommendation.JobTitle}</h4>
+      <section className="py-10 md:py-32 relative">
+         <div className="mb-10">
+            <h3>Kind recommendations</h3>
+            <p className="">From amazingly talented humans</p>
+         </div>
+         <div className="md:grid grid-cols-16">
+            <div className="col-start-1 col-end-13 ">
+               <div className="grid grid-cols-2 gap-6 md:gap-8 text-center">
+                  {reccomendations.map((recommendation, i) => (
+                     <TransitionInview>
+                        {
+                           <div key={i} className="bg-dark text-white py-7 px-6  md:px-12 lg:px-18 md:py-14 lg:py-18">
+                              <div className="flex space-x-2 justify-center">
+                                 <h5>{recommendation.name}</h5>
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="h-5 w-5 md:h-6 md:w-6 md:mt-o.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2.2"
+                                 >
+                                    <path
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                       d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                                    />
+                                 </svg>
+                              </div>
+                              <h4 className="text-xs md:text-base mb-6">{recommendation.JobTitle}</h4>
 
-                           <p className="md:leading-7 max-w-prose text-grey" style={{ whiteSpace: "pre-wrap" }}>
-                              <span className="text-grey">“</span>
-                              {recommendation.description}
-                              <span className="text-grey">”</span>
-                           </p>
-                        </div>
-                     }
-                  </TransitionInview>
-               ))}
+                              <p className="md:leading-7 max-w-prose text-grey" style={{ whiteSpace: "pre-wrap" }}>
+                                 <span className="text-grey">“</span>
+                                 {recommendation.description}
+                                 <span className="text-grey">”</span>
+                              </p>
+                           </div>
+                        }
+                     </TransitionInview>
+                  ))}
+               </div>
             </div>
          </div>
       </section>

@@ -156,40 +156,49 @@ function ImgTiles({ isPageNav, props }) {
    ]
 
    return (
-      <section
-         id="work"
-         className={` ${isPageNav ? "w-full py-12 md:py-24 " : "md:container-content pb-12 md:pt-16 md:pb-20"}`}
-      >
-         {isPageNav && <h3 className="container text-dark mb-4">Other projects</h3>}
+      <section id="work" className={` ${isPageNav ? "w-full py-12 md:py-24 " : "pb-12 md:pt-16 md:pb-20"}`}>
+         {isPageNav && <h3 className="container text-dark mb-10">Other projects</h3>}
 
          <div
-            className={`${
+            className={`
+            ${
                isPageNav
                   ? "container grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mb-0"
                   : "flex flex-col space-y-8 md:space-y-32"
             }`}
          >
-            {tilesData.map((tile) => (
+            {tilesData.map((tile, i) => (
                <TransitionInview key={tile.id}>
-                  <ImgTile
-                     classes={""}
-                     alt={tile.title}
-                     loading={"eager"}
-                     img={tile.img}
-                     imgAlt={tile.imgAlt}
-                     title={!isPageNav && tile.title}
-                     subTitle={!isPageNav && tile.subTitle}
-                     cta={tile.cta}
-                     label={!isPageNav && tile.label}
-                     linkTo={tile.linkTo}
-                     hRef={tile.hRef}
-                     marginTop={tile.marginTop}
-                     marginBottom={tile.marginBottom}
-                     rounded={false}
-                     isPageNav={isPageNav}
-                     isExternal={tile.isExternal}
-                     isLocked={tile.isLocked}
-                  />
+                  <div className={`${isPageNav ? null : "grid grid-cols-16"}`}>
+                     <div className="col-span-12">
+                        <ImgTile
+                           classes={""}
+                           alt={tile.title}
+                           loading={"eager"}
+                           img={tile.img}
+                           imgAlt={tile.imgAlt}
+                           title={!isPageNav && tile.title}
+                           subTitle={!isPageNav && tile.subTitle}
+                           cta={tile.cta}
+                           label={!isPageNav && tile.label}
+                           linkTo={tile.linkTo}
+                           hRef={tile.hRef}
+                           marginTop={tile.marginTop}
+                           marginBottom={tile.marginBottom}
+                           rounded={false}
+                           isPageNav={isPageNav}
+                           isExternal={tile.isExternal}
+                           isLocked={tile.isLocked}
+                        />
+                     </div>
+                     {isPageNav ? null : (
+                        <div className="col-start-15 col-span-2">
+                           <h2 className="text-lg sm:text-2xl md:text-2xl lg:text-3xl 2xl:text-3xl text-serif font-semibold">
+                              _0{i}
+                           </h2>
+                        </div>
+                     )}
+                  </div>
                </TransitionInview>
             ))}
          </div>

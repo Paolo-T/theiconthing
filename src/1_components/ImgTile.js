@@ -42,12 +42,14 @@ function ImgTile({
                      loading={"eager"}
                   />
                </div>
+               {isPageNav ? null : (
+                  <div className="md:flex justify-between items-center mt-5 md:mt-8 text-left">
+                     <h2 className="text-dark mb-1 md:mb-3 uppercase">{title}</h2>
+                     <p className="mb-1">{subTitle}</p>
+                  </div>
+               )}
             </a>
          </Link>
-         <div className="md:flex justify-between items-center mt-5 md:mt-8 text-left">
-            <h2 className="text-dark mb-1 md:mb-3 uppercase">{title}</h2>
-            <p className="mb-1">{subTitle}</p>
-         </div>
       </div>
    )
 }
