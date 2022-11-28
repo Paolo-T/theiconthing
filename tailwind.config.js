@@ -373,6 +373,7 @@ module.exports = {
          DEFAULT: "1",
       },
       fontFamily: {
+         hero: ["Italiana_regular"],
          header: ["Jakarta_sans_title"],
          italic: ["Gilroy-RegularItalic"],
          sans: [

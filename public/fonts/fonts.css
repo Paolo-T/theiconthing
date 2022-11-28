@@ -7,3 +7,8 @@
    font-family: "Jakarta_sans_body";
    src: url("jakarta-sans/PlusJakartaSans-Regular.woff2");
 }
+
+@font-face {
+   font-family: "Italiana_regular";
+   src: url("italiana/italiana-Regular.ttf");
+}

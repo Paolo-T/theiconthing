@@ -12,10 +12,12 @@ function Footer() {
          item: "Email",
          href: "mailto:iampaolotodde@gmail.com",
       },
+
       {
          item: "Digital art",
          href: "https://www.instagram.com/paolo__todde/",
       },
+
       {
          item: "LinkedIn",
          href: "https://www.linkedin.com/in/paolo-todde/",

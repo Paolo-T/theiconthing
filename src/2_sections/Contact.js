@@ -6,12 +6,13 @@ function Contact() {
          id="contact"
          className="md:container-content md:grid grid-cols-2 gap-6 items-baseline group bg-primary pb-10 md:pb-28 "
       >
-         <h4 className="mb-3 md:mb-0">01_</h4>
+         <h3 className="text-serif mb-3 md:mb-0">01_</h3>
          <div className="md:pl-2">
             <h2 className="mb-4 uppercase">Say Hello</h2>
-            <h3 className=" text-2xl md:text-3xl lg:text-3xl mb-8 md:mb-6">
+            <h3 className="text-3xl md:text-3xl lg:text-4xl mb-8 md:mb-6">
                <a rel="noopener noreferrer" target="_blank" href="mailto:iampaolotodde@gmail.com">
-                  Always looking for new collaborations.Let's chat!
+                  Always looking for new collaborations.
+                  <span className="text-serif">Let's chat!</span>
                </a>
             </h3>
 
