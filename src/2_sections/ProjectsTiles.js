@@ -18,7 +18,7 @@ function ImgTiles({ isPageNav, props }) {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
-         petImg: file(relativePath: { eq: "petTime/petTime_2.png" }) {
+         petImg: file(relativePath: { eq: "petTime/petTime_1.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
@@ -42,7 +42,7 @@ function ImgTiles({ isPageNav, props }) {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
-         homelyImg: file(relativePath: { eq: "homely/homely_3.png" }) {
+         homelyImg: file(relativePath: { eq: "homely/homely_1.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
