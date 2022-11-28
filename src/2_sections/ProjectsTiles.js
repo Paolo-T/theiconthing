@@ -169,7 +169,7 @@ function ImgTiles({ isPageNav, props }) {
          >
             {tilesData.map((tile, i) => (
                <TransitionInview key={tile.id}>
-                  <div className={`${isPageNav ? null : "grid grid-cols-16"}`}>
+                  <div className={`${isPageNav ? null : "md:grid grid-cols-16"}`}>
                      <div className="col-span-12">
                         <ImgTile
                            classes={""}

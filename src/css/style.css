@@ -20,7 +20,7 @@
    h3 {
       @apply font-header text-xl md:text-3xl lg:text-3xl font-semibold
       tracking-normal leading-loose md:leading-tight
-      mb-2 md:mb-3;
+      mb-0 md:mb-3;
    }
 
    h4 {

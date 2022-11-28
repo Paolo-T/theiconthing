@@ -44,13 +44,13 @@ function Reccomendations() {
 
    return (
       <section className="py-10 md:py-32 relative">
-         <div className="mb-10">
+         <div className="mb-6 md:mb-10">
             <h3>Kind recommendations</h3>
             <p className="">From amazingly talented humans</p>
          </div>
          <div className="md:grid grid-cols-16">
             <div className="col-start-1 col-end-13 ">
-               <div className="grid grid-cols-2 gap-6 md:gap-8 text-center">
+               <div className="md:grid grid-cols-2 gap-6 md:gap-8 text-center">
                   {reccomendations.map((recommendation, i) => (
                      <TransitionInview>
                         {
