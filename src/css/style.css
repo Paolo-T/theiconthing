@@ -4,7 +4,7 @@
 
 @layer base {
    h1 {
-      @apply font-hero font-semibold text-4xl sm:text-4xl md:text-6xl md_2:text-6xl lg:text-6xl xl:text-7xl 2xl:text-6xl 3xl:text-6xl tracking-wide leading-tight md:my-0 md:mb-5 lg:mb-0;
+      @apply font-hero font-semibold text-4xl sm:text-4xl md:text-6xl md_2:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl 3xl:text-7xl tracking-wide leading-tight md:my-0 md:mb-5 lg:mb-0;
    }
 
    .h1-page {
