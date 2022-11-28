@@ -4,11 +4,11 @@
 
 @layer base {
    h1 {
-      @apply font-hero font-semibold text-4xl sm:text-4xl md:text-6xl md_2:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl 3xl:text-7xl tracking-wide leading-tight md:my-0 md:mb-5 lg:mb-0;
+      @apply font-semibold text-4xl sm:text-4xl md:text-6xl md_2:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl 3xl:text-7xl tracking-normal leading-tight md:my-0 md:mb-5 lg:mb-0;
    }
 
    .h1-page {
-      @apply text-4xl md:text-6xl mb-1 md:mb-3;
+      @apply font-header text-4xl md:text-6xl mb-1 md:mb-3;
    }
 
    h2 {
@@ -18,7 +18,7 @@
    }
 
    h3 {
-      @apply font-header text-xl md:text-3xl lg:text-3xl font-bold
+      @apply font-header text-xl md:text-3xl lg:text-3xl font-semibold
       tracking-normal leading-normal md:leading-tight
       mb-4 md:mb-6;
    }
