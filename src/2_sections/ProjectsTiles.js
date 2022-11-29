@@ -138,7 +138,7 @@ function ImgTiles({ isPageNav, props }) {
          subTitle: "My personal Artwork illustration project",
          cta: "",
          img: data.digitalArtImg.childImageSharp.gatsbyImageData,
-         id: "",
+         id: "data.digitalArtImg.id",
          // linkTo: "",
          hRef: "https://www.instagram.com/paolo__todde/",
          imgAlt: "",
@@ -151,7 +151,7 @@ function ImgTiles({ isPageNav, props }) {
          subTitle: "Visual Branding excersise",
          cta: "",
          img: data.threeImg.childImageSharp.gatsbyImageData,
-         id: "",
+         id: "data.threeImg.id",
          linkTo: "/three/",
          // hRef: "",
          imgAlt: "",
@@ -172,9 +172,9 @@ function ImgTiles({ isPageNav, props }) {
                   : "flex flex-col space-y-8 md:space-y-32"
             }`}
          >
-            {tilesData.map((tile, i) => (
-               <TransitionInview key={tile.id}>
-                  <div className={`${isPageNav ? null : "md:grid grid-cols-16"}`}>
+            <TransitionInview>
+               {tilesData.map((tile, i) => (
+                  <div key={tile.id} className={`${isPageNav ? null : "md:grid grid-cols-16"}`}>
                      <div className="col-span-12">
                         <ImgTile
                            classes={""}
@@ -204,8 +204,8 @@ function ImgTiles({ isPageNav, props }) {
                         </div>
                      )}
                   </div>
-               </TransitionInview>
-            ))}
+               ))}
+            </TransitionInview>
          </div>
       </section>
    )

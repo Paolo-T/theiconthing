@@ -19,8 +19,9 @@ function ImgTile({
 }) {
    return (
       <div>
-         <Link to={!isLocked && linkTo}>
-            <a href={isExternal && hRef} target="_blank" rel="noopener noreferrer">
+         if (!isLocked){" "}
+         {
+            <Link to={linkTo}>
                <div
                   className={`relative group transition duration-500 transform
                   rounded-${rounded ? "2xl" : "0"} overflow-hidden
@@ -42,14 +43,40 @@ function ImgTile({
                      loading={"eager"}
                   />
                </div>
-               {isPageNav ? null : (
-                  <div className="md:flex justify-between items-start mt-6 md:mt-8 text-left">
-                     <h2 className="flex-1 text-dark mb-3 md:mb-3 uppercase">{title}</h2>
-                     <span className="flex-1 mb-1">{subTitle}</span>
-                  </div>
-               )}
+            </Link>
+         }{" "}
+         elseif (isExternal){" "}
+         {
+            <a href={hRef} target="_blank" rel="noopener noreferrer">
+               <div
+                  className={`relative group transition duration-500 transform
+                  rounded-${rounded ? "2xl" : "0"} overflow-hidden
+                  ${
+                     isPageNav
+                        ? "transition duration-500 transform cursor-pointer group-hover:scale-[1.1] group-hover:rotate-[0.5deg]"
+                        : ""
+                  }
+                  md:mt-${marginTop} md:mb-${marginBottom} ${classes}`}
+               >
+                  <GatsbyImage
+                     className={`transition duration-500 transform ${
+                        !isLocked
+                           ? "cursor-pointer group-hover:scale-[1.03] group-hover:rotate-[0.5deg]"
+                           : "cursor-default"
+                     } `}
+                     image={img}
+                     alt={imgAlt}
+                     loading={"eager"}
+                  />
+               </div>
             </a>
-         </Link>
+         }
+         {isPageNav ? null : (
+            <div className="md:flex justify-between items-start mt-6 md:mt-8 text-left">
+               <h2 className="flex-1 text-dark mb-3 md:mb-3 uppercase">{title}</h2>
+               <span className="flex-1 mb-1">{subTitle}</span>
+            </div>
+         )}
       </div>
    )
 }

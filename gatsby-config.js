@@ -12,7 +12,6 @@ module.exports = {
       metaOgImage: `/images/social/og-preview.png`,
    },
    plugins: [
-      `gatsby-plugin-netlify`,
       `gatsby-plugin-eslint`,
       `gatsby-plugin-react-helmet`,
       `gatsby-plugin-styled-components`,

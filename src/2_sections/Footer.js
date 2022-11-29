@@ -4,8 +4,7 @@ import TransitionPageIn from "../1_components/TransitionPageIn"
 import ScrollToTop from "../1_components/ScrollToTop"
 
 function Footer() {
-   const location = useLocation()
-   const fourFourPage = location.pathname === "/404"
+   // const location = useLocation()
 
    const footerItems = [
       {
