@@ -673,6 +673,7 @@ module.exports = {
       },
       lineHeight: {
          none: "1",
+         some: "1.10",
          less: "1.15",
          tight: "1.25",
          snug: "1.375",
