@@ -49,11 +49,14 @@ function Reccomendations() {
          </div>
          <div className="md:grid grid-cols-16">
             <div className="col-start-1 col-end-13 ">
-               <div className="md:grid grid-cols-2 gap-6 md:gap-8 text-center">
+               <div className="md:grid grid-cols-2 gap-6 md:gap-8 place-content-stretch text-center">
                   {reccomendations.map((recommendation, i) => (
                      <TransitionInview>
                         {
-                           <div key={i} className="bg-dark text-white py-7 px-6  md:px-12 lg:px-18 md:py-14 lg:py-18">
+                           <div
+                              key={i}
+                              className="bg-dark text-white py-7 px-6 h-full  md:px-12 lg:px-18 md:py-14 lg:py-18"
+                           >
                               <div className="flex space-x-2 justify-center">
                                  <h5>{recommendation.name}</h5>
                                  <svg
