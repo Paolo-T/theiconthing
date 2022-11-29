@@ -9,12 +9,14 @@ function Hero() {
 
    return (
       <section className="bg-primary">
-         <div className="w-full md:w-[80%] text-left pt-32 md:pt-72 pb-16">
+         <div className="w-full  text-left pt-32 md:pt-72 pb-16">
             <TransitionInview>
-               <h1 className="font-hero tracking-wide mb-8 sm:mb-12 md:mb-16 lg:mb-20 leading-less xl:leading-tight">
-                  {" "}
-                  Specialising in human-centred user experience. Tailored pixel perfect visual design solutions.
-               </h1>
+               <div className="md:grid grid-cols-16">
+                  <h1 className="col-start-1 col-end-14 font-hero tracking-wide mb-8 sm:mb-12 md:mb-16 lg:mb-20 leading-less xl:leading-tight">
+                     {" "}
+                     Specialising in human-centred user experience. Tailored pixel perfect visual design solutions.
+                  </h1>
+               </div>
             </TransitionInview>
 
             <div className="flex items-baseline space-x-3">
