@@ -21,10 +21,11 @@ module.exports = {
       colors: ({ colors }) => ({
          // primary: "#e7530b",
          // primary: "#fc351c",
-         primary: "#C8A47E",
+         // primary: "#C8A47E",
+         primary: "#f7ece2",
          secondary: "#272725",
          grey: "#9ca3af",
-         dark: "#1f1f1f",
+         dark: "#151515",
          // dark: "#101014",
          pureBlack: "#000000",
          lessDark: "#16171d",
@@ -373,9 +374,9 @@ module.exports = {
          DEFAULT: "1",
       },
       fontFamily: {
-         hero: ["Italiana_regular"],
+         hero: ["Garamond_regular"],
          header: ["Jakarta_sans_title"],
-         italic: ["Gilroy-RegularItalic"],
+         // italic: ["Gilroy-RegularItalic"],
          sans: [
             "Jakarta_sans_body",
             "Avenir-Book",
@@ -395,7 +396,7 @@ module.exports = {
             '"Segoe UI Symbol"',
             '"Noto Color Emoji"',
          ],
-         serif: ["ui-serif", "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
+         // serif: ["ui-serif", "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
          mono: [
             "ui-monospace",
             "SFMono-Regular",

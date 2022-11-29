@@ -8,7 +8,12 @@
    src: url("jakarta-sans/PlusJakartaSans-Regular.woff2");
 }
 
-@font-face {
+/* @font-face {
    font-family: "Italiana_regular";
    src: url("italiana/Italiana-Regular.ttf");
+} */
+
+@font-face {
+   font-family: "Garamond_regular";
+   src: url("Cormorant-Garamond/CormorantGaramond-Regular.ttf");
 }

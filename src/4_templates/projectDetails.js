@@ -91,10 +91,10 @@ export default function ProjectDetails({ data }) {
             ]}
             title={`Paolo Todde | ${title}`}
          />
-         <div className="w-screen bg-white">
+         <div className="w-screen">
             {/* Hero */}
             <TransitionPageIn>
-               <section className="pt-24 sm:pt-28 md:pt-32 mb-0 md:mb-24 container">
+               <section className="pt-24 sm:pt-28 md:pt-48 mb-0 md:mb-24 container">
                   <div className="page-header mb-6">
                      <h1 className="h1-page w-full text-dark">{title}</h1>
                      <p className="text-xl md:text-2xl text-grey mb-2">{subtitle}</p>
@@ -103,7 +103,7 @@ export default function ProjectDetails({ data }) {
                </section>
                {/* Content */}
                {(Array.isArray(content_1) || content_1.length) && (
-                  <section className="w-full bg-white text-dark">
+                  <section className="w-full text-dark">
                      {content_1.map((section, i) => (
                         <div key={i} className="container md:mb-20">
                            {/* Paragraph */}
@@ -168,7 +168,7 @@ export default function ProjectDetails({ data }) {
                   ))}{" "}
                {/* Content */}
                {Array.isArray(content_2) && (
-                  <section className="w-full bg-white text-dark">
+                  <section className="w-full text-dark">
                      {content_2.map((section, i) => (
                         <div key={i} className="container md:mb-20">
                            {/* Paragraph */}

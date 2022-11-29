@@ -30,7 +30,7 @@ function ImgTiles({ isPageNav, props }) {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
-         buzzsumoImg: file(relativePath: { eq: "buzzsumo/buzzsumo_1.png" }) {
+         buzzsumoImg: file(relativePath: { eq: "buzzsumo/buzzsumo_tile.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
@@ -42,13 +42,13 @@ function ImgTiles({ isPageNav, props }) {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
-         homelyImg: file(relativePath: { eq: "homely/homely_1.png" }) {
+         homelyImg: file(relativePath: { eq: "homely/homely_tile.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
-         theEcoExpertsImg: file(relativePath: { eq: "theEcoExperts/theEcoExperts_4.png" }) {
+         theEcoExpertsImg: file(relativePath: { eq: "theEcoExperts/theEcoExperts_tile.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)

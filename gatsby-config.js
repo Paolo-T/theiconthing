@@ -97,7 +97,7 @@ module.exports = {
          resolve: "gatsby-plugin-web-font-loader",
          options: {
             custom: {
-               families: ["Jakarta-sans-title", "Jakarta_sans_body", "Italiana_regular"],
+               families: ["CormorantGaramond-Regular", "Jakarta_sans_title", "Italiana_regular"],
                urls: ["/fonts/fonts.css"],
             },
          },
