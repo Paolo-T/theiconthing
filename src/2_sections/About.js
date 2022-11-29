@@ -24,7 +24,7 @@ function About() {
                <span
                   className="absolute h-full w-full rounded-full
 
-                  bg-gradient-to-r from-primary/40 to-primary
+                  bg-gradient-to-r from-offWhite/20 to-offWhite/60
                   animate-pulse
                   "
                ></span>
