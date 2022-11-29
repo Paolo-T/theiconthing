@@ -18,7 +18,7 @@ function Hero() {
             </div>
          </TransitionInview>
 
-         <div className="flex items-baseline space-x-3">
+         <div className="flex items-baseline space-x-3 text-primary">
             <svg
                className="rotate-90"
                width="20"
@@ -32,8 +32,8 @@ function Hero() {
             </svg>
 
             <h4
-               className="container text-primary flex-1 underline underline-offset-4
-                  transition duration-100 ease-in-out text-hover"
+               className="container flex-1 underline underline-offset-4
+                  transition duration-100 ease-in-out hover:text-dark "
             >
                <a type="button" rel="noopener noreferrer" target="_blank" href="mailto:room01info@gmail.com">
                   {" "}

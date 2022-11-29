@@ -60,7 +60,7 @@
    }
 
    .text-hover {
-      @apply transition duration-200 ease-in-out hover:text-offWhite;
+      @apply transition duration-200 ease-in-out hover:text-primary;
    }
 
    .text-serif {
