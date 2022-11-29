@@ -199,7 +199,7 @@ function ImgTiles({ isPageNav, props }) {
                      {isPageNav ? null : (
                         <div className="col-start-15 col-span-2">
                            <h2 className="text-lg sm:text-4xl md:text-4xl lg:text-5xl 2xl:text-5xl text-serif font-semibold md:mt-20">
-                              _0{i}
+                              0{i}
                            </h2>
                         </div>
                      )}

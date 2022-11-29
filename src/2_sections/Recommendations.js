@@ -55,7 +55,7 @@ function Reccomendations() {
                         {
                            <div
                               key={i}
-                              className="bg-offWhite text-dark py-7 px-6 h-full md:px-12 lg:px-18 md:py-14 lg:py-18"
+                              className="bg-offWhiteDark text-dark py-7 px-6 h-full md:px-12 lg:px-18 md:py-14 lg:py-18"
                            >
                               <div className="flex space-x-2 justify-center">
                                  <h5>{recommendation.name}</h5>
@@ -77,7 +77,7 @@ function Reccomendations() {
                               <h4 className="text-xs md:text-base mb-6">{recommendation.JobTitle}</h4>
 
                               <p className="md:leading-7 max-w-prose text-dark" style={{ whiteSpace: "pre-wrap" }}>
-                                 <span className="text-grey">“</span>
+                                 <span className="text-primary">“</span>
                                  {recommendation.description}
                                  <span className="text-grey">”</span>
                               </p>

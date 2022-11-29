@@ -2,7 +2,7 @@ import React from "react"
 
 function Contact() {
    return (
-      <div id="contact" className="container group bg-primary pb-10 md:pb-28 ">
+      <div id="contact" className="container group pb-10 md:pb-28 ">
          <div className="md:grid grid-cols-16">
             <div className="col-start-7 md:col-end-13">
                <h4 className="mb-4 uppercase">Say Hello</h4>

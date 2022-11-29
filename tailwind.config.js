@@ -22,7 +22,7 @@ module.exports = {
          // primary: "#e7530b",
          // primary: "#fc351c",
          // primary: "#C8A47E",
-         // primary: "#f7ece2",
+         primary: "#ff5151",
          // secondary: "#272725",
          grey: "#9ca3af",
          dark: "#151515",
@@ -30,6 +30,7 @@ module.exports = {
          pureBlack: "#000000",
          lessDark: "#16171d",
          offWhite: "#fdf1e7",
+         offWhiteDark: "#f2e6db",
 
          // lessDark: "#1d1d1d",
          inherit: colors.inherit,
