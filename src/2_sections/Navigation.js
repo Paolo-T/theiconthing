@@ -32,7 +32,7 @@ function Navigation() {
          <nav className="container flex justify-between pt-10 pb-2">
             <Link to="/" className="text-hover">
                <p className="text-lg sm:text-2xl md:text-2xl lg:text-3xl 2xl:text-3xl text-serif font-semibold">
-                  /ˈpa.o.lo 'to.dde /
+                  /ˈpa.o.lo 'to.dde/
                </p>
             </Link>
             <ul className="flex space-x-2 md:space-x-6 items-center">

@@ -73,7 +73,8 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "Web Design",
          title: "BuzzSumo",
-         subTitle: "Web Design and marketing collateral for Buzzsumo.",
+         subTitle:
+            "BuzzSumo is a powerful platform that allows you to find engaging pieces of content and discover new potential outreach opportunities.",
          cta: "View more",
          img: data.buzzsumoImg.childImageSharp.gatsbyImageData,
          id: data.buzzsumoImg.id,
@@ -84,7 +85,8 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "UI/UX Design",
          title: "The eco experts",
-         subTitle: "Style library + Home page design for theecoexperts.co.uk",
+         subTitle:
+            "Find out how much you’d pay for different home improvements, how much they’d save you and the climate over their lifespan, and which company makes the best",
          cta: "View use case",
          img: data.theEcoExpertsImg.childImageSharp.gatsbyImageData,
          id: data.theEcoExpertsImg.id,
@@ -97,7 +99,8 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "UI/UX Design",
          title: "Pet Time",
-         subTitle: "Concept design for a Pet management product",
+         subTitle:
+            "Concept design for a pet management product. Pet Time is a fun and friendly app for animal lovers. Whether you are experts or enthusiastic newbies, you'll find learning resources to help taking care of your pet friend",
          cta: "View use case",
          img: data.petImg.childImageSharp.gatsbyImageData,
          id: data.petImg.id,
@@ -108,7 +111,8 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "UI/UX Design",
          title: "Homely",
-         subTitle: "Concept design for a DIY tool rental product",
+         subTitle:
+            "Concept design for a DIY tool rental product. Homely has a target customer base of amateurs: regular people who sometimes need to access tools for a specific, fairly straightforward DIY task.",
          cta: "View use case",
          img: data.homelyImg.childImageSharp.gatsbyImageData,
          id: data.homelyImg.id,
@@ -119,7 +123,8 @@ function ImgTiles({ isPageNav, props }) {
       {
          label: "UI/UX Design",
          title: "Classica",
-         subTitle: "Concept design for a classical Music Player product",
+         subTitle:
+            "Concept design for a classical Music Player product. Classica is a fun and friendly app for the classical music lovers. Whether they are seasoned aficionados or enthusiastic newbies, they'll find plenty of learning material to support their listening experience.",
          cta: "View use case",
          img: data.classicaImg.childImageSharp.gatsbyImageData,
          id: data.classicaImg.id,
