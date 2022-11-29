@@ -45,7 +45,7 @@ function ImgTile({
                {isPageNav ? null : (
                   <div className="md:flex justify-between items-start mt-5 md:mt-8 text-left">
                      <h2 className="flex-1 text-dark mb-1 md:mb-3 uppercase">{title}</h2>
-                     <p className="flex-1 mb-1">{subTitle}</p>
+                     <span className="flex-1 mb-1">{subTitle}</span>
                   </div>
                )}
             </a>
