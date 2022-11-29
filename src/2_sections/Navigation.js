@@ -35,7 +35,7 @@ function Navigation() {
                   /ˈpa.o.lo 'to.dde/
                </p>
             </Link>
-            <ul className="flex space-x-2 md:space-x-6 items-center">
+            <ul className="flex space-x-2 md:space-x-6 lg:space-x-16 items-center">
                {navItems.map((item, i) => (
                   <Link key={i} to={item.to} className="text-hover">
                      <p className="text-sm md:text-base lg:text-base 2xl:text-xl font-bold ">{item.text}</p>
