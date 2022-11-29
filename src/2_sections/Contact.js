@@ -4,16 +4,16 @@ function Contact() {
    return (
       <div id="contact" className="container group bg-primary pb-10 md:pb-28 ">
          <div className="md:grid grid-cols-16">
-            <div className="col-start-7 col-end-17">
-               <h2 className="mb-4 uppercase">Say Hello</h2>
+            <div className="col-start-7 md:col-end-13">
+               <h4 className="mb-4 uppercase">Say Hello</h4>
                <a rel="noopener noreferrer" target="_blank" href="mailto:iampaolotodde@gmail.com">
-                  <h3 className="text-3xl md:text-3xl lg:text-4xl mb-8 md:mb-10">
-                     Always looking for new collaborations.
-                     <span className="text-serif"> Let's chat!</span>
-                  </h3>
+                  <h2 className="mb-8 md:mb-10">
+                     Always open to new collaborations.
+                     <span className="text-serif"> Let's chat! :)</span>
+                  </h2>
                </a>
 
-               <div className="md:mx-0 md:w-4/12 flex items-center space-x-10 md:justify-between">
+               <div className="md:mx-0 md:w-4/12 flex items-center space-x-16 md:justify-between">
                   <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/paolo-todde/">
                      <svg
                         viewBox="0 0 24 24"

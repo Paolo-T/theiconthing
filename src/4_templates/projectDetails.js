@@ -94,7 +94,7 @@ export default function ProjectDetails({ data }) {
          <div className="w-screen bg-white">
             {/* Hero */}
             <TransitionPageIn>
-               <section className="pt-24 sm:pt-28 md:pt-56 mb-0 md:mb-24 container">
+               <section className="pt-24 sm:pt-28 md:pt-32 mb-0 md:mb-24 container">
                   <div className="page-header mb-6">
                      <h1 className="h1-page w-full text-dark">{title}</h1>
                      <p className="text-xl md:text-2xl text-grey mb-2">{subtitle}</p>
@@ -183,7 +183,7 @@ export default function ProjectDetails({ data }) {
                                     ))}
                               </div>
                               <div className="col-start-5 col-end-11 md:mt-10">
-                                 <h3>{section.main.title}</h3>
+                                 <h2>{section.main.title}</h2>
                                  <p>{section.main.body}</p>
                               </div>
                            </div>
