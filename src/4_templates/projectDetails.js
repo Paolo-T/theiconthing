@@ -94,7 +94,7 @@ export default function ProjectDetails({ data }) {
          <div className="w-screen">
             {/* Hero */}
             <TransitionPageIn>
-               <section className="pt-24 sm:pt-28 md:pt-48 mb-0 md:mb-24 container">
+               <section className="pt-48 sm:pt-32 md:pt-48 mb-0 md:mb-24 container">
                   <div className="page-header mb-6">
                      <h1 className="h1-page w-full text-dark">{title}</h1>
                      <p className="text-xl md:text-2xl text-grey mb-2">{subtitle}</p>

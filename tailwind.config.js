@@ -376,7 +376,7 @@ module.exports = {
       },
       fontFamily: {
          hero: ["Garamond_regular"],
-         header: ["Jakarta_sans_title"],
+         header: ["Jakarta_sans_body"],
          // italic: ["Gilroy-RegularItalic"],
          sans: [
             "Jakarta_sans_body",

@@ -31,13 +31,13 @@ function About() {
             <GatsbyImage
                image={data.profileImg.childImageSharp.gatsbyImageData}
                alt="illustration"
-               className="rounded-full"
+               className="rounded-full border-2 border-offWhite"
                loading="eager"
             />
          </div>
 
          <div className="flex-1 text-offWhite md:pr-16">
-            <h2 className="mb-5 uppercase">Hey there!</h2>
+            <h2 className="text-primary mb-5 uppercase">Hey there!</h2>
             <p className="mt-2">
                I'm Paolo. A product designer specialising in web and mobile experiences. Passionate about visual
                communication, striving to design high quality user focused utilitarian interfaces.<br></br>

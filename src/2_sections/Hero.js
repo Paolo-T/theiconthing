@@ -32,7 +32,7 @@ function Hero() {
             </svg>
 
             <h4
-               className="container flex-1 underline underline-offset-4
+               className="container text-primary flex-1 underline underline-offset-4
                   transition duration-100 ease-in-out text-hover"
             >
                <a type="button" rel="noopener noreferrer" target="_blank" href="mailto:room01info@gmail.com">

@@ -6,11 +6,6 @@
    h1 {
       @apply text-5xl sm:text-6xl md:text-7xl md_2:text-7xl lg:text-7xl xl:text-8xl 2xl:text-8xl 3xl:text-8xl leading-some tracking-tighter md:my-0 md:mb-5 lg:mb-0;
    }
-
-   .h1-page {
-      @apply font-header font-light text-4xl md:text-6xl mb-1 md:mb-3;
-   }
-
    h2 {
       @apply font-header text-xl md:text-3xl lg:text-3xl font-bold
       tracking-normal leading-none md:leading-tight
@@ -49,6 +44,9 @@
 }
 
 @layer utilities {
+   .h1-page {
+      @apply font-header tracking-normal font-bold text-4xl md:text-5xl lg:text-6xl mb-1 md:mb-3;
+   }
    .container {
       @apply w-[94%] max-w-screen-3xl mx-auto;
    }
@@ -66,6 +64,6 @@
    }
 
    .text-serif {
-      @apply font-hero tracking-tighter;
+      @apply font-hero tracking-normal;
    }
 }
