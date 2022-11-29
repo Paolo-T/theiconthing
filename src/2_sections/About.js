@@ -17,7 +17,7 @@ function About() {
    return (
       <section
          id="about"
-         className="md:container-content flex flex-col md:flex-row items-center space-y-10 px-6 md:px-10 bg-dark py-10 md:py-20"
+         className="md:container-content flex flex-col lg:flex-row items-center space-y-10 px-6 md:px-10 bg-dark py-10 md:py-20"
       >
          <div className="relative w-6/12 sm:w-8/12 md:w-3/12 xl:w-3/12 h-1/2 md:mx-20">
             <span

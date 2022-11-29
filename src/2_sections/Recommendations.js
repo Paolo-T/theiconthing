@@ -49,7 +49,7 @@ function Reccomendations() {
          </div>
          <div className="md:grid grid-cols-16">
             <div className="col-start-1 col-end-13 ">
-               <div className="md:grid grid-cols-2 gap-6 md:gap-8 place-content-stretch text-center">
+               <div className="lg:grid grid-cols-2 gap-6 md:gap-8 place-content-stretch text-center">
                   {reccomendations.map((recommendation, i) => (
                      <TransitionInview>
                         {

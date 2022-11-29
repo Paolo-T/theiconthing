@@ -8,7 +8,7 @@ function Navigation() {
 
    const navItems = [
       {
-         to: "",
+         to: "/#about",
          text: "Who?",
       },
       {
