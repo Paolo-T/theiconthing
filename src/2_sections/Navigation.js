@@ -31,7 +31,7 @@ function Navigation() {
       <header className={`fixed z-50 w-full bg-transparent`}>
          <nav className="container flex justify-between pt-10 pb-2">
             <Link to="/" className="text-hover">
-               <p className="text-4xl sm:text-4xl md:text-4xl lg:text-4xl 2xl:text-4xl text-serif">/paolo todde/</p>
+               <p className="text-4xl sm:text-4xl md:text-4xl lg:text-4xl 2xl:text-4xl text-serif">paolo todde</p>
             </Link>
             <ul className="flex space-x-4 md:space-x-6 lg:space-x-16 items-end mb-1">
                {navItems.map((item, i) => (

@@ -25,7 +25,7 @@ function Footer() {
    ]
    return (
       <TransitionPageIn>
-         <footer className="w-full bg-primary pt-10 pb-16 md:mt-0">
+         <footer className="w-full bg-dark text-offWhite pt-10 pb-16 md:mt-0">
             <ul className="container md:grid grid-cols-16 items-end">
                <li className="hover:text-hover animate-bounce mb-10 md:mb-0 text-center">
                   <ScrollToTop showBelow="250" />

@@ -9,7 +9,7 @@ function Contact() {
                <a rel="noopener noreferrer" target="_blank" href="mailto:iampaolotodde@gmail.com">
                   <h2 className="mb-8 md:mb-10">
                      Always open to new collaborations.
-                     <span className="text-serif"> Let's chat! :)</span>
+                     <span className="text-serif text-2xl md:text-4xl"> Let's chat! :)</span>
                   </h2>
                </a>
 

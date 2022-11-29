@@ -37,7 +37,7 @@ function About() {
                />
             </div>
 
-            <div className="flex-1 text-white md:pr-16">
+            <div className="flex-1 text-offWhite md:pr-16">
                <h2 className="mb-5 uppercase">Hey there!</h2>
                <p className="mt-2">
                   I'm Paolo. A product designer specialising in web and mobile experiences. Passionate about visual
