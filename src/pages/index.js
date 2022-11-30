@@ -3,7 +3,6 @@ import SEO from "../1_components/Seo"
 import ProjectsTiles from "../2_sections/ProjectsTiles"
 import About from "../2_sections/About"
 import Recommendations from "../2_sections/Recommendations"
-import SideProjects from "../2_sections/SideProjects"
 import Hero from "../2_sections/Hero"
 import Contact from "../2_sections/Contact"
 
@@ -19,7 +18,6 @@ function Home() {
                <Hero />
                <ProjectsTiles />
                <About />
-               {/* <SideProjects /> */}
                <Recommendations />
                <Contact />
             </div>
