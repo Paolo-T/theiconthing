@@ -33,7 +33,7 @@ function Hero() {
 
             <h4
                className="container flex-1 underline underline-offset-4
-                  transition duration-100 ease-in-out hover:text-dark "
+                  transition duration-100 ease-in-out hover:text-dark"
             >
                <a type="button" rel="noopener noreferrer" target="_blank" href="mailto:room01info@gmail.com">
                   {" "}

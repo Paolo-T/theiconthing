@@ -2,82 +2,32 @@ import React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-function ImgTile({
-   linkTo,
-   title,
-   subTitle,
-   img,
-   imgAlt,
-   marginTop,
-   marginBottom,
-   rounded,
-   isPageNav,
-   isExternal,
-   hRef,
-   isLocked,
-   classes,
-}) {
+function ImgTile({ linkTo, hRef, title, subTitle, img, imgAlt, isPageNav, isExternal, isLocked, classes }) {
+   const imgHoverMotion =
+      '"transition duration-500 transform cursor-pointer group-hover:scale-[1.03] group-hover:rotate-[0.5deg]"'
    return (
-      <div>
-         if (!isLocked){" "}
-         {
-            <Link to={linkTo}>
-               <div
-                  className={`relative group transition duration-500 transform
-                  rounded-${rounded ? "2xl" : "0"} overflow-hidden
-                  ${
-                     isPageNav
-                        ? "transition duration-500 transform cursor-pointer group-hover:scale-[1.1] group-hover:rotate-[0.5deg]"
-                        : ""
-                  }
-                  md:mt-${marginTop} md:mb-${marginBottom} ${classes}`}
-               >
-                  <GatsbyImage
-                     className={`transition duration-500 transform ${
-                        !isLocked
-                           ? "cursor-pointer group-hover:scale-[1.03] group-hover:rotate-[0.5deg]"
-                           : "cursor-default"
-                     } `}
-                     image={img}
-                     alt={imgAlt}
-                     loading={"eager"}
-                  />
+      <>
+         {linkTo && (
+            <Link to={!isLocked && linkTo}>
+               <div className={`relative group overflow-hidden ${classes}`}>
+                  <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
                </div>
             </Link>
-         }{" "}
-         elseif (isExternal){" "}
-         {
+         )}
+         {isExternal && (
             <a href={hRef} target="_blank" rel="noopener noreferrer">
-               <div
-                  className={`relative group transition duration-500 transform
-                  rounded-${rounded ? "2xl" : "0"} overflow-hidden
-                  ${
-                     isPageNav
-                        ? "transition duration-500 transform cursor-pointer group-hover:scale-[1.1] group-hover:rotate-[0.5deg]"
-                        : ""
-                  }
-                  md:mt-${marginTop} md:mb-${marginBottom} ${classes}`}
-               >
-                  <GatsbyImage
-                     className={`transition duration-500 transform ${
-                        !isLocked
-                           ? "cursor-pointer group-hover:scale-[1.03] group-hover:rotate-[0.5deg]"
-                           : "cursor-default"
-                     } `}
-                     image={img}
-                     alt={imgAlt}
-                     loading={"eager"}
-                  />
+               <div className={`relative group ${classes}`}>
+                  <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
                </div>
             </a>
-         }
+         )}
          {isPageNav ? null : (
             <div className="md:flex justify-between items-start mt-6 md:mt-8 text-left">
                <h2 className="flex-1 text-dark mb-3 md:mb-3 uppercase">{title}</h2>
                <span className="flex-1 mb-1">{subTitle}</span>
             </div>
          )}
-      </div>
+      </>
    )
 }
 

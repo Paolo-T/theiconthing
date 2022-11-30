@@ -4,7 +4,7 @@ import TransitionPageIn from "../1_components/TransitionPageIn"
 import ScrollToTop from "../1_components/ScrollToTop"
 
 function Footer() {
-   // const location = useLocation()
+   // const `location = useLocation()
 
    const footerItems = [
       {

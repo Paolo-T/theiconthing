@@ -675,6 +675,7 @@ module.exports = {
       },
       lineHeight: {
          none: "1",
+         abit: "1.07",
          some: "1.10",
          less: "1.15",
          tight: "1.25",

@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import ImgTile from "../1_components/ImgTile"
 import TransitionInview from "../1_components/TransitionInview"
 
-function ImgTiles({ isPageNav, props }) {
+function ImgTiles({ isPageNav }) {
    const data = useStaticQuery(graphql`
       query {
          classicaImg: file(relativePath: { eq: "classica/classica_tile.png" }) {
@@ -71,90 +71,89 @@ function ImgTiles({ isPageNav, props }) {
 
    const tilesData = [
       {
-         label: "Web Design",
+         id: data.buzzsumoImg.id,
          title: "BuzzSumo",
          subTitle:
             "BuzzSumo is a powerful platform that allows you to find engaging pieces of content and discover new potential outreach opportunities.",
-         cta: "View more",
+
          img: data.buzzsumoImg.childImageSharp.gatsbyImageData,
-         id: data.buzzsumoImg.id,
-         linkTo: "/projects/buzzsumo",
          imgAlt: "Buzzsumo Web Page",
+         linkTo: "/projects/buzzsumo",
+         hRef: null,
+         isExternal: false,
          isLocked: false,
       },
       {
-         label: "UI/UX Design",
+         id: data.theEcoExpertsImg.id,
          title: "The eco experts",
          subTitle:
             "Find out how much you’d pay for different home improvements, how much they’d save you and the climate over their lifespan, and which company makes the best",
-         cta: "View use case",
+
          img: data.theEcoExpertsImg.childImageSharp.gatsbyImageData,
-         id: data.theEcoExpertsImg.id,
-         linkTo: "/theecoexperts",
-         // hRef: "https://www.theecoexperts.co.uk/",
          imgAlt: "DIY tool rental",
+         linkTo: "/projects/theecoexperts",
+         hRef: null,
          isExternal: false,
          isLocked: true,
       },
       {
-         label: "UI/UX Design",
+         id: data.petImg.id,
          title: "Pet Time",
          subTitle:
             "Concept design for a pet management product. Pet Time is a fun and friendly app for animal lovers. Whether you are experts or enthusiastic newbies, you'll find learning resources to help taking care of your pet friend",
-         cta: "View use case",
+
          img: data.petImg.childImageSharp.gatsbyImageData,
-         id: data.petImg.id,
-         linkTo: "/projects/pet-time",
          imgAlt: "Pet Time App UI Design",
+         linkTo: "/projects/pet-time",
+         hRef: null,
+         isExternal: false,
          isLocked: false,
       },
       {
-         label: "UI/UX Design",
+         id: data.homelyImg.id,
          title: "Homely",
          subTitle:
             "Concept design for a DIY tool rental product. Homely has a target customer base of amateurs: regular people who sometimes need to access tools for a specific, fairly straightforward DIY task.",
          cta: "View use case",
          img: data.homelyImg.childImageSharp.gatsbyImageData,
-         id: data.homelyImg.id,
-         linkTo: "/projects/homely",
          imgAlt: "DIY tool rental",
+         linkTo: "/projects/homely",
+         hRef: null,
+         isExternal: false,
          isLocked: false,
       },
       {
-         label: "UI/UX Design",
+         id: data.classicaImg.id,
          title: "Classica",
          subTitle:
             "Concept design for a classical Music Player product. Classica is a fun and friendly app for the classical music lovers. Whether they are seasoned aficionados or enthusiastic newbies, they'll find plenty of learning material to support their listening experience.",
-         cta: "View use case",
+
          img: data.classicaImg.childImageSharp.gatsbyImageData,
-         id: data.classicaImg.id,
-         linkTo: "/projects/classica",
          imgAlt: "classica app ui design",
+         linkTo: "/projects/classica",
+         hRef: null,
+         isExternal: false,
          isLocked: false,
       },
       {
-         label: "",
+         id: data.digitalArtImg.id,
          title: "Digital art",
          subTitle: "My personal Artwork illustration project",
-         cta: "",
          img: data.digitalArtImg.childImageSharp.gatsbyImageData,
-         id: "data.digitalArtImg.id",
-         // linkTo: "",
+         imgAlt: "Arwork",
+         linkTo: null,
          hRef: "https://www.instagram.com/paolo__todde/",
-         imgAlt: "",
          isExternal: true,
          isLocked: false,
       },
       {
-         label: "",
+         id: data.threeImg.id,
          title: "3DC",
          subTitle: "Visual Branding excersise",
-         cta: "",
          img: data.threeImg.childImageSharp.gatsbyImageData,
-         id: "data.threeImg.id",
+         imgAlt: "Artwork",
          linkTo: "/three/",
-         // hRef: "",
-         imgAlt: "",
+         hRef: null,
          isExternal: false,
          isLocked: false,
       },
@@ -172,11 +171,15 @@ function ImgTiles({ isPageNav, props }) {
                   : "flex flex-col space-y-8 md:space-y-32"
             }`}
          >
-            <TransitionInview>
-               {tilesData.map((tile, i) => (
-                  <div key={tile.id} className={`${isPageNav ? null : "md:grid grid-cols-16"}`}>
+            {tilesData.map((tile, i) => (
+               <TransitionInview key={tile.id}>
+                  <div className={`${isPageNav ? null : "md:grid grid-cols-16"}`}>
                      <div className="col-span-12">
                         <ImgTile
+                           isPageNav={isPageNav}
+                           isLocked={tile.isLocked}
+                           linkTo={tile.linkTo}
+                           hRef={tile.hRef}
                            classes={""}
                            alt={tile.title}
                            loading={"eager"}
@@ -184,28 +187,19 @@ function ImgTiles({ isPageNav, props }) {
                            imgAlt={tile.imgAlt}
                            title={!isPageNav && tile.title}
                            subTitle={!isPageNav && tile.subTitle}
-                           cta={tile.cta}
-                           label={!isPageNav && tile.label}
-                           linkTo={tile.linkTo}
-                           hRef={tile.hRef}
-                           marginTop={tile.marginTop}
-                           marginBottom={tile.marginBottom}
-                           rounded={false}
-                           isPageNav={isPageNav}
                            isExternal={tile.isExternal}
-                           isLocked={tile.isLocked}
                         />
                      </div>
                      {isPageNav ? null : (
                         <div className="col-start-15 col-span-2">
-                           <h2 className="text-lg sm:text-4xl md:text-4xl lg:text-5xl 2xl:text-5xl text-serif font-semibold md:mt-20">
+                           <h2 className="text-lg sm:text-2xl md:text-2xl lg:text-3xl 2xl:text-3xl text-serif font-semibold md:mt-20">
                               0{i}
                            </h2>
                         </div>
                      )}
                   </div>
-               ))}
-            </TransitionInview>
+               </TransitionInview>
+            ))}
          </div>
       </section>
    )
