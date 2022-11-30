@@ -66,10 +66,29 @@ function ImgTiles({ isPageNav }) {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
+         mvfDesignSystemtImg: file(relativePath: { eq: "mvf/mvf_tile.png" }) {
+            id
+            childImageSharp {
+               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
+            }
+         }
       }
    `)
 
    const tilesData = [
+      {
+         id: data.mvfDesignSystemtImg.id,
+         title: "MVF Design system",
+         subTitle:
+            "Established the structure of the company multibrand design system.\n\nServing as a foundation at the core ofr the many company websites. The multibrand approach helps maintaining and scale multiple websites with different brands – helping consistency, dev speed and better UX across different products.",
+
+         img: data.mvfDesignSystemtImg.childImageSharp.gatsbyImageData,
+         imgAlt: "MVF Design System",
+         linkTo: "/",
+         hRef: null,
+         isExternal: false,
+         isLocked: true,
+      },
       {
          id: data.buzzsumoImg.id,
          title: "BuzzSumo",
@@ -87,7 +106,7 @@ function ImgTiles({ isPageNav }) {
          id: data.theEcoExpertsImg.id,
          title: "The eco experts",
          subTitle:
-            "Find out how much you’d pay for different home improvements, how much they’d save you and the climate over their lifespan, and which company makes the best",
+            "Find out how much you’d pay for different home improvements, how much they’d save you and the climate over their lifespan, and which company makes the best.",
 
          img: data.theEcoExpertsImg.childImageSharp.gatsbyImageData,
          imgAlt: "DIY tool rental",
@@ -112,8 +131,7 @@ function ImgTiles({ isPageNav }) {
       {
          id: data.homelyImg.id,
          title: "Homely",
-         subTitle:
-            "Concept design for a DIY tool rental product. Homely has a target customer base of amateurs: regular people who sometimes need to access tools for a specific, fairly straightforward DIY task.",
+         subTitle: "Established",
          cta: "View use case",
          img: data.homelyImg.childImageSharp.gatsbyImageData,
          imgAlt: "DIY tool rental",
@@ -152,7 +170,7 @@ function ImgTiles({ isPageNav }) {
          subTitle: "Visual Branding excersise",
          img: data.threeImg.childImageSharp.gatsbyImageData,
          imgAlt: "Artwork",
-         linkTo: "/three/",
+         linkTo: "projects/three/",
          hRef: null,
          isExternal: false,
          isLocked: false,

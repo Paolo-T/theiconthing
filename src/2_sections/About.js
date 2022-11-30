@@ -40,7 +40,8 @@ function About() {
             <h2 className="text-primary mb-5 uppercase">Hey there!</h2>
             <p className="mt-2">
                I'm Paolo. A product designer specialising in web and mobile experiences. Passionate about visual
-               communication, striving to design high quality user focused utilitarian interfaces.<br></br>
+               communication, collaboration and iteration to design high quality human focused utilitarian interfaces.
+               Striving to help people acheiving their goals online.<br></br>
                <br></br>Currently designing with&nbsp;
                <a
                   className="cursor-pointer underline underline-offset-4 decoration-1  hover:text-grey transition duration-300"
