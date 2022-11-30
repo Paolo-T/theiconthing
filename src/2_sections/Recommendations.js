@@ -90,9 +90,9 @@ function Reccomendations() {
                               <h4 className="text-xs md:text-base mb-6">{recommendation.JobTitle}</h4>
 
                               <p className="md:leading-7 max-w-prose text-dark" style={{ whiteSpace: "pre-wrap" }}>
-                                 <span className="text-primary text-4xl">“</span>
+                                 <span className="text-primary text-2xl">“</span>
                                  {recommendation.description}
-                                 <span className="text-primary text-4xl">”</span>
+                                 <span className="text-primary text-2xl">”</span>
                               </p>
                            </div>
                         }
