@@ -59,7 +59,7 @@ module.exports = {
             background_color: fullConfig.theme.colors.white,
             theme_color: fullConfig.theme.colors.white,
             display: `minimal-ui`,
-            icon: `src/images/logo.svg`,
+            icon: `src/icons/logo.svg`,
          },
       },
       {
@@ -98,6 +98,14 @@ module.exports = {
             custom: {
                families: ["CormorantGaramond-Regular", "Jakarta_sans_title", "Italiana_regular"],
                urls: ["/fonts/fonts.css"],
+            },
+         },
+      },
+      {
+         resolve: "gatsby-plugin-react-svg",
+         options: {
+            rule: {
+               include: /icons/,
             },
          },
       },

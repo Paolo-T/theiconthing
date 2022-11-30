@@ -80,7 +80,7 @@ function ImgTiles({ isPageNav }) {
          id: data.mvfDesignSystemtImg.id,
          title: "MVF Design system",
          subTitle:
-            "Established the structure of the MVF multibrand design system.\n\nServing as a foundation at the core of the many company websites. The multibrand approach helps maintaining and scale multiple websites with different brands – helping consistency, dev speed and better UX across a suite of products.",
+            "Established the structure of the MVF multibrand design system.\n\nServing as a foundation at the core of the many company websites. The multibrand approach helps maintaining and scale multiple websites with different brands – increasing consistency, speed and betterr user experience across a suite of products.",
 
          img: data.mvfDesignSystemtImg.childImageSharp.gatsbyImageData,
          imgAlt: "MVF Design System",
@@ -211,8 +211,8 @@ function ImgTiles({ isPageNav }) {
                      </div>
                      {isPageNav ? null : (
                         <div className="col-start-15 col-span-2">
-                           <h2 className="text-lg sm:text-2xl md:text-2xl lg:text-3xl 2xl:text-3xl text-serif font-semibold md:mt-20">
-                              0{i}
+                           <h2 className="text-xl sm:text-xl md:text-3xl lg:text-4xl 2xl:text-4xl text-serif mt-2 md:mt-10 lg:mt-20">
+                              _0{i}
                            </h2>
                         </div>
                      )}
