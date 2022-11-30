@@ -22,11 +22,11 @@ function NotFoundPage() {
          <section className="w-full h-screen bg-offWhite text-left">
             <TransitionPageIn>
                <div className="container md:grid grid-cols-16 grid-row pt-32 md:pt-72">
-                  <h1 className="col-start-1 col-end-14 font-hero mb-8 sm:mb-12 md:mb-16 lg:mb-20">
+                  <h1 className="col-start-1 col-end-12 font-hero mb-8 sm:mb-12 md:mb-16 lg:mb-20">
                      {" "}
                      Looks like the page you are looking for is not here...
                   </h1>
-                  <h2 className="row-start-2 col-span-3 underline underline-offset-4 transition duration-100 ease-in-out hover:text-dark">
+                  <h2 className="row-start-2 col-span-3 underline underline-offset-4 uppercase text-hover">
                      <Link to="/"> Let's go home!</Link>
                   </h2>
                </div>
