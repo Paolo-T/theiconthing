@@ -56,37 +56,36 @@ function Reccomendations() {
    ]
 
    return (
-      <section className="py-10 md:py-32 relative">
-         <div className="mb-6 md:mb-10">
+      <section className="md:grid grid-cols-16 grid-gap section-spacing">
+         <div className="col-start-1 col-end-13 mb-6 md:mb-10">
             <h3>Kind recommendations</h3>
-            <p className="">From amazingly talented humans</p>
+            <p>From amazingly talented humans</p>
          </div>
-         <div className="md:grid grid-cols-16">
-            <div className="col-start-1 col-end-13 ">
-               <div className="lg:grid grid-cols-2 gap-6 md:gap-8 place-content-stretch text-center">
-                  {reccomendations.map((recommendation, i) => (
-                     <TransitionInview key={recommendation.id}>
-                        {
-                           <div
-                              key={recommendation.id}
-                              className="bg-offWhiteDark text-dark py-7 px-6 h-full md:px-12 lg:px-18 md:py-14 lg:py-18"
-                           >
-                              <div className="flex space-x-2 text-primary justify-center">
-                                 <h5>{recommendation.name}</h5>
-                                 <IconBubble />
-                              </div>
-                              <h4 className="text-xs md:text-base mb-6">{recommendation.JobTitle}</h4>
 
-                              <p className="md:leading-7 max-w-prose text-dark" style={{ whiteSpace: "pre-wrap" }}>
-                                 <span className="text-primary text-2xl">“</span>
-                                 {recommendation.description}
-                                 <span className="text-primary text-2xl">”</span>
-                              </p>
+         <div className="col-start-1 col-end-13">
+            <div className="lg:grid grid-cols-2 grid-gap place-content-stretch text-center">
+               {reccomendations.map((recommendation) => (
+                  <TransitionInview key={recommendation.id}>
+                     {
+                        <div
+                           key={recommendation.id}
+                           className="bg-offWhiteDark text-dark py-7 px-6 h-full md:px-12 lg:px-18 md:py-14 lg:py-18"
+                        >
+                           <div className="flex space-x-2 text-primary justify-center">
+                              <h5>{recommendation.name}</h5>
+                              <IconBubble />
                            </div>
-                        }
-                     </TransitionInview>
-                  ))}
-               </div>
+                           <h4 className="text-xs md:text-base mb-6">{recommendation.JobTitle}</h4>
+
+                           <p className="md:leading-7 max-w-prose text-dark" style={{ whiteSpace: "pre-wrap" }}>
+                              <span className="text-primary text-2xl">“</span>
+                              {recommendation.description}
+                              <span className="text-primary text-2xl">”</span>
+                           </p>
+                        </div>
+                     }
+                  </TransitionInview>
+               ))}
             </div>
          </div>
       </section>

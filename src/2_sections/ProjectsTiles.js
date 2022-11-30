@@ -179,7 +179,7 @@ function ImgTiles({ isPageNav }) {
    ]
 
    return (
-      <section id="work" className={` ${isPageNav ? "w-full py-12 md:py-24 " : "pb-12 md:pt-16 md:pb-20"}`}>
+      <section id="work" className={` ${isPageNav ? "w-full py-12 md:py-24 " : "section-spacing"}`}>
          {isPageNav && <h3 className="container text-dark mb-10">Other projects</h3>}
 
          <div
@@ -192,7 +192,7 @@ function ImgTiles({ isPageNav }) {
          >
             {tilesData.map((tile, i) => (
                <TransitionInview key={tile.id}>
-                  <div className={`${isPageNav ? null : "md:grid grid-cols-16"}`}>
+                  <div className={`${!isPageNav && "md:grid grid-cols-16 grid-gap"}`}>
                      <div className="col-span-12">
                         <ImgTile
                            isPageNav={isPageNav}

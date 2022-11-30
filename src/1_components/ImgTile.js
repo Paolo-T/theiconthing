@@ -7,10 +7,10 @@ function ImgTile({ linkTo, hRef, title, subTitle, img, imgAlt, isPageNav, isExte
    const imgHoverMotion =
       '"transition duration-500 transform cursor-pointer group-hover:scale-[1.03] group-hover:rotate-[0.5deg]"'
    return (
-      <>
+      <div className={classes}>
          {linkTo && (
             <Link to={!isLocked && linkTo}>
-               <div className={`relative group overflow-hidden ${classes}`}>
+               <div className={`relative group overflow-hidden`}>
                   <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
                </div>
             </Link>
@@ -36,7 +36,7 @@ function ImgTile({ linkTo, hRef, title, subTitle, img, imgAlt, isPageNav, isExte
                <span className="flex-1 mb-1">{subTitle}</span>
             </div>
          )}
-      </>
+      </div>
    )
 }
 

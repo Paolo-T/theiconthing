@@ -10,7 +10,7 @@ function Hero() {
    return (
       <section className="w-full text-left pt-32 md:pt-72 pb-16">
          <TransitionInview>
-            <div className="md:grid grid-cols-16">
+            <div className="md:grid grid-cols-16 grid-gap">
                <h1 className="col-start-1 col-end-14 font-hero mb-8 sm:mb-12 md:mb-16 lg:mb-20">
                   {" "}
                   Specialising in human-centred user experience. Tailored pixel perfect visual design solutions.

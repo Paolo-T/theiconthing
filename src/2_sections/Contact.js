@@ -6,8 +6,8 @@ import IconMail from "../icons/mail.svg"
 
 function Contact() {
    return (
-      <div id="contact" className="container group pb-10 md:pb-28 ">
-         <div className="md:grid grid-cols-16">
+      <section id="contact" className="group pb-10 section-spacing">
+         <div className="md:grid grid-cols-16 grid-gap">
             <div className="col-start-7 md:col-end-13">
                <h4 className="mb-4 uppercase">Say Hello</h4>
                <a rel="noopener noreferrer" target="_blank" href="mailto:iampaolotodde@gmail.com">
@@ -56,7 +56,7 @@ function Contact() {
                </div>
             </div>
          </div>
-      </div>
+      </section>
    )
 }
 

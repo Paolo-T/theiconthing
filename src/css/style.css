@@ -66,4 +66,12 @@
    .text-serif {
       @apply font-hero tracking-normal;
    }
+
+   .section-spacing {
+      @apply py-10 md:py-16 box-border;
+   }
+
+   .grid-gap {
+      @apply gap-6 md:gap-8;
+   }
 }
