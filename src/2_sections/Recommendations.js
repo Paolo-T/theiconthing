@@ -3,13 +3,13 @@ import TransitionInview from "../1_components/TransitionInview"
 
 function Reccomendations() {
    const reccomendations = [
-      // {
-      //    id: "3df9e28f-cda5-454f-8a9a-8a3b9r9h77e46",
-      //    name: "Ana Abrantes",
-      //    JobTitle: "Senior UI Designer @ MVF Global",
-      //    description:
-      //       "I worked in the same team as Paolo, we collaborated on several projects, and can say for sure it was the best collaboration I ever had!\n\nWhen I gave feedback on his work and questioned some of the decisions, Paolo was always welcoming of different perspectives and willing to iterate more on his work until we found the right solution.\n\nSome of the most epic projects that Paolo worked on were the Eco Experts website redesign which had several challenges and different stakeholders giving input on designs but he was able to manage the visual direction and expectations really well. Another big contribution was the creation of our first-ever Multi-brand Design System, which he built from the ground up, having into consideration the scalability of our products in the future.\n\nApart from being an incredible designer, Paolo is also an amazing person, always available to help and accept new challenges, bringing enthusiasm and a friendly smile to all the meetings we had :)",
-      // },
+      {
+         id: "3df9e28f-cda5-454f-8a9a-8a3b9r9h77e46",
+         name: "Ana Abrantes",
+         JobTitle: "Senior UI Designer @ MVF Global",
+         description:
+            "I worked in the same team as Paolo, we collaborated on several projects, and can say for sure it was the best collaboration I ever had!\n\nWhen I gave feedback on his work and questioned some of the decisions, Paolo was always welcoming of different perspectives and willing to iterate more on his work until we found the right solution.\n\nSome of the most epic projects that Paolo worked on were the Eco Experts website redesign which had several challenges and different stakeholders giving input on designs but he was able to manage the visual direction and expectations really well. Another big contribution was the creation of our first-ever Multi-brand Design System, which he built from the ground up, having into consideration the scalability of our products in the future.\n\nApart from being an incredible designer, Paolo is also an amazing person, always available to help and accept new challenges, bringing enthusiasm and a friendly smile to all the meetings we had :)",
+      },
       {
          id: "d82a67e2-544a-40f2-bb16-ary6330a0d75",
          name: "Rebecca Harrison",
