@@ -1,11 +1,11 @@
 import React from "react"
 import { useLocation } from "@reach/router"
-// import TransitionPageIn from "../1_components/TransitionPageIn"
+import IconArrow from "../icons/arrow.svg"
 import TransitionInview from "../1_components/TransitionInview"
 
 function Hero() {
    const location = useLocation()
-   const home = location.pathname === "/"
+   // const home = location.pathname === "/"
 
    return (
       <section className="w-full text-left pt-32 md:pt-72 pb-16">
@@ -19,27 +19,21 @@ function Hero() {
          </TransitionInview>
 
          <div className="flex items-baseline space-x-3 text-primary">
-            <svg
-               className="rotate-90"
-               width="20"
-               height="20"
-               viewBox="0 0 20 20"
-               fill="currentColor"
-               xmlns="http://www.w3.org/2000/svg"
-               stroke="currentColor"
-            >
-               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-            </svg>
+            <IconArrow />
 
-            <h4
+            <a
                className="container flex-1 underline underline-offset-4
                   transition duration-100 ease-in-out hover:text-dark"
+               type="button"
+               rel="noopener noreferrer"
+               target="_blank"
+               href="mailto:room01info@gmail.com"
             >
-               <a type="button" rel="noopener noreferrer" target="_blank" href="mailto:room01info@gmail.com">
-                  {" "}
-                  Send me a message
-               </a>
-            </h4>
+               {" "}
+               <div className="flex space-x-2 tems-start">
+                  <h4>Send me a message</h4>
+               </div>
+            </a>
          </div>
       </section>
    )
