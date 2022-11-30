@@ -80,7 +80,7 @@ function ImgTiles({ isPageNav }) {
          id: data.mvfDesignSystemtImg.id,
          title: "MVF Design system",
          subTitle:
-            "Established the structure of the MVF multibrand design system.\n\nServing as a foundation at the core of the many company websites. The multibrand approach helps maintaining and scale multiple websites with different brands – helping consistency, dev speed and better UX across different products.",
+            "Established the structure of the MVF multibrand design system.\n\nServing as a foundation at the core of the many company websites. The multibrand approach helps maintaining and scale multiple websites with different brands – helping consistency, dev speed and better UX across a suite of products.",
 
          img: data.mvfDesignSystemtImg.childImageSharp.gatsbyImageData,
          imgAlt: "MVF Design System",
@@ -131,7 +131,8 @@ function ImgTiles({ isPageNav }) {
       {
          id: data.homelyImg.id,
          title: "Homely",
-         subTitle: "Established",
+         subTitle:
+            "Concept design for a DIY tool rental product. Homely has a target customer base of amateurs: regular people who sometimes need to access tools for a specific, fairly straightforward DIY task.",
          cta: "View use case",
          img: data.homelyImg.childImageSharp.gatsbyImageData,
          imgAlt: "DIY tool rental",
