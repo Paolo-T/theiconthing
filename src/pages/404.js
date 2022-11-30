@@ -19,21 +19,19 @@ function NotFoundPage() {
             ]}
             title="404: Not found"
          />
-
-         <TransitionPageIn>
-            <div className="h-screen pt-32 sm:pt-32 bg-primary">
-               <div className="container ">
-                  <h1 className="container-content lg:w-12/12 xl:w-12/12 2xl:w-12/12 mb-12 sm:mb-12 md:mb-20 lg:mb-16 xl:mb-16 md:mt-20 xl:mt-32 leading-less xl:leading-tight">
+         <section className="w-full h-screen bg-offWhite text-left">
+            <TransitionPageIn>
+               <div className="container md:grid grid-cols-16 grid-row pt-32 md:pt-72">
+                  <h1 className="col-start-1 col-end-14 font-hero mb-8 sm:mb-12 md:mb-16 lg:mb-20">
                      {" "}
                      Looks like the page you are looking for is not here...
                   </h1>
-
-                  <h2 className="flex-1 underline underline-offset-4 transition duration-100 ease-in-out hover:text-dark">
+                  <h2 className="row-start-2 col-span-3 underline underline-offset-4 transition duration-100 ease-in-out hover:text-dark">
                      <Link to="/"> Let's go home!</Link>
                   </h2>
                </div>
-            </div>
-         </TransitionPageIn>
+            </TransitionPageIn>
+         </section>
       </>
    )
 }
