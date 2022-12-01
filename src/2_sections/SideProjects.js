@@ -6,7 +6,7 @@ import ImgTile from "../1_components/ImgTile"
 function SideProjects() {
    const images = useStaticQuery(graphql`
       query sideProjects {
-         threeImg: file(relativePath: { eq: "three/three_1.png" }) {
+         threeImg: file(relativePath: { eq: "3dc/3dc_1.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
@@ -41,7 +41,7 @@ function SideProjects() {
          cta: "",
          img: images.threeImg.childImageSharp.gatsbyImageData,
          imgAlt: "Artwork",
-         linkTo: "projects/three/",
+         linkTo: "projects/3dc/",
          hRef: "https://www.instagram.com/paolo__todde/",
          isExternal: false,
          isLocked: false,

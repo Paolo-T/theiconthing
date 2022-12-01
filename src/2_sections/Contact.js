@@ -6,7 +6,7 @@ import IconMail from "../icons/mail.svg"
 
 function Contact() {
    return (
-      <section id="contact" className="group pb-10 section-spacing">
+      <section id="contact" className="group pb-32">
          <div className="md:grid grid-cols-16 grid-gap">
             <div className="col-start-7 md:col-end-13">
                <h4 className="mb-4 uppercase">Say Hello</h4>

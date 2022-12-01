@@ -1,0 +1,80 @@
+{
+   "slug": "3dc",
+   "hero": {
+      "title": "3DC",
+      "subtitle": "",
+      "heroImg": "../images/3dc/3dc_tile.png"
+   },
+   "content_1": [
+      {
+         "id": "1",
+         "aside": {
+            "title": "",
+            "list": [""]
+         },
+         "main": {
+            "title": "",
+            "body": ""
+         }
+      },
+      {
+         "id": "",
+         "aside": {
+            "title": "",
+            "list": [""]
+         },
+         "main": {
+            "title": "",
+            "body": ""
+         }
+      },
+      {
+         "id": "",
+         "aside": {
+            "title": "",
+            "list": []
+         },
+         "main": {
+            "title": "",
+            "body": ""
+         }
+      }
+   ],
+   "contentImg_1": ["../images/3dc/3dc_1.png"],
+   "contentList": {
+      "title": "",
+      "listItems": [
+         {
+            "title": "",
+            "description": "."
+         },
+         {
+            "title": "",
+            "description": ""
+         },
+         {
+            "title": "",
+            "description": ""
+         },
+         {
+            "title": "",
+            "description": ""
+         }
+      ]
+   },
+   "contentImg_2": [],
+   "content_2": [
+      {
+         "id": "",
+         "aside": {
+            "title": "",
+            "list": [""]
+         },
+         "main": {
+            "title": "",
+            "body": ""
+         }
+      }
+   ],
+   "contentImg_3": ["../images/3dc/3dc_2.png", "../images/3dc/3dc_3.png", "../images/3dc/3dc_4.png"]
+}
