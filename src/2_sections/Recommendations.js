@@ -51,7 +51,7 @@ function Reccomendations() {
          name: "Monica Salis",
          JobTitle: "CFO @ Omnia International",
          description:
-            "Paolo provided an excellent service in creating and refining our logo according to our request. Very professional, not only he undrestood exactly what our needs were, but he did it in a very short time. Absolutely recommended, we will be using him more and more in the future. Thanks Paolo!",
+            "Paolo provided an excellent service in creating and refining our logo according to our request. Very professional, not only he understood exactly what our needs were, but he did it in a very short time. Absolutely recommended, we will be using him more and more in the future. Thanks Paolo!",
       },
    ]
 
