@@ -19,27 +19,27 @@ function ImgTile({
    classes,
 }) {
    const imgHoverMotion =
-      '"transition duration-500 transform cursor-pointer group-hover:scale-[1.01] group-hover:rotate-[1.3deg] overflow-hidden"'
+      '"transition duration-500 transform cursor-pointer group-hover:scale-[1.02] group-hover:rotate-[1.05deg] overflow-hidden"'
    return (
-      <div className={`group ${isHorizontal ? "md:grid grid-cols-16 grid-gap" : "flex-1"} ${classes}`}>
-         <div className={`${isHorizontal ? "col-start-1 col-end-13" : ""}`}>
+      <div className={`${isHorizontal ? "md:grid grid-cols-16 grid-gap" : "flex-1"} ${classes}`}>
+         <div className={`${isHorizontal ? "col-start-1 col-end-13 overflow-hidden" : ""}`}>
             {linkTo && (
                <Link to={!isLocked && linkTo}>
-                  <div className="group overflow-hidden">
+                  <div className="group">
                      <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
                   </div>
                </Link>
             )}
             {isExternal && (
                <a href={hRef} target="_blank" rel="noopener noreferrer">
-                  <div className="group overflow-hidden">
+                  <div className="group">
                      <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
                   </div>
                </a>
             )}
          </div>
          {!isPageNav && (
-            <div className={`${isHorizontal ? "col-start-13 col-end-16 md:py-8 " : "mt-3 md:mt-5"}`}>
+            <div className={`${isHorizontal ? "col-start-13 col-end-16 md:py-12 " : "mt-3 md:mt-5"}`}>
                <div className="h-full flex flex-col justify-between">
                   <div className="pt-4 md:pt-0">
                      {titleSmall ? (
