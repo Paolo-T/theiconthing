@@ -30,9 +30,7 @@ function Hero() {
                href="mailto:room01info@gmail.com"
             >
                {" "}
-               <div className="flex space-x-2 items-start">
-                  <h4>Send me a message</h4>
-               </div>
+               <h4>Send me a message</h4>
             </a>
          </div>
       </section>

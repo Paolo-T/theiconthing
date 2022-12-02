@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-
 import ImgTile from "../1_components/ImgTile"
 
 function SideProjects() {
@@ -24,7 +23,7 @@ function SideProjects() {
    const tilesData = [
       {
          id: "",
-         title: "Digital art",
+         title: "Artwork",
          subTitle: "Digital and traditional artwork",
          cta: "",
          img: images.digitalArtImg.childImageSharp.gatsbyImageData,

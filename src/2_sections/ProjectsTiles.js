@@ -156,8 +156,6 @@ function ImgTiles({ isPageNav }) {
       },
    ]
 
-   console.log(data)
-
    return (
       <section id="work" className={` ${isPageNav ? "w-full py-12 md:py-24 " : "md:spacing-top spacing-bottom"}`}>
          {isPageNav && <h3 className="container text-dark mb-10">Other projects</h3>}
