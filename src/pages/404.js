@@ -35,7 +35,7 @@ export default function NotFoundPage() {
             title="404: Not found"
          />
          <TransitionPageIn>
-            <section className="w-full bg-offWhite py-32 md:pt-48 spacing-bottom ">
+            <section className="w-full bg-offWhite py-32 md:pt-36 spacing-bottom ">
                <div className="container grid grid-cols-16 grid-gap content-center">
                   <div className="col-start-1 col-end-17 md:col-end-9 order-last md:oder-first">
                      <GatsbyImage className="mb-2" image={featuredImg} alt="Image" loading={"eager"} />
