@@ -20,7 +20,7 @@ function Contact() {
                   </h2>
                </a>
 
-               <div className="md:mx-0 md:w-4/12 flex items-center space-x-16 justify-around md:justify-between ">
+               <div className="flex items-center space-x-16 justify-around md:justify-between px-12 md:pr-32 mx-auto">
                   <a
                      className="hover:text-hover"
                      rel="noopener noreferrer"
