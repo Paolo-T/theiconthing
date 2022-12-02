@@ -5,19 +5,19 @@ import IconLock from "../icons/lock.svg"
 
 function ImgTile({ linkTo, hRef, title, titleSmall, subTitle, img, imgAlt, isPageNav, isExternal, isLocked, classes }) {
    const imgHoverMotion =
-      '"transition duration-500 transform cursor-pointer group-hover:scale-[1.03] group-hover:rotate-[0.5deg]"'
+      '"transition duration-500 transform cursor-pointer group-hover:scale-[1.03] group-hover:rotate-[1.3deg] overflow-hidden"'
    return (
-      <div className={classes}>
+      <div className={`group ${classes}`}>
          {linkTo && (
             <Link to={!isLocked && linkTo}>
-               <div className={`relative group overflow-hidden`}>
+               <div className="group overflow-hidden">
                   <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
                </div>
             </Link>
          )}
          {isExternal && (
             <a href={hRef} target="_blank" rel="noopener noreferrer">
-               <div className={`relative group ${classes}`}>
+               <div className="group overflow-hidden">
                   <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
                </div>
             </a>
