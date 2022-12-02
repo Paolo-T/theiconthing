@@ -15,7 +15,7 @@ function About() {
    `)
 
    return (
-      <section className="md:grid grid-cols-16 grid-gap section-spacing text-offWhite">
+      <section className="md:grid grid-cols-16 grid-gap spacing-top spacing-bottom text-offWhite">
          <div className="col-start-1 col-end-13">
             <div
                id="about"
@@ -38,7 +38,7 @@ function About() {
                   />
                </div>
 
-               <div className="flex-1 pl-20 mt-0">
+               <div className="flex-1 md:pl-20 mt-0">
                   <h2 className="text-primary uppercase">Hey there!</h2>
                   <p>
                      I'm Paolo. A product designer specialising in web and mobile experiences. Passionate about visual

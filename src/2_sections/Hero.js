@@ -8,7 +8,7 @@ function Hero() {
    // const home = location.pathname === "/"
 
    return (
-      <section className="w-full text-left pt-32 md:pt-72 pb-16">
+      <section className="w-full text-left pt-32 md:pt-72 spacing-bottom">
          <TransitionInview>
             <div className="md:grid grid-cols-16 grid-gap">
                <h1 className="col-start-1 col-end-14 font-hero mb-8 sm:mb-12 md:mb-16 lg:mb-20">

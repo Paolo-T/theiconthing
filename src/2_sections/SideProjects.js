@@ -6,7 +6,7 @@ import ImgTile from "../1_components/ImgTile"
 function SideProjects() {
    const images = useStaticQuery(graphql`
       query sideProjects {
-         threeImg: file(relativePath: { eq: "3dc/3dc_1.png" }) {
+         threeImg: file(relativePath: { eq: "3dc/3dc_tile.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
@@ -49,10 +49,10 @@ function SideProjects() {
    ]
 
    return (
-      <section className="w-full md:grid grid-cols-16 grid-gap section-spacing">
+      <section className="w-full md:grid grid-cols-16 grid-gap spacing-bottom">
          <div className="col-span-12">
             <h2 className="text-dark mb-10">Side projects</h2>
-            <div className="md:flex grid-gap">
+            <div className="flex flex-col md:flex-row grid-gap">
                {tilesData.map((tile, i) => (
                   <ImgTile
                      key={i}

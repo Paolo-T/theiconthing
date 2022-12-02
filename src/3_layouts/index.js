@@ -7,7 +7,7 @@ function Layout({ children }) {
    return (
       <div className="w-full relative">
          <Navigation />
-         <main>{children}</main>
+         <main className="w-full">{children}</main>
          <Footer />
       </div>
    )
