@@ -27,7 +27,7 @@ function Navigation() {
             <Link to="/" className="text-hover">
                <p className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl 2xl:text-6xl text-serif">pt.</p>
             </Link>
-            <ul className="flex space-x-4 md:space-x-6 lg:space-x-16 items-end mb-1.5">
+            <ul className="flex space-x-4 md:space-x-6 lg:space-x-10 items-end mb-1.5">
                {navItems.map((item, i) => (
                   <Link to={item.to} key={i} className="text-hover">
                      <p className="text-xs md:text-base lg:text-base 2lg:text-lg font-bold uppercase">{item.text}</p>
