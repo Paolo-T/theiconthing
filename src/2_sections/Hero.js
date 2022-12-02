@@ -18,19 +18,19 @@ function Hero() {
             </div>
          </TransitionInview>
 
-         <div className="flex items-baseline space-x-3 text-primary">
-            <IconArrow className="rotate-90" />
+         <div className="flex items-baseline space-x-3">
+            <IconArrow className="rotate-90 text-primary" />
 
             <a
                className="container flex-1 underline underline-offset-4
-                  transition duration-100 ease-in-out hover:text-dark"
+                  transition duration-100 ease-in-out dark-text-hover"
                type="button"
                rel="noopener noreferrer"
                target="_blank"
                href="mailto:room01info@gmail.com"
             >
                {" "}
-               <div className="flex space-x-2 tems-start">
+               <div className="flex space-x-2 items-start">
                   <h4>Send me a message</h4>
                </div>
             </a>

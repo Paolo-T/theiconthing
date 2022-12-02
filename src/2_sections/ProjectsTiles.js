@@ -12,12 +12,6 @@ function ImgTiles({ isPageNav }) {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
-         shuushImg: file(relativePath: { eq: "shuush/shuush_tile_2.png" }) {
-            id
-            childImageSharp {
-               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
-            }
-         }
          petImg: file(relativePath: { eq: "petTime/petTime_tile.png" }) {
             id
             childImageSharp {
@@ -54,19 +48,13 @@ function ImgTiles({ isPageNav }) {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
-         threeImg: file(relativePath: { eq: "three/three_1.png" }) {
-            id
-            childImageSharp {
-               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
-            }
-         }
-         digitalArtImg: file(relativePath: { eq: "about/digitalArtThumb.png" }) {
-            id
-            childImageSharp {
-               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
-            }
-         }
          mvfDesignSystemtImg: file(relativePath: { eq: "mvf/mvf_tile.png" }) {
+            id
+            childImageSharp {
+               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
+            }
+         }
+         shuushImg: file(relativePath: { eq: "shuush/shuush_tile.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
@@ -116,10 +104,22 @@ function ImgTiles({ isPageNav }) {
          isLocked: true,
       },
       {
+         id: data.shuushImg.id,
+         title: "Shuush",
+         subTitle:
+            " exploration for a minimalistic mesaging app. Designd to eliminate all the superfluous clutter and present only the eesential functional features.",
+         img: data.shuushImg.childImageSharp.gatsbyImageData,
+         imgAlt: "Shuush app presentation",
+         linkTo: "/projects/shuush",
+         hRef: null,
+         isExternal: false,
+         isLocked: false,
+      },
+      {
          id: data.petImg.id,
          title: "Pet Time",
          subTitle:
-            "Concept design for a pet management product. Pet Time is a fun and friendly app for animal lovers. Whether you are experts or enthusiastic newbies, you'll find learning resources to help taking care of your pet friend",
+            " exploration for a pet management product. Pet Time is a fun and friendly app for animal lovers. Whether you are experts or enthusiastic newbies, you'll find learning resources to help taking care of your pet friend",
 
          img: data.petImg.childImageSharp.gatsbyImageData,
          imgAlt: "Pet Time App UI Design",
@@ -132,7 +132,7 @@ function ImgTiles({ isPageNav }) {
          id: data.homelyImg.id,
          title: "Homely",
          subTitle:
-            "Concept design for a DIY tool rental product. Homely has a target customer base of amateurs: regular people who sometimes need to access tools for a specific, fairly straightforward DIY task.",
+            " exploration for a DIY tool rental product. Homely has a target customer base of amateurs: regular people who sometimes need to access tools for a specific, fairly straightforward DIY task.",
          cta: "View use case",
          img: data.homelyImg.childImageSharp.gatsbyImageData,
          imgAlt: "DIY tool rental",
@@ -145,7 +145,7 @@ function ImgTiles({ isPageNav }) {
          id: data.classicaImg.id,
          title: "Classica",
          subTitle:
-            "Concept design for a classical Music Player product. Classica is a fun and friendly app for the classical music lovers. Whether they are seasoned aficionados or enthusiastic newbies, they'll find plenty of learning material to support their listening experience.",
+            " exploration for a classical Music Player product. Classica is a fun and friendly app for the classical music lovers. Whether they are seasoned aficionados or enthusiastic newbies, they'll find plenty of learning material to support their listening experience.",
 
          img: data.classicaImg.childImageSharp.gatsbyImageData,
          imgAlt: "classica app ui design",
@@ -154,29 +154,9 @@ function ImgTiles({ isPageNav }) {
          isExternal: false,
          isLocked: false,
       },
-      // {
-      //    id: data.digitalArtImg.id,
-      //    title: "Digital art",
-      //    subTitle: "My personal Artwork illustration project",
-      //    img: data.digitalArtImg.childImageSharp.gatsbyImageData,
-      //    imgAlt: "Arwork",
-      //    linkTo: null,
-      //    hRef: "https://www.instagram.com/paolo__todde/",
-      //    isExternal: true,
-      //    isLocked: false,
-      // },
-      // {
-      //    id: data.threeImg.id,
-      //    title: "3DC",
-      //    subTitle: "Visual Branding excersise",
-      //    img: data.threeImg.childImageSharp.gatsbyImageData,
-      //    imgAlt: "Artwork",
-      //    linkTo: "/projects/three/",
-      //    hRef: null,
-      //    isExternal: false,
-      //    isLocked: false,
-      // },
    ]
+
+   console.log(data)
 
    return (
       <section id="work" className={` ${isPageNav ? "w-full py-12 md:py-24 " : "md:spacing-top spacing-bottom"}`}>

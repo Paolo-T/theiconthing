@@ -59,8 +59,12 @@
       @apply font-sans font-normal text-base md:text-2xl leading-7 md:leading-8;
    }
 
-   .text-hover {
-      @apply transition duration-200 ease-in-out hover:text-primary;
+   .dark-text-hover {
+      @apply hover:text-primary transition duration-200 ease-in-out;
+   }
+
+   .primary-text-hover {
+      @apply hover:text-dark transition duration-200 ease-in-out;
    }
 
    .text-serif {

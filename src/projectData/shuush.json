@@ -1,0 +1,54 @@
+{
+   "slug": "shuush",
+   "hero": {
+      "title": "Shuush!",
+      "subtitle": "Minimalist messaging app concept design",
+      "heroImg": "../images/shuush/shuush_tile.png"
+   },
+   "content_1": [
+      {
+         "id": "section-1",
+         "aside": {
+            "title": "Concept",
+            "list": ["Product design", "UX/UI"]
+         },
+         "main": {
+            "title": "Exploration",
+            "body": "Concept design exploration for a minimalistic mesaging app. Designd to eliminate all the superfluous clutter and present only the eesential functional features."
+         }
+      }
+   ],
+   "contentImg_1": [
+      "../images/shuush/shuush_1.png",
+      "../images/shuush/shuush_2.png",
+      "../images/shuush/shuush_3.png",
+      "../images/shuush/shuush_4.png",
+      "../images/shuush/shuush_5.png",
+      "../images/shuush/shuush_6.png",
+      "../images/shuush/shuush_7.png"
+   ],
+   "contentList": {
+      "title": "",
+      "listItems": [
+         {
+            "title": "",
+            "description": ""
+         },
+         {
+            "title": "",
+            "description": ""
+         },
+         {
+            "title": "",
+            "description": ""
+         },
+         {
+            "title": "",
+            "description": ""
+         }
+      ]
+   },
+   "contentImg_2": [],
+   "content_2": [],
+   "contentImg_3": []
+}

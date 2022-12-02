@@ -2,7 +2,7 @@
    "slug": "3dc",
    "hero": {
       "title": "3DC",
-      "subtitle": "",
+      "subtitle": "Visusl identity exploration",
       "heroImg": "../images/3dc/3dc_tile.png"
    },
    "content_1": [
@@ -40,7 +40,12 @@
          }
       }
    ],
-   "contentImg_1": ["../images/3dc/3dc_1.png"],
+   "contentImg_1": [
+      "../images/3dc/3dc_1.png",
+      "../images/3dc/3dc_2.png",
+      "../images/3dc/3dc_3.png",
+      "../images/3dc/3dc_4.png"
+   ],
    "contentList": {
       "title": "",
       "listItems": [
@@ -68,7 +73,7 @@
          "id": "",
          "aside": {
             "title": "",
-            "list": [""]
+            "list": []
          },
          "main": {
             "title": "",
@@ -76,5 +81,5 @@
          }
       }
    ],
-   "contentImg_3": ["../images/3dc/3dc_2.png", "../images/3dc/3dc_3.png", "../images/3dc/3dc_4.png"]
+   "contentImg_3": []
 }

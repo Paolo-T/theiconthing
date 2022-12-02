@@ -99,7 +99,7 @@ export default function ProjectDetails({ data }) {
                      <h1 className="h1-page w-full text-dark">{title}</h1>
                      <p className="text-xl md:text-2xl text-grey mb-2">{subtitle}</p>
                   </div>
-                  <GatsbyImage image={heroImg} alt={`${title} + "presentation image"`} loading="eager" />
+                  {heroImg && <GatsbyImage image={heroImg} alt={`${title} + "presentation image"`} loading="eager" />}
                </section>
                {/* Content */}
                {(Array.isArray(content_1) || content_1.length) && (
