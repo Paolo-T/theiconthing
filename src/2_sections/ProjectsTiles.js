@@ -157,7 +157,7 @@ function ImgTiles({ isPageNav }) {
    ]
 
    return (
-      <section id="work" className={` ${isPageNav ? "w-full py-12 md:py-24 " : "spacing-top spacing-bottom"}`}>
+      <section id="work" className={`${isPageNav ? "w-full py-12 md:py-24 " : "spacing-top spacing-bottom"}`}>
          {isPageNav && <h3 className="container text-dark mb-10">Other projects</h3>}
 
          <div
@@ -170,32 +170,21 @@ function ImgTiles({ isPageNav }) {
          >
             {tilesData.map((tile, i) => (
                <TransitionInview key={tile.id}>
-                  <div className={`${!isPageNav && "md:grid grid-cols-16 grid-gap"}`}>
-                     <div className="col-span-12">
-                        <ImgTile
-                           isPageNav={isPageNav}
-                           isLocked={tile.isLocked}
-                           linkTo={tile.linkTo}
-                           hRef={tile.hRef}
-                           classes={""}
-                           alt={tile.title}
-                           loading={"eager"}
-                           img={tile.img}
-                           imgAlt={tile.imgAlt}
-                           title={!isPageNav && tile.title}
-                           titleSmall={false}
-                           subTitle={!isPageNav && tile.subTitle}
-                           isExternal={tile.isExternal}
-                        />
-                     </div>
-                     {isPageNav ? null : (
-                        <div className="col-start-15 col-span-2">
-                           <h2 className="text-xl sm:text-xl md:text-3xl lg:text-4xl 2xl:text-4xl text-serif mt-2 md:mt-10 lg:mt-20">
-                              _0{i}
-                           </h2>
-                        </div>
-                     )}
-                  </div>
+                  <ImgTile
+                     id={i}
+                     hRef={tile.hRef}
+                     linkTo={tile.linkTo}
+                     title={!isPageNav && tile.title}
+                     titleSmall={false}
+                     description={!isPageNav && tile.subTitle}
+                     img={tile.img}
+                     imgAlt={tile.imgAlt}
+                     isPageNav={isPageNav}
+                     isExternal={tile.isExternal}
+                     isLocked={tile.isLocked}
+                     isHorizontal={true}
+                     classes={""}
+                  />
                </TransitionInview>
             ))}
          </div>

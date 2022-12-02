@@ -3,42 +3,64 @@ import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import IconLock from "../icons/lock.svg"
 
-function ImgTile({ linkTo, hRef, title, titleSmall, subTitle, img, imgAlt, isPageNav, isExternal, isLocked, classes }) {
+function ImgTile({
+   id,
+   linkTo,
+   hRef,
+   title,
+   titleSmall,
+   description,
+   img,
+   imgAlt,
+   isPageNav,
+   isExternal,
+   isLocked,
+   isHorizontal,
+   classes,
+}) {
    const imgHoverMotion =
-      '"transition duration-500 transform cursor-pointer group-hover:scale-[1.03] group-hover:rotate-[1.3deg] overflow-hidden"'
+      '"transition duration-500 transform cursor-pointer group-hover:scale-[1.01] group-hover:rotate-[1.3deg] overflow-hidden"'
    return (
-      <div className={`group ${classes}`}>
-         {linkTo && (
-            <Link to={!isLocked && linkTo}>
-               <div className="group overflow-hidden">
-                  <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
-               </div>
-            </Link>
-         )}
-         {isExternal && (
-            <a href={hRef} target="_blank" rel="noopener noreferrer">
-               <div className="group overflow-hidden">
-                  <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
-               </div>
-            </a>
-         )}
+      <div className={`group ${isHorizontal ? "md:grid grid-cols-16 grid-gap" : "flex-1"} ${classes}`}>
+         <div className={`${isHorizontal ? "col-start-1 col-end-13" : ""}`}>
+            {linkTo && (
+               <Link to={!isLocked && linkTo}>
+                  <div className="group overflow-hidden">
+                     <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
+                  </div>
+               </Link>
+            )}
+            {isExternal && (
+               <a href={hRef} target="_blank" rel="noopener noreferrer">
+                  <div className="group overflow-hidden">
+                     <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
+                  </div>
+               </a>
+            )}
+         </div>
          {!isPageNav && (
-            <div className="md:flex justify-between items-start mt-6 md:mt-8 text-left">
-               <div className="flex-1">
-                  {titleSmall ? (
-                     <h4 className="text-dark mb-3 md:mb-3 uppercase">{title}</h4>
-                  ) : (
-                     <h2 className="text-dark mb-3 md:mb-3 uppercase">{title}</h2>
-                  )}
-
-                  {isLocked && (
-                     <div className="flex mb-3">
-                        <IconLock className="w-5 mr-2 inline h-auto" />
-                        <span>Coming soon...</span>{" "}
-                     </div>
+            <div className={`${isHorizontal ? "col-start-13 col-end-16 md:py-8 " : "mt-3 md:mt-5"}`}>
+               <div className="h-full flex flex-col justify-between">
+                  <div className="pt-4 md:pt-0">
+                     {titleSmall ? (
+                        <h4 className="text-dark mb-3 md:mb-2 uppercase">{title}</h4>
+                     ) : (
+                        <h2 className="text-dark mb-3 md:mb-5 uppercase">{title}</h2>
+                     )}
+                     <span>{description}</span>
+                     {isLocked && (
+                        <div className="pt-2 md:pt-6">
+                           <IconLock className="w-5 mr-2 inline h-auto" />
+                           <span>Coming soon...</span>{" "}
+                        </div>
+                     )}
+                  </div>
+                  {isHorizontal && (
+                     <span className="text-xl sm:text-xl md:text-3xl lg:text-3xl 2xl:text-3xl text-serif font-semibold">
+                        0{id}
+                     </span>
                   )}
                </div>
-               <span className="flex-1 mb-1">{subTitle}</span>
             </div>
          )}
       </div>

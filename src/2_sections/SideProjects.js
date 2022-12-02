@@ -32,6 +32,7 @@ function SideProjects() {
          hRef: "https://www.instagram.com/paolo__todde/",
          isExternal: true,
          isLocked: false,
+         isPageNav: false,
       },
       {
          id: "",
@@ -44,6 +45,7 @@ function SideProjects() {
          hRef: "https://www.instagram.com/paolo__todde/",
          isExternal: false,
          isLocked: false,
+         isPageNav: false,
       },
    ]
 
@@ -54,25 +56,19 @@ function SideProjects() {
             <div className="flex flex-col md:flex-row grid-gap">
                {tilesData.map((tile, i) => (
                   <ImgTile
-                     key={i}
-                     classes={"flex-1"}
-                     alt={tile.title}
-                     loading={"lazy"}
-                     img={tile.img}
-                     imgAlt={tile.imgAlt}
+                     id={i}
+                     hRef={tile.hRef}
+                     linkTo={tile.linkTo}
                      title={tile.title}
                      titleSmall={true}
-                     subTitle={tile.subTitle}
-                     cta={tile.cta}
-                     label={tile.label}
-                     linkTo={tile.linkTo}
-                     hRef={tile.hRef}
-                     marginTop={tile.marginTop}
-                     marginBottom={tile.marginBottom}
-                     rounded={false}
-                     isPageNav={false}
+                     description={tile.subTitle}
+                     img={tile.img}
+                     imgAlt={tile.imgAlt}
+                     isPageNav={tile.isPageNav}
                      isExternal={tile.isExternal}
                      isLocked={tile.isLocked}
+                     isHorizontal={false}
+                     classes={""}
                   />
                ))}
             </div>
