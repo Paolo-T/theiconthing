@@ -25,7 +25,7 @@ function SideProjects() {
       {
          id: "",
          title: "Digital art",
-         subTitle: "Illustration",
+         subTitle: "Digital and traditional artwork",
          cta: "",
          img: images.digitalArtImg.childImageSharp.gatsbyImageData,
          imgAlt: "Artwork",
@@ -37,7 +37,7 @@ function SideProjects() {
       {
          id: "",
          title: "3dc designs",
-         subTitle: "Branding",
+         subTitle: "Visual identity exploration",
          cta: "",
          img: images.threeImg.childImageSharp.gatsbyImageData,
          imgAlt: "Artwork",
@@ -51,7 +51,7 @@ function SideProjects() {
    return (
       <section className="w-full md:grid grid-cols-16 grid-gap spacing-bottom">
          <div className="col-span-12">
-            <h2 className="text-dark mb-10">Side projects</h2>
+            <h2 className="text-dark">Side projects</h2>
             <div className="flex flex-col md:flex-row grid-gap">
                {tilesData.map((tile, i) => (
                   <ImgTile
@@ -62,6 +62,7 @@ function SideProjects() {
                      img={tile.img}
                      imgAlt={tile.imgAlt}
                      title={tile.title}
+                     titleSmall={true}
                      subTitle={tile.subTitle}
                      cta={tile.cta}
                      label={tile.label}

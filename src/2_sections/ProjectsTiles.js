@@ -205,6 +205,7 @@ function ImgTiles({ isPageNav }) {
                            img={tile.img}
                            imgAlt={tile.imgAlt}
                            title={!isPageNav && tile.title}
+                           titleSmall={false}
                            subTitle={!isPageNav && tile.subTitle}
                            isExternal={tile.isExternal}
                         />

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import IconLock from "../icons/lock.svg"
 
-function ImgTile({ linkTo, hRef, title, subTitle, img, imgAlt, isPageNav, isExternal, isLocked, classes }) {
+function ImgTile({ linkTo, hRef, title, titleSmall, subTitle, img, imgAlt, isPageNav, isExternal, isLocked, classes }) {
    const imgHoverMotion =
       '"transition duration-500 transform cursor-pointer group-hover:scale-[1.03] group-hover:rotate-[0.5deg]"'
    return (
@@ -25,7 +25,12 @@ function ImgTile({ linkTo, hRef, title, subTitle, img, imgAlt, isPageNav, isExte
          {!isPageNav && (
             <div className="md:flex justify-between items-start mt-6 md:mt-8 text-left">
                <div className="flex-1">
-                  <h2 className="text-dark mb-3 md:mb-3 uppercase">{title}</h2>
+                  {titleSmall ? (
+                     <h4 className="text-dark mb-3 md:mb-3 uppercase">{title}</h4>
+                  ) : (
+                     <h2 className="text-dark mb-3 md:mb-3 uppercase">{title}</h2>
+                  )}
+
                   {isLocked && (
                      <div className="flex mb-3">
                         <IconLock className="w-5 mr-2 inline h-auto" />
