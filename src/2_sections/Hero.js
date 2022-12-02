@@ -19,7 +19,7 @@ function Hero() {
          </TransitionInview>
 
          <div className="flex items-baseline space-x-3 text-primary">
-            <IconArrow />
+            <IconArrow className="rotate-90" />
 
             <a
                className="container flex-1 underline underline-offset-4
