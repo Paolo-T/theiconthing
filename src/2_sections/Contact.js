@@ -13,16 +13,16 @@ function Contact() {
                <a rel="noopener noreferrer" target="_blank" href="mailto:iampaolotodde@gmail.com">
                   <h2 className="mb-8 md:mb-10">
                      Always open to new collaborations.
-                     <span className="text-serif text-primary hover:text-dark text-2xl md:text-4xl">
+                     <span className="text-serif text-primary primary-text-hover text-2xl md:text-4xl">
                         {" "}
                         Let's chat! :)
                      </span>
                   </h2>
                </a>
 
-               <div className="flex items-center space-x-8 md:space-x-16 justify-around md:justify-between md:pr-32 mx-auto">
+               <div className="flex items-center space-x-8 md:space-x-16 justify-around md:justify-between md:pr-32 mx-auto ">
                   <a
-                     className="hover:text-hover"
+                     className="dark-text-hover"
                      rel="noopener noreferrer"
                      target="_blank"
                      href="https://www.linkedin.com/in/paolo-todde/"
@@ -30,7 +30,7 @@ function Contact() {
                      <IconLinkedin />
                   </a>
                   <a
-                     className="hover:text-hover"
+                     className="dark-text-hover"
                      rel="noopener noreferrer"
                      target="_blank"
                      href="https://twitter.com/roomzeroone"
@@ -38,7 +38,7 @@ function Contact() {
                      <IconTwitter />
                   </a>
                   <a
-                     className="hover:text-hover"
+                     className="dark-text-hover"
                      rel="noopener noreferrer"
                      target="_blank"
                      href="https://www.instagram.com/paolo__todde/"
@@ -46,7 +46,7 @@ function Contact() {
                      <IconInstagram />
                   </a>
                   <a
-                     className="hover:text-hover"
+                     className="dark-text-hover"
                      rel="noopener noreferrer"
                      target="_blank"
                      href="mailto:iampaolotodde@gmail.com"
