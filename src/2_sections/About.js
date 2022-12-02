@@ -68,7 +68,7 @@ function About() {
                   <h4 className="mt-16 mb-4 text-primary">Passionate about:</h4>
                   <ul className="md:flex text-5xl justify-between pr-8">
                      <li>UX/UI</li>
-                     <li>Interaction & Motion</li>
+                     <li>Interaction and Motion</li>
                      <li>Design Systems</li>
                   </ul>
                </div>

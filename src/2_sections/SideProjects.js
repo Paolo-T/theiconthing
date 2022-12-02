@@ -24,7 +24,7 @@ function SideProjects() {
       {
          id: "",
          title: "Artwork",
-         subTitle: "Digital and traditional artwork",
+         subTitle: "",
          cta: "",
          img: images.digitalArtImg.childImageSharp.gatsbyImageData,
          imgAlt: "Artwork",
@@ -35,8 +35,8 @@ function SideProjects() {
       },
       {
          id: "",
-         title: "3dc designs",
-         subTitle: "Visual identity exploration",
+         title: "3dc",
+         subTitle: "",
          cta: "",
          img: images.threeImg.childImageSharp.gatsbyImageData,
          imgAlt: "Artwork",

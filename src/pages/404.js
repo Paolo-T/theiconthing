@@ -38,7 +38,12 @@ export default function NotFoundPage() {
             <section className="w-full bg-offWhite py-32 md:pt-36 spacing-bottom ">
                <div className="container grid grid-cols-16 grid-gap content-center">
                   <div className="col-start-1 col-end-17 md:col-end-9 order-last md:oder-first">
-                     <GatsbyImage className="mb-2" image={featuredImg} alt="Image" loading={"eager"} />
+                     <GatsbyImage
+                        className="mb-2 border-4 border-primary"
+                        image={featuredImg}
+                        alt="Image"
+                        loading={"eager"}
+                     />
                      <div>
                         <span>Photo by</span>{" "}
                         <a
@@ -48,14 +53,7 @@ export default function NotFoundPage() {
                         >
                            Garrett Sears
                         </a>{" "}
-                        <span> on</span>{" "}
-                        <a
-                           rel="noopener noreferrer"
-                           target="_blank"
-                           href="https://unsplash.com/s/photos/lost?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                        >
-                           Unsplash
-                        </a>
+                        <span> on Unsplash</span>{" "}
                      </div>
                   </div>
                   <div className="col-start-1 md:col-start-9 col-end-16 md:pt-40 order-first md:order-last">
