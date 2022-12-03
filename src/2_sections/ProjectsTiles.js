@@ -67,7 +67,7 @@ function ImgTiles({ isPageNav }) {
       {
          id: data.mvfDesignSystemtImg.id,
          title: "MVF Design system",
-         subTitle:
+         description:
             "Established the structure of the MVF multibrand design system.\n\nServing as a foundation at the core of the many company websites. The multibrand approach helps maintaining and scale multiple websites with different brands.",
 
          img: data.mvfDesignSystemtImg.childImageSharp.gatsbyImageData,
@@ -80,7 +80,7 @@ function ImgTiles({ isPageNav }) {
       {
          id: data.buzzsumoImg.id,
          title: "BuzzSumo",
-         subTitle:
+         description:
             "BuzzSumo is a powerful platform that allows you to find engaging pieces of content and discover new potential outreach opportunities.",
 
          img: data.buzzsumoImg.childImageSharp.gatsbyImageData,
@@ -93,7 +93,7 @@ function ImgTiles({ isPageNav }) {
       {
          id: data.theEcoExpertsImg.id,
          title: "The eco experts",
-         subTitle:
+         description:
             "Find out how much you’d pay for different home improvements, how much they’d save you and the climate over their lifespan, and which company makes the best.",
 
          img: data.theEcoExpertsImg.childImageSharp.gatsbyImageData,
@@ -106,7 +106,7 @@ function ImgTiles({ isPageNav }) {
       {
          id: data.shuushImg.id,
          title: "Shuush",
-         subTitle:
+         description:
             " exploration for a minimalistic mesaging app. Designd to eliminate all the superfluous clutter and present only the eesential functional features.",
          img: data.shuushImg.childImageSharp.gatsbyImageData,
          imgAlt: "Shuush app presentation",
@@ -118,7 +118,7 @@ function ImgTiles({ isPageNav }) {
       {
          id: data.petImg.id,
          title: "Pet Time",
-         subTitle:
+         description:
             " exploration for a pet management product. Pet Time is a fun and friendly app for animal lovers. Whether you are experts or enthusiastic newbies, you'll find learning resources to help taking care of your pet friend",
 
          img: data.petImg.childImageSharp.gatsbyImageData,
@@ -131,7 +131,7 @@ function ImgTiles({ isPageNav }) {
       {
          id: data.homelyImg.id,
          title: "Homely",
-         subTitle:
+         description:
             " exploration for a DIY tool rental product. Homely has a target customer base of amateurs: regular people who sometimes need to access tools for a specific, fairly straightforward DIY task.",
          cta: "View use case",
          img: data.homelyImg.childImageSharp.gatsbyImageData,
@@ -144,7 +144,7 @@ function ImgTiles({ isPageNav }) {
       {
          id: data.classicaImg.id,
          title: "Classica",
-         subTitle:
+         description:
             "Exploration for a classical Music Player product. Classica is a fun and friendly app for the classical music lovers. Whether they are seasoned aficionados or enthusiastic newbies, they'll find plenty of learning material to support their listening experience.",
 
          img: data.classicaImg.childImageSharp.gatsbyImageData,
@@ -176,7 +176,7 @@ function ImgTiles({ isPageNav }) {
                      linkTo={tile.linkTo}
                      title={!isPageNav && tile.title}
                      titleSmall={false}
-                     description={!isPageNav && tile.subTitle}
+                     description={!isPageNav && tile.description}
                      img={tile.img}
                      imgAlt={tile.imgAlt}
                      isPageNav={isPageNav}

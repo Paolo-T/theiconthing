@@ -15,10 +15,10 @@ function About() {
    `)
 
    return (
-      <section className="md:grid grid-cols-16 grid-gap spacing-top spacing-bottom text-offWhite">
+      <section className="lg:grid grid-cols-16 grid-gap spacing-top spacing-bottom text-offWhite">
          <div className="col-start-1 col-end-13">
             <div id="about" className="flex flex-col lg:flex-row items-center px-6 md:px-20 bg-dark py-10 md:py-20">
-               <div className="relative col-span-12 w-6/12 sm:w-8/12 md:w-3/12 xl:w-3/12 h-1/2 ">
+               <div className="relative col-span-12 w-6/12 sm:w-4/12 md:w-3/12 xl:w-3/12 h-1/2 mb-10">
                   <span
                      className="absolute h-full w-full rounded-full
 
@@ -43,7 +43,7 @@ function About() {
                      interfaces. Striving to help people acheiving their goals online.<br></br>
                      <br></br>Currently designing with&nbsp;
                      <a
-                        className="cursor-pointer underline underline-offset-4 decoration-1  hover:text-grey transition duration-300"
+                        className="cursor-pointer underline underline-offset-4 decoration-1 hover:text-grey transition duration-300"
                         rel="noopener noreferrer"
                         href="https://www.johnlewis.com/"
                         target="_blank"

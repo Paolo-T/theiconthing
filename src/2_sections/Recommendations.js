@@ -57,13 +57,13 @@ function Reccomendations() {
 
    return (
       <section className="grid grid-cols-16 md:grid-gap spacing-top spacing-bottom">
-         <div className="col-start-3 col-end-15 md:col-start-1 md:col-end-13 mb-6 md:mb-0 text-center md:text-left">
+         <div className="col-start-3 col-end-15 md:col-start-1 lg:col-end-13 mb-6 md:mb-0 text-center md:text-left">
             <h3>Kind recommendations</h3>
             <p>From amazingly talented humans</p>
          </div>
 
          <div className="w-full col-start-1 col-end-17 md:col-end-13">
-            <div className="lg:grid grid-cols-2 md:grid-gap place-content-stretch text-center">
+            <div className="sm:grid grid-cols-2 sm:grid-gap place-content-stretch text-center">
                {reccomendations.map((recommendation) => (
                   <TransitionInview key={recommendation.id}>
                      {

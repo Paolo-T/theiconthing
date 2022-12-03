@@ -24,8 +24,7 @@ function SideProjects() {
       {
          id: "",
          title: "Artwork",
-         subTitle: "",
-         cta: "",
+         description: "",
          img: images.digitalArtImg.childImageSharp.gatsbyImageData,
          imgAlt: "Artwork",
          linkTo: null,
@@ -37,8 +36,7 @@ function SideProjects() {
       {
          id: "",
          title: "3dc",
-         subTitle: "",
-         cta: "",
+         description: "",
          img: images.threeImg.childImageSharp.gatsbyImageData,
          imgAlt: "Artwork",
          linkTo: "projects/3dc/",
@@ -51,7 +49,7 @@ function SideProjects() {
 
    return (
       <section className="w-full md:grid grid-cols-16 grid-gap spacing-bottom">
-         <div className="col-span-12">
+         <div className="col-start-1 md:col-end-17 lg:col-end-13">
             <h2 className="text-dark">Side projects</h2>
             <div className="flex flex-col md:flex-row grid-gap">
                {tilesData.map((tile, i) => (
@@ -61,7 +59,7 @@ function SideProjects() {
                      linkTo={tile.linkTo}
                      title={tile.title}
                      titleSmall={true}
-                     description={tile.subTitle}
+                     description={tile.description}
                      img={tile.img}
                      imgAlt={tile.imgAlt}
                      isPageNav={tile.isPageNav}
