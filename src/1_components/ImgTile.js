@@ -48,12 +48,12 @@ function ImgTile({
             <div
                className={`${
                   isHorizontal ? "block xl:block xl:col-start-13 xl:col-end-16  " : ""
-               } md:flex flex-row justify-between items-center md:pt-4`}
+               } md:flex flex-row justify-between items-center pt-2 md:pt-4`}
             >
                {/* Title */}
                <div className="flex-1 flex-col">
                   {isHorizontal && (
-                     <span className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl 2xl:text-3xl text-serif font-semibold">
+                     <span className="inline-block text-2xl sm:text-2xl md:text-3xl lg:text-3xl 2xl:text-3xl text-serif font-semibold pb-1 md:pb-0">
                         0{id + 1}
                      </span>
                   )}
