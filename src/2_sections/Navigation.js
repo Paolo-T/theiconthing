@@ -13,7 +13,7 @@ function Navigation() {
       },
       {
          to: "/#work",
-         text: "Work",
+         text: "What?",
       },
       {
          to: "#contact",
