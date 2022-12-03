@@ -39,11 +39,11 @@ function ImgTile({
             )}
          </div>
          {!isPageNav && (
-            <div className={`${isHorizontal ? "col-start-13 col-end-16 pt-8" : "mt-3 md:mt-5"}`}>
-               <div className="h-full flex flex-col items-startt">
-                  <div className="flex space-x-2 md:space-x-0 md:block">
+            <div className={`${isHorizontal ? "col-start-13 col-end-16 pt-4" : "mt-3 md:mt-5"}`}>
+               <div className="h-full flex flex-col">
+                  <div className="">
                      {isHorizontal && (
-                        <span className="h-auto text-2xl sm:text-2xl md:text-3xl lg:text-3xl 2xl:text-3xl text-serif font-semibold">
+                        <span className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl 2xl:text-3xl text-serif font-semibold align-top">
                            0{id + 1}
                         </span>
                      )}

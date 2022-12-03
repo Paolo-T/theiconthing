@@ -4,7 +4,7 @@
 
 @layer base {
    h1 {
-      @apply text-5xl sm:text-6xl md:text-7xl md_2:text-7xl lg:text-7xl xl:text-8xl 2xl:text-8xl 3xl:text-8xl leading-abit md:leading-some tracking-tighter md:my-0 md:mb-5 lg:mb-0;
+      @apply text-5xl sm:text-6xl md:text-7xl md_2:text-7xl lg:text-7xl xl:text-8xl 2xl:text-8xl 3xl:text-8xl leading-none md:leading-some tracking-tighter md:my-0 md:mb-5 lg:mb-0;
    }
    h2 {
       @apply font-header text-xl md:text-3xl lg:text-3xl font-bold
@@ -39,7 +39,7 @@
    }
 
    .span {
-      @apply font-sans text-base;
+      @apply font-sans text-base leading-some;
    }
 }
 

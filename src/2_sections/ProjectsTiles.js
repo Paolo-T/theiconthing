@@ -165,7 +165,7 @@ function ImgTiles({ isPageNav }) {
             ${
                isPageNav
                   ? "container grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mb-0"
-                  : "flex flex-col space-y-8 md:space-y-32"
+                  : "flex flex-col space-y-10 md:space-y-32"
             }`}
          >
             {tilesData.map((tile, i) => (
