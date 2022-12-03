@@ -21,7 +21,7 @@ function ImgTile({
    const imgHoverMotion =
       '"transition duration-500 transform cursor-pointer group-hover:scale-[1.025] group-hover:rotate-[1.02deg] overflow-hidden"'
    return (
-      <div className={`${isHorizontal ? "md:grid grid-cols-16 grid-gap" : "flex-1"} overflow-hidden ${classes}`}>
+      <div className={`${isHorizontal ? "lg:grid grid-cols-16 grid-gap" : "flex-1"} overflow-hidden ${classes}`}>
          <div className={`${isHorizontal ? "col-start-1 col-end-13 overflow-hidden" : ""} overflow-hidden`}>
             {linkTo && (
                <Link to={!isLocked && linkTo}>
@@ -39,20 +39,24 @@ function ImgTile({
             )}
          </div>
          {!isPageNav && (
-            <div className={`${isHorizontal ? "col-start-13 col-end-16 pt-4" : "mt-3 md:mt-5"}`}>
-               <div className="h-full flex flex-col">
-                  <div className="">
-                     {isHorizontal && (
-                        <span className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl 2xl:text-3xl text-serif font-semibold align-top">
-                           0{id + 1}
-                        </span>
-                     )}
-                     {titleSmall ? (
-                        <h4 className="text-dark mb-3 md:mb-2 uppercase">{title}</h4>
-                     ) : (
-                        <h2 className="text-dark mb-3 md:mb-5 uppercase">{title}</h2>
-                     )}
-                  </div>
+            <div
+               className={`${
+                  isHorizontal ? "block md:flex flex-row lg:block lg:col-start-13 lg:col-end-16 pt-4" : "mt-3 md:mt-5"
+               }`}
+            >
+               <div className="flex-1 flex flex-col space-y-2">
+                  {isHorizontal && (
+                     <span className="h-auto text-2xl sm:text-2xl md:text-3xl lg:text-3xl 2xl:text-3xl text-serif font-semibold">
+                        0{id + 1}
+                     </span>
+                  )}
+                  {titleSmall ? (
+                     <h4 className="text-dark mb-3 md:mb-2 uppercase">{title}</h4>
+                  ) : (
+                     <h2 className="text-dark mb-3 md:mb-5 uppercase">{title}</h2>
+                  )}
+               </div>
+               <div className="flex-1">
                   <span>{description}</span>
                   {isLocked && (
                      <div className="pt-2 md:pt-3">
