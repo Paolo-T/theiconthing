@@ -68,7 +68,7 @@ function ImgTiles({ isPageNav }) {
          id: data.mvfDesignSystemtImg.id,
          title: "MVF Design system",
          subTitle:
-            "Established the structure of the MVF multibrand design system.\n\nServing as a foundation at the core of the many company websites. The multibrand approach helps maintaining and scale multiple websites with different brands – increasing consistency, speed and betterr user experience across a suite of products.",
+            "Established the structure of the MVF multibrand design system.\n\nServing as a foundation at the core of the many company websites. The multibrand approach helps maintaining and scale multiple websites with different brands.",
 
          img: data.mvfDesignSystemtImg.childImageSharp.gatsbyImageData,
          imgAlt: "MVF Design System",
@@ -145,7 +145,7 @@ function ImgTiles({ isPageNav }) {
          id: data.classicaImg.id,
          title: "Classica",
          subTitle:
-            " exploration for a classical Music Player product. Classica is a fun and friendly app for the classical music lovers. Whether they are seasoned aficionados or enthusiastic newbies, they'll find plenty of learning material to support their listening experience.",
+            "Exploration for a classical Music Player product. Classica is a fun and friendly app for the classical music lovers. Whether they are seasoned aficionados or enthusiastic newbies, they'll find plenty of learning material to support their listening experience.",
 
          img: data.classicaImg.childImageSharp.gatsbyImageData,
          imgAlt: "classica app ui design",
