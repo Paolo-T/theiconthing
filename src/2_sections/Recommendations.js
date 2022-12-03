@@ -62,7 +62,7 @@ function Reccomendations() {
             <p>From amazingly talented humans</p>
          </div>
 
-         <div className="w-full col-start-1 col-end-17 md:col-end-13">
+         <div className="w-full col-start-1 col-end-17 lg:col-end-13">
             <div className="sm:grid grid-cols-2 sm:grid-gap place-content-stretch text-center">
                {reccomendations.map((recommendation) => (
                   <TransitionInview key={recommendation.id}>
