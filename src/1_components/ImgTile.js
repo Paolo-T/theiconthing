@@ -23,7 +23,7 @@ function ImgTile({
    return (
       <div
          className={`${
-            isHorizontal ? "lg:grid grid-cols-16 grid-gap" : "flex-1 h-full flex flex-col"
+            isHorizontal ? "xl:grid grid-cols-16 grid-gap" : "flex-1 h-full flex flex-col"
          } overflow-hidden ${classes}`}
       >
          {/* Image */}
@@ -47,8 +47,8 @@ function ImgTile({
          {!isPageNav && (
             <div
                className={`${
-                  isHorizontal ? "block lg:block lg:col-start-13 lg:col-end-16 " : ""
-               } md:flex flex-row justify-between md:pt-4`}
+                  isHorizontal ? "block xl:block xl:col-start-13 xl:col-end-16  " : ""
+               } md:flex flex-row justify-between items-center md:pt-4`}
             >
                {/* Title */}
                <div className="flex-1 flex-col">
@@ -58,21 +58,21 @@ function ImgTile({
                      </span>
                   )}
                   {titleSmall ? (
-                     <h4 className="text-dark my-2 md:my-2 uppercase">{title}</h4>
+                     <h4 className="text-dark my-2 md:mb-2 uppercase">{title}</h4>
                   ) : (
-                     <h2 className="text-dark my-2 md:my-3 uppercase">{title}</h2>
+                     <h2 className="text-dark mb-2 md:mb-3 uppercase">{title}</h2>
+                  )}
+                  {isLocked && (
+                     <div className="">
+                        <IconLock className="w-5 mr-2 inline h-auto" />
+                        <span>Coming soon...</span>{" "}
+                     </div>
                   )}
                </div>
                {/* !END Title */}
                {/* Description */}
                <div className="flex-1">
                   <span>{description}</span>
-                  {isLocked && (
-                     <div className="pt-2 md:pt-3">
-                        <IconLock className="w-5 mr-2 inline h-auto" />
-                        <span>Coming soon...</span>{" "}
-                     </div>
-                  )}
                </div>
                {/* !END Description */}
             </div>
