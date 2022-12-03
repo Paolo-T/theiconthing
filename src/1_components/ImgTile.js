@@ -39,26 +39,26 @@ function ImgTile({
             )}
          </div>
          {!isPageNav && (
-            <div className={`${isHorizontal ? "col-start-13 col-end-16 md:py-12 " : "mt-3 md:mt-5"}`}>
-               <div className="h-full flex flex-col justify-between">
-                  <div className="pt-4 md:pt-0">
+            <div className={`${isHorizontal ? "col-start-13 col-end-16 pt-6 md:py-20" : "mt-3 md:mt-5"}`}>
+               <div className="h-full flex flex-col">
+                  <div className="flex space-x-2 md:space-x-0 md:block items-center">
+                     {isHorizontal && (
+                        <span className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl 2xl:text-3xl text-serif font-semibold">
+                           0{id + 1}
+                        </span>
+                     )}
                      {titleSmall ? (
                         <h4 className="text-dark mb-3 md:mb-2 uppercase">{title}</h4>
                      ) : (
                         <h2 className="text-dark mb-3 md:mb-5 uppercase">{title}</h2>
                      )}
-                     <span>{description}</span>
-                     {isLocked && (
-                        <div className="pt-2 md:pt-6">
-                           <IconLock className="w-5 mr-2 inline h-auto" />
-                           <span>Coming soon...</span>{" "}
-                        </div>
-                     )}
                   </div>
-                  {isHorizontal && (
-                     <span className="text-xl sm:text-xl md:text-3xl lg:text-3xl 2xl:text-3xl text-serif font-semibold">
-                        0{id}
-                     </span>
+                  <span>{description}</span>
+                  {isLocked && (
+                     <div className="pt-2 md:pt-3">
+                        <IconLock className="w-5 mr-2 inline h-auto" />
+                        <span>Coming soon...</span>{" "}
+                     </div>
                   )}
                </div>
             </div>
