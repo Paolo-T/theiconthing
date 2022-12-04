@@ -19,15 +19,15 @@ function ImgTile({
    classes,
 }) {
    const imgHoverMotion =
-      '"transition duration-500 transform cursor-pointer group-hover:scale-[1.025] group-hover:rotate-[1.02deg] overflow-hidden"'
+      '"transition duration-500 transform cursor-pointer group-hover:scale-[1.025] group-hover:rotate-[0.7deg] overflow-hidden"'
    return (
       <div
          className={`${
-            isHorizontal ? "xl:grid grid-cols-16 grid-gap" : "flex-1 h-full flex flex-col"
+            isHorizontal & !isPageNav ? "xl:grid grid-cols-16 grid-gap" : "flex-1 h-full flex flex-col"
          } overflow-hidden ${classes}`}
       >
          {/* Image */}
-         <div className={`${isHorizontal ? "col-start-1 col-end-13 overflow-hidden" : ""} overflow-hidden`}>
+         <div className={`${isHorizontal ? "h-auto col-start-1 col-end-13 overflow-hidden" : ""} overflow-hidden`}>
             {linkTo && (
                <Link to={!isLocked && linkTo}>
                   <div className="group">

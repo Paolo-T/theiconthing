@@ -164,7 +164,7 @@ function ImgTiles({ isPageNav }) {
             className={`
             ${
                isPageNav
-                  ? "container grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mb-0"
+                  ? "container grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-0"
                   : "flex flex-col space-y-10 md:space-y-32"
             }`}
          >
