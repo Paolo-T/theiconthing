@@ -63,7 +63,7 @@ function ImgTile({
                      <h2 className="text-dark mb-2 md:mb-3 uppercase">{title}</h2>
                   )}
                   {isLocked && (
-                     <div className="">
+                     <div className="mb-2">
                         <IconLock className="w-5 mr-2 inline h-auto" />
                         <span>Coming soon...</span>{" "}
                      </div>

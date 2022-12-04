@@ -5,41 +5,7 @@
       "subtitle": "Visusl identity exploration",
       "heroImg": "../images/3dc/3dc_tile.png"
    },
-   "content_1": [
-      {
-         "id": "1",
-         "aside": {
-            "title": "",
-            "list": [""]
-         },
-         "main": {
-            "title": "",
-            "body": ""
-         }
-      },
-      {
-         "id": "",
-         "aside": {
-            "title": "",
-            "list": [""]
-         },
-         "main": {
-            "title": "",
-            "body": ""
-         }
-      },
-      {
-         "id": "",
-         "aside": {
-            "title": "",
-            "list": []
-         },
-         "main": {
-            "title": "",
-            "body": ""
-         }
-      }
-   ],
+   "content_1": [],
    "contentImg_1": [
       "../images/3dc/3dc_1.png",
       "../images/3dc/3dc_2.png",

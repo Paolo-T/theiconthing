@@ -125,6 +125,7 @@ export default function ProjectDetails({ data }) {
                      ))}
                   </section>
                )}
+               {console.log(content_1.length)}
                {/* Image */}
                {(Array.isArray(contentImg_1) || contentImg_1.length) &&
                   contentImg_1.map((image, i) => (
