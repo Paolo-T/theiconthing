@@ -27,7 +27,7 @@ function SideProjects() {
          description: "",
          img: images.digitalArtImg.childImageSharp.gatsbyImageData,
          imgAlt: "Artwork",
-         linkTo: null,
+         linkTo: false,
          hRef: "https://www.instagram.com/paolo__todde/",
          isExternal: true,
          isLocked: false,
@@ -54,6 +54,7 @@ function SideProjects() {
             <div className="flex flex-col md:flex-row grid-gap">
                {tilesData.map((tile, i) => (
                   <ImgTile
+                     key={i}
                      id={i}
                      hRef={tile.hRef}
                      linkTo={tile.linkTo}

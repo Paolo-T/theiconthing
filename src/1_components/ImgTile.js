@@ -29,7 +29,7 @@ function ImgTile({
          {/* Image */}
          <div className={`${isHorizontal ? "h-auto col-start-1 col-end-13 overflow-hidden" : ""} overflow-hidden`}>
             {linkTo && (
-               <Link to={!isLocked && linkTo}>
+               <Link to={isLocked ? "#0" : linkTo} className="cursor-default">
                   <div className="group">
                      <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
                   </div>
