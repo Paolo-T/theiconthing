@@ -53,17 +53,17 @@ function ImgTile({
                {/* Title */}
                <div className="flex-1 flex-col">
                   {isHorizontal && (
-                     <span className="inline-block text-2xl sm:text-2xl md:text-3xl lg:text-3xl 2xl:text-3xl text-serif font-semibold pb-1 md:pb-0">
+                     <span className="inline-block text-3xl sm:text-3xl md:text-4xl lg:text-4xl 2xl:text-4xl text-serif font-semibold pb-2 md:pb-2">
                         0{id + 1}
                      </span>
                   )}
                   {titleSmall ? (
-                     <h4 className="text-dark my-2 md:mb-2 uppercase">{title}</h4>
+                     <h4 className="my-2 md:mb-2 uppercase">{title}</h4>
                   ) : (
-                     <h2 className="text-dark mb-2 md:mb-3 uppercase">{title}</h2>
+                     <h2 className="mb-3 md:mb-4 uppercase">{title}</h2>
                   )}
                   {isLocked && (
-                     <div className="mb-2">
+                     <div className="mb-3 text-primary">
                         <IconLock className="w-5 mr-2 inline h-auto" />
                         <span>Coming soon...</span>{" "}
                      </div>

@@ -15,9 +15,12 @@ function About() {
    `)
 
    return (
-      <section className="lg:grid grid-cols-16 grid-gap spacing-top spacing-bottom text-offWhite">
+      <section className="lg:grid grid-cols-16 grid-gap spacing-top spacing-bottom text-offWhite ">
          <div className="col-start-1 col-end-13">
-            <div id="about" className="flex flex-col lg:flex-row items-center px-6 md:px-20 bg-dark py-10 md:py-20">
+            <div
+               id="about"
+               className="flex flex-col lg:flex-row items-center px-6 md:px-20 border border-offWhite py-10 md:py-20"
+            >
                <div className="relative col-span-12 w-6/12 sm:w-4/12 md:w-3/12 xl:w-3/12 h-1/2 mb-10">
                   <span
                      className="absolute h-full w-full rounded-full
@@ -30,7 +33,7 @@ function About() {
                   <GatsbyImage
                      image={data.profileImg.childImageSharp.gatsbyImageData}
                      alt="illustration"
-                     className="rounded-full border-2 border-offWhite"
+                     className="rounded-full border border-offWhite"
                      loading="eager"
                   />
                </div>
@@ -38,8 +41,9 @@ function About() {
                <div className="flex-1 md:pl-20 mt-0">
                   <h2 className="text-primary uppercase">Hey there!</h2>
                   <p>
-                     I'm Paolo. A product designer specialising in web and mobile experiences. Passionate about visual
-                     communication and user experience. Striving to help people achieving their goals online.<br></br>
+                     I'm Paolo, UI/product designer specialising in web and mobile experiences. Passionate about visual
+                     communication and user experience. Striving to help people achieving their goals online.
+                     <br></br>
                      Collaborating with teams to design high quality human focused, accessible interfaces.<br></br>
                      <br></br>Currently designing with&nbsp;
                      <a

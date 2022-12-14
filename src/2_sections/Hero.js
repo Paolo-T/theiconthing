@@ -8,18 +8,17 @@ function Hero() {
    // const home = location.pathname === "/"
 
    return (
-      <section className="w-full text-left pt-32 md:pt-72 spacing-bottom">
+      <section className="w-full pt-32 md:pt-72 spacing-bottom text-center md:mb-16">
          <TransitionInview>
             <div className="md:grid grid-cols-16 grid-gap">
-               <h1 className="col-start-1 col-end-14 font-hero mb-8 sm:mb-12 md:mb-16 lg:mb-20 leading-some">
+               <h1 className="col-start-2 col-end-16 mb-8 sm:mb-12 md:mb-16 lg:mb-16 leading-some text-offWhite ">
                   {" "}
-                  Specialising in human-centred user experience. Tailored pixel perfect, accessible visual design
-                  solutions.
+                  Specialising in human-centred user experience. Tailored pixel perfect design solutions.
                </h1>
             </div>
          </TransitionInview>
 
-         <div className="flex items-baseline space-x-3">
+         <div className="w-[14rem] mx-auto flex items-baseline space-x-3 text-left">
             <IconArrow className="rotate-90 text-primary" />
 
             <a

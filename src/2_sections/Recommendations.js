@@ -57,19 +57,19 @@ function Reccomendations() {
 
    return (
       <section className="grid grid-cols-16 md:grid-gap spacing-top spacing-bottom">
-         <div className="col-start-3 col-end-15 md:col-start-1 lg:col-end-13 mb-6 md:mb-0 text-center md:text-left">
+         <div className="col-start-3 col-end-15 md:col-start-4 lg:col-end-16 mb-6 md:mb-0 text-center md:text-left">
             <h3>Kind recommendations</h3>
             <p>From amazingly talented humans</p>
          </div>
 
-         <div className="w-full col-start-1 col-end-17 lg:col-end-13">
+         <div className="w-full col-start-1 lg:col-start-4 col-end-16">
             <div className="sm:grid grid-cols-2 sm:grid-gap place-content-stretch text-center">
                {reccomendations.map((recommendation) => (
                   <TransitionInview key={recommendation.id}>
                      {
                         <div
                            key={recommendation.id}
-                           className="h-full bg-offWhite text-dark px-4 md:px-12 lg:px-18 py-7 md:py-14 lg:py-18"
+                           className="h-full border border-offWhite px-4 md:px-12 lg:px-18 py-7 md:py-14 lg:py-18"
                         >
                            <div className="flex space-x-2 text-primary justify-center">
                               <h5>{recommendation.name}</h5>
@@ -77,7 +77,7 @@ function Reccomendations() {
                            </div>
                            <h4 className="text-xs md:text-base mb-6">{recommendation.JobTitle}</h4>
 
-                           <p className="md:leading-7 max-w-prose text-dark" style={{ whiteSpace: "pre-wrap" }}>
+                           <p className="md:leading-7 max-w-prose" style={{ whiteSpace: "pre-wrap" }}>
                               <span className="text-primary text-2xl">“</span>
                               {recommendation.description}
                               <span className="text-primary text-2xl">”</span>

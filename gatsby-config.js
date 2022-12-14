@@ -96,7 +96,7 @@ module.exports = {
          resolve: "gatsby-plugin-web-font-loader",
          options: {
             custom: {
-               families: ["CormorantGaramond-Regular", "Jakarta_sans_title", "Italiana_regular"],
+               families: ["CormorantGaramond-Regular", "Gilroy_regular", "Gilroy_semibold", "Gilroy_regular"],
                urls: ["/fonts/fonts.css"],
             },
          },

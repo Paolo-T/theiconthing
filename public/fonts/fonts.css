@@ -1,6 +1,11 @@
 @font-face {
-   font-family: "Jakarta_sans_title";
-   src: url("jakarta-sans/PlusJakartaSans-Bold.woff");
+   font-family: "Gilroy_semibold";
+   src: url("gilroy/Gilroy-SemiBold.woff");
+}
+
+@font-face {
+   font-family: "Gilroy_regular";
+   src: url("gilroy/Gilroy-Regular.woff");
 }
 
 @font-face {
