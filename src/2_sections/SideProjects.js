@@ -29,6 +29,7 @@ function SideProjects() {
          imgAlt: "Artwork",
          linkTo: false,
          hRef: "https://www.instagram.com/paolo__todde/",
+         cta: null,
          isExternal: true,
          isLocked: false,
          isPageNav: false,
@@ -41,6 +42,7 @@ function SideProjects() {
          imgAlt: "Artwork",
          linkTo: "projects/3dc/",
          hRef: "https://www.instagram.com/paolo__todde/",
+         cta: null,
          isExternal: false,
          isLocked: false,
          isPageNav: false,
@@ -61,6 +63,7 @@ function SideProjects() {
                      title={tile.title}
                      titleSmall={true}
                      description={tile.description}
+                     cta={tile.cta}
                      img={tile.img}
                      imgAlt={tile.imgAlt}
                      isPageNav={tile.isPageNav}

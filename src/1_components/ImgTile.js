@@ -69,9 +69,10 @@ function ImgTile({
                   <span>{description}</span>
                </div>
 
-               {!isLocked && (
-                  <Button label={cta} customClass={"hidden xl:inline-block mt-7"} href={hRef} linkTo={linkTo} />
-               )}
+               {!isLocked ||
+                  (cta && (
+                     <Button label={cta} customClass={"hidden xl:inline-block mt-7"} href={hRef} linkTo={linkTo} />
+                  ))}
             </div>
          )}
       </div>
