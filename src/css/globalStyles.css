@@ -8,10 +8,7 @@ body {
    text-rendering: auto;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   /* color: #0f1419; */
-   /* color: #e1e1e1; */
-   /* color: #6b7280; */
-   /* color: #6b6d70; */
-   /* color: #0a0a0a; */
-   color: #fdf1e7;
+
+   /*color: #fdf1e7;*/
+   color: #f3f1d0;
 }
