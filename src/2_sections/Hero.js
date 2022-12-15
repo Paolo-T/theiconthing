@@ -11,9 +11,9 @@ function Hero() {
       <section className="w-full pt-32 md:pt-64 spacing-bottom text-center md:mb-32">
          <TransitionInview>
             <div className="md:grid grid-cols-16 grid-gap">
-               <h1 className="col-start-2 col-end-16 mb-8 sm:mb-12 md:mb-16 lg:mb-16 leading-some text-offWhite ">
+               <h1 className="col-start-4 col-end-15 mb-8 sm:mb-12 md:mb-16 lg:mb-16 leading-some text-offWhite ">
                   {" "}
-                  Specialising in human-centred user experience. Tailored pixel perfect design solutions.
+                  Human-centred design solutions.
                </h1>
             </div>
          </TransitionInview>

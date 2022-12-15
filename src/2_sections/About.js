@@ -41,10 +41,11 @@ function About() {
                <div className="flex-1 md:pl-20 mt-0">
                   <h2 className="text-primary uppercase">Hey there!</h2>
                   <p>
-                     I'm Paolo, UI/product designer specialising in web and mobile experiences. Passionate about visual
-                     communication and user experience. Striving to help people achieving their goals online.
-                     <br></br>
-                     Collaborating with teams to design high quality human focused, accessible interfaces.<br></br>
+                     I'm Paolo, a UI/product designer Specialising in human-centric user experience. Tailored pixel
+                     perfect design solutions.<br></br>
+                     <br></br>Passionate advocate for visual communication and great user experience. I collaborate with
+                     teams in order to design high quality, accessible interfaces that are human-focused.<br></br>
+                     <br></br>Dedicated in assisting people in achieving their online goals.<br></br>
                      <br></br>Currently designing with&nbsp;
                      <a
                         className="cursor-pointer underline underline-offset-4 decoration-1 hover:text-grey transition duration-300"
