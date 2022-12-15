@@ -4,7 +4,7 @@
 
 @layer base {
    h1 {
-      @apply text-4xl sm:text-5xl md:text-6xl md_2:text-7xl lg:text-7xl xl:text-8xl 2xl:text-8xl 3xl:text-8xl leading-none md:leading-some tracking-normal md:my-0 md:mb-5 lg:mb-0;
+      @apply text-4xl sm:text-5xl md:text-6xl md_2:text-6xl lg:text-6xl xl:text-7xxl 2xl:text-7xxl 3xl:text-7xxl leading-none md:leading-some tracking-normal md:my-0 md:mb-5 lg:mb-0;
    }
    h2 {
       @apply font-sans text-xl md:text-3xl lg:text-3xl font-bold
@@ -64,11 +64,11 @@
    }
 
    .primary-text-hover {
-      @apply hover:text-dark transition duration-200 ease-in-out;
+      @apply hover:text-secondary transition duration-200 ease-in-out;
    }
 
    .text-serif {
-      @apply font-hero tracking-normal;
+      @apply font-serif tracking-normal;
    }
 
    .spacing-top {

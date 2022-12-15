@@ -21,13 +21,13 @@ function Footer() {
    ]
    return (
       <footer className="w-full text-offWhite  bg-dark pt-10 pb-16 md:mt-0">
-         <div className="container grid grid-cols-16 md:grid-gap md:items-end px-0 md:px-4">
+         <div className="container grid grid-cols-16 md:grid-gap items-center px-0 md:px-4">
             <div className="order-last md:order-first col-start-1 col-end-17 md:col-end-7 flex space-x-2 items-center justify-center md:justify-start">
-               <IconCopyright className="w-5 md:w-9 h-full text-white inline-block" />
-               <span>Designed & coded</span>
+               <IconCopyright className="w-5 h-full text-white inline-block" />
+               <p>Designed & coded</p>
             </div>
 
-            <ul className="col-start-1 md:col-start-7 col-end-17 flex justify-between">
+            <ul className="col-start-1 md:col-start-7 col-end-17 flex justify-between items-center">
                {footerItems.map((listItem, i) => (
                   <li key={i}>
                      <a rel="noopener noreferrer" target="_blank" href={listItem.href}>

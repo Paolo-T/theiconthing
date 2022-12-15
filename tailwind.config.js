@@ -23,6 +23,7 @@ module.exports = {
          // primary: "#fc351c",
          // primary: "#C8A47E",
          primary: "#ff5151",
+         secondary: "#ffda18",
          grey: "#9ca3af",
          // dark: "#151515",
          dark: "#1a1a1a",
@@ -374,10 +375,10 @@ module.exports = {
          DEFAULT: "1",
       },
       fontFamily: {
-         hero: ["Gilroy_semibold"],
          header: ["Gilroy_semibold"],
          // header: ["Jakarta_sans_body"],
          // italic: ["Gilroy-RegularItalic"],
+         serif: ["Garamond_regular"],
          sans: [
             "Gilroy_regular",
             "Avenir-Book",
@@ -422,6 +423,7 @@ module.exports = {
          "5xl": ["3rem", { lineHeight: "1" }],
          "6xl": ["3.75rem", { lineHeight: "1" }],
          "7xl": ["4.5rem", { lineHeight: "1" }],
+         "7xxl": ["5rem", { lineHeight: "1" }],
          "8xl": ["6rem", { lineHeight: "1" }],
          "9xl": ["7rem", { lineHeight: "1" }],
          "10xl": ["10rem", { lineHeight: "1" }],
