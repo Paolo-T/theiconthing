@@ -27,7 +27,7 @@ function ImgTile({
          } overflow-hidden ${classes}`}
       >
          {/* Image */}
-         <div className={`${isHorizontal ? "h-auto col-start-1 col-end-13 overflow-hidden" : ""} overflow-hidden`}>
+         <div className={`${isHorizontal ? "h-auto col-start-1 col-end-14 overflow-hidden" : ""} overflow-hidden`}>
             {linkTo && (
                <Link to={isLocked ? "#0" : linkTo} className="cursor-default">
                   <div className="group">
@@ -47,7 +47,7 @@ function ImgTile({
          {!isPageNav && (
             <div
                className={`${
-                  isHorizontal ? "block xl:block xl:col-start-13 xl:col-end-16  " : ""
+                  isHorizontal ? "block xl:block xl:col-start-14 xl:col-end-17  " : ""
                } md:flex flex-row justify-between items-center pt-2 md:pt-4`}
             >
                {/* Title */}
