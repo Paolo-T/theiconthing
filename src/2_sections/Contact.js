@@ -8,7 +8,7 @@ function Contact() {
    return (
       <section id="contact" className="group spacing-top pb-20 md:pb-40">
          <div className="md:grid grid-cols-16 grid-gap">
-            <div className="col-start-4 md:col-end-16 lg:col-end-12 justify-center text-center md:text-left">
+            <div className="col-start-11 md:col-end-16 lg:col-end-17 justify-center text-center md:text-left">
                <h4 className="mb-4 uppercase">Say Hello</h4>
                <a rel="noopener noreferrer" target="_blank" href="mailto:iampaolotodde@gmail.com">
                   <h2 className="mb-8 md:mb-10">

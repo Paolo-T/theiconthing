@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import IconArrow from "../icons/arrow.svg"
 
 function About() {
    const data = useStaticQuery(graphql`
@@ -39,7 +40,7 @@ function About() {
                </div>
 
                <div className="flex-1 md:pl-20 mt-0">
-                  <h2 className="text-primary uppercase">Hey there!</h2>
+                  <h2 className="text-primary uppercase">Hey there, Welcome!</h2>
                   <p>
                      I'm Paolo, a UI/product designer Specialising in human-centric user experience. Tailored pixel
                      perfect design solutions.<br></br>
@@ -67,12 +68,29 @@ function About() {
                      .
                   </p>
 
-                  <h4 className="mt-16 mb-4 text-primary">Passionate about:</h4>
-                  <ul className="md:flex text-5xl justify-between pr-8">
-                     <li>UX/UI</li>
-                     <li>Interaction and Motion</li>
-                     <li>Design Systems</li>
-                  </ul>
+                  <div className="mb-16">
+                     <h4 className="mt-16 mb-4 text-primary">Passionate about:</h4>
+                     <ul className="md:flex text-5xl justify-between pr-8">
+                        <li>UX/UI</li>
+                        <li>Interaction and Motion</li>
+                        <li>Design Systems</li>
+                     </ul>
+                  </div>
+
+                  <div className="flex items-baseline space-x-3 text-left">
+                     <IconArrow className="rotate-90 text-primary" />
+                     <a
+                        className="container flex-1 underline underline-offset-4
+                  transition duration-100 ease-in-out dark-text-hover"
+                        type="button"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href="mailto:room01info@gmail.com"
+                     >
+                        {" "}
+                        <h4>Send me a message</h4>
+                     </a>
+                  </div>
                </div>
             </div>
          </div>
