@@ -19,7 +19,7 @@ function About() {
          <div className="col-start-1 col-end-13">
             <div
                id="about"
-               className="flex flex-col lg:flex-row items-center px-6 md:px-20 border border-offWhite py-10 md:py-20"
+               className="flex flex-col lg:flex-row items-center px-6 md:px-20 border border-offWhite rounded-xl py-10 md:py-20"
             >
                <div className="relative col-span-12 w-6/12 sm:w-4/12 md:w-3/12 xl:w-3/12 h-1/2 mb-10">
                   <span

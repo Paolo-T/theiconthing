@@ -26,10 +26,11 @@ module.exports = {
          secondary: "#ffda18",
          grey: "#9ca3af",
          // dark: "#151515",
-         dark: "#1a1a1a",
-         pureBlack: "#000000",
          // lessDark: "#1d1d1d",
          lessDark: "#16171d",
+         dark: "#1a1a1a",
+         darker: "#080812",
+         pureBlack: "#000000",
          offWhite: "#fdf1e7",
          offWhiteDark: "#f2e6db",
 
