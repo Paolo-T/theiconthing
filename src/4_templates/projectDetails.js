@@ -1,6 +1,6 @@
 import React from "react"
 import SEO from "../1_components/Seo"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 import TransitionPageIn from "../1_components/TransitionPageIn"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import ProjectsTiles from "../2_sections/ProjectsTiles"
