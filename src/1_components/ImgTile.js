@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import IconLock from "../icons/lock.svg"
+import Button from "./Button"
 
 function ImgTile({
    id,
@@ -10,6 +11,7 @@ function ImgTile({
    title,
    titleSmall,
    description,
+   cta,
    img,
    imgAlt,
    isPageNav,
@@ -45,27 +47,27 @@ function ImgTile({
          </div>
          {/* !END Image */}
          {!isPageNav && (
-            <div className={`${isHorizontal ? "block xl:col-start-14 xl:col-end-17 " : null}`}>
-               {/* Title */}
-               <div className="flex-1 flex-col">
+            <div className={`${isHorizontal ? "xl:col-start-14 xl:col-end-17 " : "flex"}`}>
+               <div className="flex-1">
                   {titleSmall ? (
                      <h4 className="my-2 md:mb-2 uppercase">{title}</h4>
                   ) : (
                      <h2 className="mb-3 md:mb-4 uppercase">{title}</h2>
                   )}
                   {isLocked && (
-                     <div className="mb-3 text-primary">
+                     <div className="mb-3 text-secondary">
                         <IconLock className="w-5 mr-2 inline h-auto" />
                         <span>Coming soon...</span>{" "}
                      </div>
                   )}
                </div>
-               {/* !END Title */}
-               {/* Description */}
                <div className="flex-1">
                   <span>{description}</span>
                </div>
-               {/* !END Description */}
+
+               {!isLocked && (
+                  <Button label={cta} customClass={"hiden xl:inline-block mt-7"} href={hRef} linkTo={linkTo} />
+               )}
             </div>
          )}
       </div>

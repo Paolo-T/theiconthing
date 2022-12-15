@@ -72,6 +72,7 @@ function ImgTiles({ isPageNav }) {
 
          img: data.mvfDesignSystemtImg.childImageSharp.gatsbyImageData,
          imgAlt: "MVF Design System",
+         cta: "View",
          linkTo: "/",
          hRef: false,
          isExternal: false,
@@ -87,6 +88,7 @@ function ImgTiles({ isPageNav }) {
          imgAlt: "Buzzsumo Web Page",
          linkTo: "/projects/buzzsumo",
          hRef: false,
+         cta: "View",
          isExternal: false,
          isLocked: false,
       },
@@ -100,6 +102,7 @@ function ImgTiles({ isPageNav }) {
          imgAlt: "DIY tool rental",
          linkTo: "/projects/theecoexperts",
          hRef: false,
+         cta: "View",
          isExternal: false,
          isLocked: true,
       },
@@ -112,6 +115,7 @@ function ImgTiles({ isPageNav }) {
          imgAlt: "Shuush app presentation",
          linkTo: "/projects/shuush",
          hRef: false,
+         cta: "View",
          isExternal: false,
          isLocked: false,
       },
@@ -125,6 +129,7 @@ function ImgTiles({ isPageNav }) {
          imgAlt: "Pet Time App UI Design",
          linkTo: "/projects/pet-time",
          hRef: false,
+         cta: "View",
          isExternal: false,
          isLocked: false,
       },
@@ -138,6 +143,7 @@ function ImgTiles({ isPageNav }) {
          imgAlt: "DIY tool rental",
          linkTo: "/projects/homely",
          hRef: false,
+         cta: "View",
          isExternal: false,
          isLocked: false,
       },
@@ -151,6 +157,7 @@ function ImgTiles({ isPageNav }) {
          imgAlt: "classica app ui design",
          linkTo: "/projects/classica",
          hRef: false,
+         cta: "View",
          isExternal: false,
          isLocked: false,
       },
@@ -177,6 +184,7 @@ function ImgTiles({ isPageNav }) {
                      title={!isPageNav && tile.title}
                      titleSmall={false}
                      description={!isPageNav && tile.description}
+                     cta={tile.cta}
                      img={tile.img}
                      imgAlt={tile.imgAlt}
                      isPageNav={isPageNav}
