@@ -37,7 +37,7 @@ export default function NotFoundPage() {
          <TransitionPageIn>
             <section className="bg-offWhite py-32 md:pt-36 spacing-bottom ">
                <div className="container grid grid-cols-16 grid-gap items-center">
-                  <div className="col-start-1 col-end-17 md:col-end-9 order-last md:oder-first">
+                  <div className="col-start-1 col-end-14 md:col-end-9 order-last md:oder-first">
                      <GatsbyImage
                         className="mb-2 border-4 border-primary"
                         image={featuredImg}
@@ -56,7 +56,7 @@ export default function NotFoundPage() {
                         <span> on Unsplash</span>{" "}
                      </div>
                   </div>
-                  <div className="col-start-1 md:col-start-9 col-end-16  order-first md:order-last">
+                  <div className="col-start-1 md:col-start-9 col-end-14 md:col-end-16  order-first md:order-last">
                      <h1 className="h1-page text-dark pb-8 sm:pb-16 md:mb-16 lg:mb-16">
                         {" "}
                         Looks like the page you are looking for is not here...
