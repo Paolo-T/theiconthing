@@ -46,13 +46,13 @@ function Reccomendations() {
          description:
             "Paolo is a highly skilled Designer. He is very creative, honest, reliable and approachable to work with. Full of creative energy, he thrives on any challenge, making him to get work delivered with thought, insight, speed and most importantly, always to a high standard. A pleasure to work with Paolo.",
       },
-      {
-         id: "632b0366l-5034-4ec0-8673-319c2305d0c0",
-         name: "Monica Salis",
-         JobTitle: "CFO @ Omnia International",
-         description:
-            "Paolo provided an excellent service in creating and refining our logo according to our request. Very professional, not only he understood exactly what our needs were, but he did it in a very short time. Absolutely recommended, we will be using him more and more in the future. Thanks Paolo!",
-      },
+      // {
+      //    id: "632b0366l-5034-4ec0-8673-319c2305d0c0",
+      //    name: "Monica Salis",
+      //    JobTitle: "CFO @ Omnia International",
+      //    description:
+      //       "Paolo provided an excellent service in creating and refining our logo according to our request. Very professional, not only he understood exactly what our needs were, but he did it in a very short time. Absolutely recommended, we will be using him more and more in the future. Thanks Paolo!",
+      // },
    ]
 
    return (
