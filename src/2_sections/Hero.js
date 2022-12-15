@@ -4,8 +4,6 @@ import TransitionInview from "../1_components/TransitionInview"
 
 function Hero() {
    const location = useLocation()
-   // const home = location.pathname === "/"
-
    return (
       <section className="relative w-full pt-32 md:pt-64 spacing-bottom text-center xl:mb-32">
          <span className="absolute inset-0 bg-ImageBg bg-auto w-full h-full" style={{ opacity: "4%" }}></span>

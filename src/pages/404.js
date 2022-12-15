@@ -35,8 +35,8 @@ export default function NotFoundPage() {
             title="404: Not found"
          />
          <TransitionPageIn>
-            <section className="w-full bg-offWhite py-32 md:pt-36 spacing-bottom ">
-               <div className="container grid grid-cols-16 grid-gap content-center">
+            <section className="bg-offWhite py-32 md:pt-36 spacing-bottom ">
+               <div className="container grid grid-cols-16 grid-gap items-center">
                   <div className="col-start-1 col-end-17 md:col-end-9 order-last md:oder-first">
                      <GatsbyImage
                         className="mb-2 border-4 border-primary"
@@ -44,7 +44,7 @@ export default function NotFoundPage() {
                         alt="Image"
                         loading={"eager"}
                      />
-                     <div>
+                     <div className="text-dark">
                         <span>Photo by</span>{" "}
                         <a
                            rel="noopener noreferrer"
@@ -56,8 +56,8 @@ export default function NotFoundPage() {
                         <span> on Unsplash</span>{" "}
                      </div>
                   </div>
-                  <div className="col-start-1 md:col-start-9 col-end-16 md:pt-40 order-first md:order-last">
-                     <h1 className="font-hero mb-8 sm:mb-12 md:mb-16 lg:mb-20">
+                  <div className="col-start-1 md:col-start-9 col-end-16  order-first md:order-last">
+                     <h1 className="h1-page text-dark pb-8 sm:pb-16 md:mb-16 lg:mb-16">
                         {" "}
                         Looks like the page you are looking for is not here...
                      </h1>
@@ -65,7 +65,7 @@ export default function NotFoundPage() {
                         <IconArrow className="rotate-90 text-primary" />
 
                         <Link
-                           className="container flex-1 underline underline-offset-4 transition duration-100 ease-in-out dark-text-hover"
+                           className="container flex-1 text-dark underline underline-offset-4 transition duration-100 ease-in-out dark-text-hover"
                            type="button"
                            target="_blank"
                            to="/"
