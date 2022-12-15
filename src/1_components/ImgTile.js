@@ -47,7 +47,11 @@ function ImgTile({
          </div>
          {/* !END Image */}
          {!isPageNav && (
-            <div className={`${isHorizontal ? "xl:col-start-14 xl:col-end-17 " : "flex"}`}>
+            <div
+               className={`${
+                  isHorizontal ? "block md:flex xl:block xl:col-start-14 xl:col-end-17 mt-5 xl:mt-0" : null
+               }`}
+            >
                <div className="flex-1">
                   {titleSmall ? (
                      <h4 className="my-2 md:mb-2 uppercase">{title}</h4>
@@ -66,7 +70,7 @@ function ImgTile({
                </div>
 
                {!isLocked && (
-                  <Button label={cta} customClass={"hiden xl:inline-block mt-7"} href={hRef} linkTo={linkTo} />
+                  <Button label={cta} customClass={"hidden xl:inline-block mt-7"} href={hRef} linkTo={linkTo} />
                )}
             </div>
          )}
