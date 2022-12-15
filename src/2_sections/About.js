@@ -16,7 +16,7 @@ function About() {
 
    return (
       <section className="lg:grid grid-cols-16 grid-gap spacing-top spacing-bottom text-offWhite ">
-         <div className="col-start-1 col-end-13">
+         <div className="col-start-1 col-end-14">
             <div
                id="about"
                className="flex flex-col lg:flex-row items-center px-6 md:px-20 border border-offWhite rounded-xl py-10 md:py-20"
