@@ -16,7 +16,7 @@ function About() {
    `)
 
    return (
-      <section className="lg:grid grid-cols-16 grid-gap spacing-top spacing-bottom text-offWhite ">
+      <section className="xl:grid grid-cols-16 grid-gap spacing-top spacing-bottom text-offWhite ">
          <div className="col-start-1 col-end-14">
             <div
                id="about"

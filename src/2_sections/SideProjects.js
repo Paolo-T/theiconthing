@@ -50,7 +50,7 @@ function SideProjects() {
    ]
 
    return (
-      <section className="w-full md:grid grid-cols-16 grid-gap spacing-bottom">
+      <section className="w-full xl:grid grid-cols-16 grid-gap spacing-bottom">
          <div className="col-start-1 md:col-end-17 lg:col-end-14">
             <h2>Side projects</h2>
             <div className="flex flex-col md:flex-row grid-gap">

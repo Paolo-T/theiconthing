@@ -25,10 +25,10 @@ const ScrollToTop = (showBelow) => {
 
    return (
       <button
-         className="bg-transparent ease-in-out transform hover:-translate-y-1 transition duration-200 focus:outline-none inline-block mx-auto md:mx-2"
+         className="bg-transparent ease-in-out transform hover:-translate-y-1 transition duration-200 focus:outline-none inline-block mx-auto md:mx-2 border border-offWhite pt-2 pb-3 pl-2 pr-3 rounded-full"
          onClick={handleClick}
       >
-         <IconArrow className="rotate-360" />
+         <IconArrow className="rotate-360 " />
       </button>
    )
 }

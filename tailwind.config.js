@@ -153,7 +153,8 @@ module.exports = {
       backdropSepia: ({ theme }) => theme("sepia"),
       backgroundColor: ({ theme }) => theme("colors"),
       backgroundImage: {
-         ImageBg: "url('/images/waves.svg')",
+         ImageBg: "url('/images/pattern.svg')",
+         // ImageBg: "url('/images/waves.svg')",
          // NoiseTexture: "url('/images/noise-texture.svg.svg')",
          none: "none",
          "gradient-to-t": "linear-gradient(to top, var(--tw-gradient-stops))",
