@@ -23,7 +23,7 @@ function ImgTile({
    return (
       <div
          className={`${
-            isHorizontal & !isPageNav ? "xl:grid grid-cols-16 grid-gap" : "flex-1 h-full flex flex-col"
+            isHorizontal & !isPageNav ? "xl:grid grid-cols-16 grid-gap items-center" : "flex-1 h-full flex flex-col"
          } overflow-hidden ${classes}`}
       >
          {/* Image */}
@@ -45,18 +45,9 @@ function ImgTile({
          </div>
          {/* !END Image */}
          {!isPageNav && (
-            <div
-               className={`${
-                  isHorizontal ? "block xl:block xl:col-start-14 xl:col-end-17  " : ""
-               } md:flex flex-row justify-between items-center pt-2 md:pt-4`}
-            >
+            <div className={`${isHorizontal ? "block xl:col-start-14 xl:col-end-17 " : null}`}>
                {/* Title */}
                <div className="flex-1 flex-col">
-                  {isHorizontal && (
-                     <span className="inline-block text-3xl sm:text-3xl md:text-4xl lg:text-4xl 2xl:text-4xl text-serif font-semibold pb-2 md:pb-2">
-                        0{id + 1}
-                     </span>
-                  )}
                   {titleSmall ? (
                      <h4 className="my-2 md:mb-2 uppercase">{title}</h4>
                   ) : (
