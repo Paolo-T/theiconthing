@@ -20,14 +20,14 @@ function Footer() {
       },
    ]
    return (
-      <footer className="w-full text-offWhite  bg-dark pt-10 pb-16 md:mt-0">
+      <footer className="w-full text-offWhite bg-dark pt-10 pb-16 md:mt-0">
          <div className="container grid grid-cols-16 md:grid-gap items-center px-0 md:px-4">
             <div className="order-last md:order-first col-start-1 col-end-17 md:col-end-7 flex space-x-2 items-center justify-center md:justify-start">
-               <IconCopyright className="w-5 h-full text-white inline-block" />
+               <IconCopyright className="w-5 h-full text-offWhite inline-block" />
                <p>Designed & coded</p>
             </div>
 
-            <ul className="col-start-1 md:col-start-7 col-end-17 flex justify-between items-center">
+            <ul className="col-start-1 md:col-start-7 col-end-17 flex justify-between items-center mb-10 md:mb-0">
                {footerItems.map((listItem, i) => (
                   <li key={i}>
                      <a rel="noopener noreferrer" target="_blank" href={listItem.href}>
@@ -37,7 +37,7 @@ function Footer() {
                      </a>
                   </li>
                ))}
-               <li className="animate-bounce mb-6 md:mb-0 text-center dark-text-hover">
+               <li className="animate-bounce text-center dark-text-hover">
                   <ScrollToTop showBelow="250" />
                </li>
             </ul>
