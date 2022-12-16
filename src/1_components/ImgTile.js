@@ -25,15 +25,13 @@ function ImgTile({
    return (
       <div
          className={`${
-            isHorizontal & !isPageNav
-               ? "xl:grid grid-cols-16 grid-gap items-center"
-               : "flex-1 h-full flex flex-col rounded-lg"
+            isHorizontal & !isPageNav ? "xl:grid grid-cols-16 grid-gap items-center" : "flex-1 h-full flex flex-col"
          } overflow-hidden ${classes}`}
       >
          {/* Image */}
          <div
             className={`${
-               isHorizontal ? "h-auto col-start-1 col-end-14 rounded-xl overflow-hidden" : ""
+               !isPageNav ? "h-auto col-start-1 col-end-14 rounded-xl overflow-hidden" : ""
             } overflow-hidden`}
          >
             {linkTo && (
