@@ -11,7 +11,13 @@ function SideProjects() {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
-         digitalArtImg: file(relativePath: { eq: "about/digitalArtThumb.png" }) {
+         digitalArtImg: file(relativePath: { eq: "about/digitalArt_tile.png" }) {
+            id
+            childImageSharp {
+               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
+            }
+         }
+         photographytImg: file(relativePath: { eq: "photography/photography_tile.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
@@ -41,6 +47,19 @@ function SideProjects() {
          img: images.threeImg.childImageSharp.gatsbyImageData,
          imgAlt: "Artwork",
          linkTo: "projects/3dc/",
+         hRef: null,
+         cta: null,
+         isExternal: false,
+         isLocked: false,
+         isPageNav: false,
+      },
+      {
+         id: "",
+         title: "Photography",
+         description: "",
+         img: images.photographytImg.childImageSharp.gatsbyImageData,
+         imgAlt: "Artwork",
+         linkTo: "projects/photo/",
          hRef: "https://www.instagram.com/paolo__todde/",
          cta: null,
          isExternal: false,

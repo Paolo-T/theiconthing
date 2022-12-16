@@ -1,0 +1,37 @@
+{
+   "slug": "photo",
+   "hero": {
+      "title": null,
+      "subtitle": null,
+      "heroImg": null
+   },
+
+   "contentImg_1": [],
+   "contentList": {},
+   "contentImg_2": [],
+   "content_2": [],
+   "contentImg_3": [],
+   "gallery": [
+      "../images/photography/portugal2022/portugal2022_1.png",
+      "../images/photography/portugal2022/portugal2022_2.png",
+      "../images/photography/portugal2022/portugal2022_3.png",
+      "../images/photography/portugal2022/portugal2022_5.png",
+      "../images/photography/portugal2022/portugal2022_6.png",
+      "../images/photography/portugal2022/portugal2022_7.png",
+      "../images/photography/portugal2022/portugal2022_8.png",
+      "../images/photography/portugal2022/portugal2022_9.png",
+      "../images/photography/portugal2022/portugal2022_10.png",
+      "../images/photography/portugal2022/portugal2022_11.png",
+      "../images/photography/portugal2022/portugal2022_12.png",
+      "../images/photography/portugal2022/portugal2022_13.png",
+      "../images/photography/portugal2022/portugal2022_14.png",
+      "../images/photography/portugal2022/portugal2022_15.png",
+      "../images/photography/portugal2022/portugal2022_16.png",
+      "../images/photography/portugal2022/portugal2022_17.png",
+      "../images/photography/portugal2022/portugal2022_18.png",
+      "../images/photography/portugal2022/portugal2022_19.png",
+      "../images/photography/portugal2022/portugal2022_20.png",
+      "../images/photography/portugal2022/portugal2022_21.png",
+      "../images/photography/portugal2022/portugal2022_22.png"
+   ]
+}

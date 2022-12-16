@@ -4,7 +4,7 @@ import { useLocation } from "@reach/router"
 
 function Navigation() {
    const location = useLocation()
-   // const homePage = location.pathname === "/"
+   const homePage = location.pathname === "/"
 
    const navItems = [
       {
@@ -32,7 +32,13 @@ function Navigation() {
             <ul className="flex space-x-4 md:space-x-6 lg:space-x-9 items-end mb-1.5">
                {navItems.map((item, i) => (
                   <Link to={item.to} key={i} className="dark-text-hover">
-                     <p className="text-xs md:text-base lg:text-base 2lg:text-lg font-bold uppercase">{item.text}</p>
+                     <p
+                        className={`text-xs md:text-base lg:text-base 2lg:text-lg font-bold uppercase ${
+                           homePage ? "text-offWhite" : "text-dark dark-text-hover"
+                        }`}
+                     >
+                        {item.text}
+                     </p>
                   </Link>
                ))}
             </ul>
