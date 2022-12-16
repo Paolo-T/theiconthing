@@ -22,7 +22,10 @@ function Footer() {
    return (
       <footer className="w-full text-offWhite bg-dark md:pt-10 pb-16 md:mt-0">
          <div className="container grid grid-cols-16 md:grid-gap items-center px-0 md:px-4">
-            <div className="order-last md:order-first col-start-1 col-end-17 md:col-end-7 flex space-x-1 items-start md:items-center">
+            <div
+               className="order-last md:order-first col-start-1 col-end-17 md:col-end-7 flex space-x-1 items-start md:items-center
+                           border-t border-offWhite md:border-none pt-4 md:pt-0"
+            >
                <IconCopyright className="w-5 h-full text-offWhite inline-block self-start" />
                <span>
                   Designed in{" "}
