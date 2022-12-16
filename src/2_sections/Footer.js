@@ -22,18 +22,22 @@ function Footer() {
    return (
       <footer className="w-full text-offWhite bg-dark md:pt-10 pb-16 md:mt-0">
          <div className="container grid grid-cols-16 md:grid-gap items-center px-0 md:px-4">
-            <div className="order-last md:order-first col-start-1 col-end-17 md:col-end-7 flex space-x-2">
-               <IconCopyright className="w-5 h-full text-offWhite inline-block mt-1.5" />
-               <p>
+            <div className="order-last md:order-first col-start-1 col-end-17 md:col-end-7 flex space-x-1 items-start md:items-center">
+               <IconCopyright className="w-5 h-full text-offWhite inline-block self-start" />
+               <span>
                   Designed in{" "}
                   <a className="text-grey" target="_blank" href="https://www.figma.com/">
                      Figma
                   </a>
-                  , coded, deployed on{" "}
+                  , coded with{" "}
+                  <a className="text-grey" target="_blank" href="hhttps://www.gatsbyjs.com/">
+                     Gatsby
+                  </a>
+                  , deployed on{" "}
                   <a className="text-grey" target="_blank" href="https://www.netlify.com/">
                      Netlify
                   </a>
-               </p>
+               </span>
             </div>
 
             <ul className="col-start-1 md:col-start-8 col-end-17 flex justify-between items-center mb-10 md:mb-0">

@@ -21,7 +21,7 @@ function ImgTile({
    classes,
 }) {
    const imgHoverMotion =
-      '"transition duration-500 transform cursor-pointer group-hover:scale-[1.025] group-hover:rotate-[0.7deg] overflow-hidden"'
+      '"transition duration-500 transform cursor-pointer group-hover:scale-[1.025] group-hover:rotate-[0.7deg] "'
    return (
       <div
          className={`${
