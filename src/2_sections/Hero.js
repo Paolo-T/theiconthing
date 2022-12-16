@@ -9,7 +9,7 @@ function Hero() {
          <div>
             <span className="absolute inset-0 bg-ImageBg bg-auto w-full h-full" style={{ opacity: "4%" }}></span>
             <span
-               className="absolute inset-0 z-0 bg-gradient-to-t from-dark  via-dark/80 to-transparent"
+               className="absolute inset-0 z-0 bg-gradient-to-t from-dark lg:via-dark/80 to-transparent"
                style={{ opacity: "90%" }}
             ></span>
          </div>
