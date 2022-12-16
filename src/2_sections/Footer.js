@@ -20,10 +20,10 @@ function Footer() {
       },
    ]
    return (
-      <footer className="w-full text-offWhite bg-dark pt-10 pb-16 md:mt-0">
+      <footer className="w-full text-offWhite bg-dark md:pt-10 pb-16 md:mt-0">
          <div className="container grid grid-cols-16 md:grid-gap items-center px-0 md:px-4">
-            <div className="order-last md:order-first col-start-1 col-end-17 md:col-end-7 flex space-x-2 items-center justify-center md:justify-start">
-               <IconCopyright className="w-5 h-full text-offWhite inline-block" />
+            <div className="order-last md:order-first col-start-1 col-end-17 md:col-end-7 flex space-x-2">
+               <IconCopyright className="w-5 h-full text-offWhite inline-block mt-1.5" />
                <p>
                   Designed in{" "}
                   <a className="text-grey" target="_blank" href="https://www.figma.com/">
