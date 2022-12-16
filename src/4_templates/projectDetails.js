@@ -101,13 +101,19 @@ export default function ProjectDetails({ data }) {
          <div className="w-screen">
             {/* Hero */}
             <TransitionPageIn>
-               <section className="pt-32 sm:pt-32 md:pt-48 mb-0 md:mb-24 container">
-                  <div className="page-header mb-6">
-                     <h1 className="h1-page w-full text-dark">{title}</h1>
-                     <p className="text-xl md:text-2xl text-grey mb-2">{subtitle}</p>
-                  </div>
-                  {heroImg && <GatsbyImage image={heroImg} alt={`${title} + "presentation image"`} loading="eager" />}
-               </section>
+               {title ||
+                  (heroImg && (
+                     <section className="container pt-32 sm:pt-32 md:pt-48 mb-0 md:mb-24">
+                        <div className="page-header mb-6">
+                           <h1 className="h1-page w-full text-dark">{title}</h1>
+                           <p className="text-xl md:text-2xl text-grey mb-2">{subtitle}</p>
+                        </div>
+
+                        {heroImg && (
+                           <GatsbyImage image={heroImg} alt={`${title} + "presentation image"`} loading="eager" />
+                        )}
+                     </section>
+                  ))}
                {/* Content */}
                {Array.isArray(content_1) && (
                   <section className="w-full text-dark">
@@ -217,7 +223,11 @@ export default function ProjectDetails({ data }) {
                      ))}{" "}
                </div>
                {/* Gallery */}
-               <div className={Array.isArray(gallery) && "container columns-4 gap-8 "}>
+               <div
+                  className={
+                     Array.isArray(gallery) && "container columns-4 gap-8 pt-32 sm:pt-32 md:pt-48 mb-0 md:mb-24"
+                  }
+               >
                   {Array.isArray(gallery) &&
                      gallery.map((image, i) => (
                         <div className="mb-7">
@@ -225,7 +235,7 @@ export default function ProjectDetails({ data }) {
                               key={i}
                               image={image.childImageSharp.gatsbyImageData}
                               alt={`${title} "presentation image"`}
-                              loading="lazy"
+                              loading="eager"
                            />
                            {/* <span className="text-dark">Porto 2022</span> */}
                         </div>
