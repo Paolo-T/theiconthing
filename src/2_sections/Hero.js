@@ -20,7 +20,6 @@ function Hero() {
                   Human centred design solutions.
                </h1>
             </div>
-
             <h4>UI | UX | Code </h4>
          </TransitionInview>
       </section>
