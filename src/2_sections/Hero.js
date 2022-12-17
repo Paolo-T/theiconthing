@@ -7,7 +7,7 @@ function Hero() {
    return (
       <section className="relative w-full pt-32 md:pt-64 spacing-bottom text-center xl:mb-28">
          <div>
-            <span className="absolute inset-0 bg-ImageBg bg-auto w-full h-full" style={{ opacity: "4%" }}></span>
+            <span className="absolute inset-0 bg-ImageBg bg-auto w-full h-full" style={{ opacity: "6%" }}></span>
             <span
                className="absolute inset-0 z-0 bg-gradient-to-t from-dark lg:via-dark/80 to-transparent"
                style={{ opacity: "90%" }}

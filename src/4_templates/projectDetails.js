@@ -82,7 +82,7 @@ export default function ProjectDetails({ data }) {
    const contentImg_2 = data.projectDataJson.contentImg_2
    const contentImg_3 = data.projectDataJson.contentImg_3
    const gallery = data.projectDataJson.gallery
-
+   console.log(data)
    return (
       <>
          <SEO
@@ -238,7 +238,7 @@ export default function ProjectDetails({ data }) {
                               alt={`${title} "presentation image"`}
                               loading="eager"
                            />
-                           {/* <span className="text-dark">Porto 2022</span> */}
+                           {/* <span className="text-grey">Porto 2022</span> */}
                         </div>
                      ))}{" "}
                </div>
