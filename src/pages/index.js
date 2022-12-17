@@ -6,6 +6,8 @@ import About from "../2_sections/About"
 import SideProjects from "../2_sections/SideProjects"
 import Recommendations from "../2_sections/Recommendations"
 import Contact from "../2_sections/Contact"
+import TransitionPageIn from "../1_components/TransitionPageIn"
+import TransitionInview from "../1_components/TransitionInview"
 
 function Home() {
    return (
@@ -17,7 +19,9 @@ function Home() {
          <div className="bg-dark">
             <div className="container h-full">
                <Hero />
-               <ProjectsTiles />
+               <TransitionInview>
+                  <ProjectsTiles />
+               </TransitionInview>
                <About />
                <SideProjects />
                <Recommendations />
