@@ -113,7 +113,7 @@ export default function ProjectDetails({ data }) {
                `Sketch`,
                `Adobe Photoshop`,
                `Adobe Illustrator`,
-               `Photo manipulation`,
+               `Tailwind css`,
             ]}
             title={`Paolo Todde | ${title}`}
          />

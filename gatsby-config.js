@@ -4,10 +4,10 @@ const fullConfig = resolveConfig(tailwindConfig)
 
 module.exports = {
    siteMetadata: {
-      title: `Paolo Todde | Senior UI Designer | Coder`,
+      title: `Paolo Todde | Product Designer | Coder`,
       siteUrl: `https://todde.design`,
-      description: `Specialising in human-centred user experience. Tailored pixel perfect visual design solutions.`,
-      author: ``,
+      description: `UI/product designer Specialising in human-centric user experience. Tailored pixel perfect design solutions.\n\nPassionate advocate for visual communication and great user experience. I collaborate with teams in order to design high quality, accessible interfaces that are human-focused.\n\nDedicated in assisting people in achieving their online goals.`,
+      author: `Paolo Todde`,
       twitterImage: `/images/social/twitter-preview.png`,
       metaOgImage: `/images/social/og-preview.png`,
    },
