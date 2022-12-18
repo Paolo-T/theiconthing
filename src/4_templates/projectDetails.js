@@ -88,13 +88,32 @@ export default function ProjectDetails({ data }) {
          <SEO
             keywords={[
                `UI Design`,
+               `User Interface design`,
+               `Interaction design`,
+               `Prototyping`,
                `UX Design`,
+               `UX/UI`,
+               `Visual Design`,
                `User Experience`,
+               `User centred`,
                `Web Design`,
                `Product Design`,
+               `Wireframes`,
+               `Usability testing`,
                `Portfolio`,
                `App`,
                `Website`,
+               `Photography`,
+               `Photo manipulation`,
+               `Photos`,
+               `Illustration`,
+               `Digital art`,
+               `Design thinking`,
+               `Figma`,
+               `Sketch`,
+               `Adobe Photoshop`,
+               `Adobe Illustrator`,
+               `Photo manipulation`,
             ]}
             title={`Paolo Todde | ${title}`}
          />
