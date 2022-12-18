@@ -69,7 +69,7 @@ function About() {
                   </p>
 
                   <div className="mb-16">
-                     <h4 className="mt-16 mb-4 text-primary">Passionate about:</h4>
+                     <h4 className="mt-16 mb-4 text-primary">I'm passionate about:</h4>
                      <ul className="md:flex text-5xl justify-between pr-8">
                         <li>UX/UI</li>
                         <li>Interaction and Motion</li>
