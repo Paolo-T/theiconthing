@@ -1,11 +1,8 @@
 {
    "slug": "photo",
    "hero": {
-      "title": "People in places",
-      "subtitle": "",
-      "heroImg": ""
+      "title": "People in places"
    },
-
    "contentImg_1": [],
    "contentList": {},
    "contentImg_2": [],
@@ -51,7 +48,6 @@
       "../images/photography/wales2022/wales2022_3.png",
       "../images/photography/wales2022/wales2022_4.png",
       "../images/photography/wales2022/wales2022_5.png",
-      "../images/photography/wales2022/wales2022_6.png",
 
       "../images/photography/gigs/gigs_1.png",
       "../images/photography/gigs/gigs_2.png",
