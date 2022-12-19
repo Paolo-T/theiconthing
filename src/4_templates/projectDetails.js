@@ -254,7 +254,7 @@ export default function ProjectDetails({ data }) {
                                  key={i}
                                  image={image.childImageSharp.gatsbyImageData}
                                  alt={`${title} "presentation image"`}
-                                 loading="eager"
+                                 loading={i < 6 ? "eager" : "lazy"}
                               />
                               {/* <span className="text-grey">Porto 2022</span> */}
                            </div>
