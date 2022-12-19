@@ -255,6 +255,8 @@ export default function ProjectDetails({ data }) {
                                  image={image.childImageSharp.gatsbyImageData}
                                  alt={`${title} "presentation image"`}
                                  loading={i < 6 ? "eager" : "lazy"}
+                                 fadeIn={true}
+                                 durationFadeIn={300}
                               />
                               {/* <span className="text-grey">Porto 2022</span> */}
                            </div>
