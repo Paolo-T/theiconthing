@@ -120,16 +120,19 @@ export default function ProjectDetails({ data }) {
          <div className="w-screen">
             {/* Hero */}
             <TransitionPageIn>
-               <section className="container pt-32 sm:pt-32 md:pt-48 mb-0 md:mb-24">
-                  <div className="page-header mb-6">
-                     <h1 className="h1-page w-full text-dark">{title}</h1>
-                     {subtitle ? <p className="text-xl md:text-2xl text-grey mb-2">{subtitle}</p> : null}
-                  </div>
+               {title ? (
+                  <section className="container pt-32 sm:pt-32 md:pt-48 mb-0 md:mb-24">
+                     <div className="page-header mb-6">
+                        <h1 className="h1-page w-full text-dark">{title}</h1>
+                        {subtitle ? <p className="text-xl md:text-2xl text-grey mb-2">{subtitle}</p> : null}
+                     </div>
 
-                  {heroImg && <GatsbyImage image={heroImg} alt={`${title} + "presentation image"`} loading="eager" />}
-               </section>
+                     {heroImg ? (
+                        <GatsbyImage image={heroImg} alt={`${title} + "presentation image"`} loading="eager" />
+                     ) : null}
+                  </section>
+               ) : null}
                {/* Content */}
-               {console.log(content_1)}
                {content_1 & Array.isArray(content_1) ? (
                   <section className="w-full text-dark">
                      {content_1.map((section, i) => (
@@ -154,48 +157,51 @@ export default function ProjectDetails({ data }) {
                   </section>
                ) : null}
                {/* Image */}
-               {(Array.isArray(contentImg_1) || contentImg_1.length) &&
-                  contentImg_1.map((image, i) => (
-                     <GatsbyImage
-                        key={i}
-                        image={image.childImageSharp.gatsbyImageData}
-                        className="container grid col-span-12 mt-4 md:mt-0"
-                        alt={`${title} "presentation image"`}
-                        loading="eager"
-                     />
-                  ))}{" "}
+               {contentImg_1 & (Array.isArray(contentImg_1) || contentImg_1.length)
+                  ? contentImg_1.map((image, i) => (
+                       <GatsbyImage
+                          key={i}
+                          image={image.childImageSharp.gatsbyImageData}
+                          className="container grid col-span-12 mt-4 md:mt-0"
+                          alt={`${title} "presentation image"`}
+                          loading="eager"
+                       />
+                    ))
+                  : null}{" "}
                {/* Content list */}
-               {contentListist.title && (
+               {contentListist.title ? (
                   <section className="container mx-auto grid grid-cols-4 md:grid-cols-12 gap-y-6 md:gap-y-6 gap-x-0 py-10 md:py-24 text-dark">
                      <h2 className="col-start-1 col-end-5 md:col-start-2 md:col-end-4 mb-0 md:mb-4 ">
                         {contentListist.title}
                      </h2>
-                     {Array.isArray(contentListist.listItems) &&
-                        contentListist.listItems.map((listItem, i) => (
-                           <div key={i} className="col-start-1 col-end-5 md:col-start-5 md:col-end-11">
-                              <h4 className="uppercase tracking-widest col-start-1 col-end-4 md:col-start-1 mb-2">
-                                 {listItem.title}
-                              </h4>
-                              <p className="col-start-4 col-end-12">{listItem.description}</p>
-                           </div>
-                        ))}
+                     {contentListist.listItems & Array.isArray(contentListist.listItems)
+                        ? contentListist.listItems.map((listItem, i) => (
+                             <div key={i} className="col-start-1 col-end-5 md:col-start-5 md:col-end-11">
+                                <h4 className="uppercase tracking-widest col-start-1 col-end-4 md:col-start-1 mb-2">
+                                   {listItem.title}
+                                </h4>
+                                <p className="col-start-4 col-end-12">{listItem.description}</p>
+                             </div>
+                          ))
+                        : null}
                   </section>
-               )}
+               ) : null}
                {/* Image */}
-               {(Array.isArray(contentImg_2) || contentImg_2.length) &&
-                  contentImg_2.map((image, i) => (
-                     <GatsbyImage
-                        key={i}
-                        image={image.childImageSharp.gatsbyImageData}
-                        className={`container grid col-span-12 mb-20 ${
-                           !data.projectDataJson.contentList.title && "mt-20"
-                        }`}
-                        alt={`${title} "presentation image"`}
-                        loading="lazy"
-                     />
-                  ))}{" "}
+               {contentImg_2 & Array.isArray(contentImg_2)
+                  ? contentImg_2.map((image, i) => (
+                       <GatsbyImage
+                          key={i}
+                          image={image.childImageSharp.gatsbyImageData}
+                          className={`container grid col-span-12 mb-20 ${
+                             !data.projectDataJson.contentList.title && "mt-20"
+                          }`}
+                          alt={`${title} "presentation image"`}
+                          loading="lazy"
+                       />
+                    ))
+                  : null}{" "}
                {/* Content */}
-               {Array.isArray(content_2) && (
+               {content_2 & Array.isArray(content_2) ? (
                   <section className="w-full text-dark">
                      {content_2.map((section, i) => (
                         <div key={i} className="container md:mb-20">
@@ -218,45 +224,43 @@ export default function ProjectDetails({ data }) {
                         </div>
                      ))}
                   </section>
-               )}
+               ) : null}
                {/* Image */}
-               <div
-                  className={
-                     Array.isArray(contentImg_3) & (contentImg_3.length > 3)
-                        ? "container grid grid-cols-3 gap-y-6 md:gap-x-6 "
-                        : "container grid col-span-12"
-                  }
-               >
-                  {Array.isArray(contentImg_3) &&
-                     contentImg_3.map((image, i) => (
+               {contentImg_3 & Array.isArray(contentImg_3) ? (
+                  <section
+                     className={
+                        contentImg_3.length > 3
+                           ? "container grid grid-cols-3 gap-y-6 md:gap-x-6 "
+                           : "container grid col-span-12"
+                     }
+                  >
+                     {contentImg_3.map((image, i) => (
                         <GatsbyImage
                            key={i}
                            image={image.childImageSharp.gatsbyImageData}
                            alt={`${title} "presentation image"`}
                            loading="lazy"
                         />
-                     ))}{" "}
-               </div>
+                     ))}
+                  </section>
+               ) : null}{" "}
                {/* Gallery */}
-               <div
-                  className={
-                     Array.isArray(gallery) &&
-                     "container columns-2 sm:columns-3 md:columns-4 gap-3 sm:gap-4 md:gap-8 mb-0 md:mb-32"
-                  }
-               >
-                  {Array.isArray(gallery) &&
-                     gallery.map((image, i) => (
-                        <div className="mb-3 md:mb-7">
-                           <GatsbyImage
-                              key={i}
-                              image={image.childImageSharp.gatsbyImageData}
-                              alt={`${title} "presentation image"`}
-                              loading="eager"
-                           />
-                           {/* <span className="text-grey">Porto 2022</span> */}
-                        </div>
-                     ))}{" "}
-               </div>
+               {gallery ? (
+                  <section className="container columns-2 sm:columns-3 md:columns-4 gap-3 sm:gap-4 md:gap-8 mb-0 md:mb-32">
+                     {Array.isArray(gallery) &&
+                        gallery.map((image, i) => (
+                           <div key={i} className="mb-3 md:mb-7">
+                              <GatsbyImage
+                                 key={i}
+                                 image={image.childImageSharp.gatsbyImageData}
+                                 alt={`${title} "presentation image"`}
+                                 loading="eager"
+                              />
+                              {/* <span className="text-grey">Porto 2022</span> */}
+                           </div>
+                        ))}{" "}
+                  </section>
+               ) : null}
                <ProjectsTiles isPageNav={true} />
             </TransitionPageIn>
          </div>
