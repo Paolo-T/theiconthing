@@ -133,7 +133,7 @@ export default function ProjectDetails({ data }) {
                   </section>
                ) : null}
                {/* Content */}
-               {content_1 & Array.isArray(content_1) ? (
+               {Array.isArray(content_1) ? (
                   <section className="w-full text-dark">
                      {content_1.map((section, i) => (
                         <div key={i} className="container md:mb-20">
@@ -157,7 +157,7 @@ export default function ProjectDetails({ data }) {
                   </section>
                ) : null}
                {/* Image */}
-               {contentImg_1 & (Array.isArray(contentImg_1) || contentImg_1.length)
+               {Array.isArray(contentImg_1) || contentImg_1.length
                   ? contentImg_1.map((image, i) => (
                        <GatsbyImage
                           key={i}
@@ -187,7 +187,7 @@ export default function ProjectDetails({ data }) {
                   </section>
                ) : null}
                {/* Image */}
-               {contentImg_2 & Array.isArray(contentImg_2)
+               {Array.isArray(contentImg_2)
                   ? contentImg_2.map((image, i) => (
                        <GatsbyImage
                           key={i}
@@ -201,7 +201,7 @@ export default function ProjectDetails({ data }) {
                     ))
                   : null}{" "}
                {/* Content */}
-               {content_2 & Array.isArray(content_2) ? (
+               {Array.isArray(content_2) ? (
                   <section className="w-full text-dark">
                      {content_2.map((section, i) => (
                         <div key={i} className="container md:mb-20">
@@ -226,7 +226,7 @@ export default function ProjectDetails({ data }) {
                   </section>
                ) : null}
                {/* Image */}
-               {contentImg_3 & Array.isArray(contentImg_3) ? (
+               {Array.isArray(contentImg_3) ? (
                   <section
                      className={
                         contentImg_3.length > 3
