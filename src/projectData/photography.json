@@ -2,10 +2,22 @@
    "slug": "photo",
    "hero": {
       "title": "People in places",
-      "subtitle": null,
-      "heroImg": null
+      "subtitle": "",
+      "heroImg": ""
    },
-
+   "content_1": [
+      {
+         "id": "",
+         "aside": {
+            "title": "",
+            "list": [""]
+         },
+         "main": {
+            "title": "",
+            "body": ""
+         }
+      }
+   ],
    "contentImg_1": [],
    "contentList": {},
    "contentImg_2": [],
