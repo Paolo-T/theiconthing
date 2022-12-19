@@ -121,7 +121,7 @@ export default function ProjectDetails({ data }) {
          <div className="w-screen">
             {/* Hero */}
             <TransitionPageIn>
-               {title ? (
+               {title && title.length ? (
                   <section className="container pt-32 sm:pt-32 md:pt-48 mb-0 md:mb-24">
                      <div className="page-header mb-6">
                         <h1 className="h1-page w-full text-dark">{title}</h1>
@@ -134,7 +134,7 @@ export default function ProjectDetails({ data }) {
                   </section>
                ) : null}
                {/* Content */}
-               {Array.isArray(content_1) ? (
+               {content_1 && content_1.length ? (
                   <section className="w-full text-dark">
                      {content_1.map((section, i) => (
                         <div key={i} className="container md:mb-20">
@@ -158,7 +158,7 @@ export default function ProjectDetails({ data }) {
                   </section>
                ) : null}
                {/* Image */}
-               {Array.isArray(contentImg_1) || contentImg_1.length
+               {contentImg_1 && contentImg_1.length
                   ? contentImg_1.map((image, i) => (
                        <GatsbyImage
                           key={i}
@@ -170,25 +170,24 @@ export default function ProjectDetails({ data }) {
                     ))
                   : null}{" "}
                {/* Content list */}
-               {contentListist.title ? (
+               {contentListist.listItems && contentListist.listItems.length ? (
                   <section className="container mx-auto grid grid-cols-4 md:grid-cols-12 gap-y-6 md:gap-y-6 gap-x-0 py-10 md:py-24 text-dark">
                      <h2 className="col-start-1 col-end-5 md:col-start-2 md:col-end-4 mb-0 md:mb-4 ">
                         {contentListist.title}
                      </h2>
-                     {contentListist.listItems & Array.isArray(contentListist.listItems)
-                        ? contentListist.listItems.map((listItem, i) => (
-                             <div key={i} className="col-start-1 col-end-5 md:col-start-5 md:col-end-11">
-                                <h4 className="uppercase tracking-widest col-start-1 col-end-4 md:col-start-1 mb-2">
-                                   {listItem.title}
-                                </h4>
-                                <p className="col-start-4 col-end-12">{listItem.description}</p>
-                             </div>
-                          ))
-                        : null}
+
+                     {contentListist.listItems.map((listItem, i) => (
+                        <div key={i} className="col-start-1 col-end-5 md:col-start-5 md:col-end-11">
+                           <h4 className="uppercase tracking-widest col-start-1 col-end-4 md:col-start-1 mb-2">
+                              {listItem.title}
+                           </h4>
+                           <p className="col-start-4 col-end-12">{listItem.description}</p>
+                        </div>
+                     ))}
                   </section>
                ) : null}
                {/* Image */}
-               {Array.isArray(contentImg_2)
+               {contentImg_2 && contentImg_2.length
                   ? contentImg_2.map((image, i) => (
                        <GatsbyImage
                           key={i}
@@ -202,7 +201,7 @@ export default function ProjectDetails({ data }) {
                     ))
                   : null}{" "}
                {/* Content */}
-               {Array.isArray(content_2) ? (
+               {content_2 && content_2.length ? (
                   <section className="w-full text-dark">
                      {content_2.map((section, i) => (
                         <div key={i} className="container md:mb-20">
@@ -227,7 +226,7 @@ export default function ProjectDetails({ data }) {
                   </section>
                ) : null}
                {/* Image */}
-               {Array.isArray(contentImg_3) ? (
+               {contentImg_3 && contentImg_3.length ? (
                   <section
                      className={
                         contentImg_3.length > 3
@@ -246,7 +245,7 @@ export default function ProjectDetails({ data }) {
                   </section>
                ) : null}{" "}
                {/* Gallery */}
-               {gallery ? (
+               {gallery && gallery.length ? (
                   <section className="container columns-2 sm:columns-3 md:columns-4 gap-3 sm:gap-4 md:gap-8 mb-0 md:mb-32">
                      {Array.isArray(gallery) &&
                         gallery.map((image, i) => (

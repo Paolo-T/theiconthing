@@ -8,7 +8,7 @@ function TransitionInView({ children }) {
       rootMargin: "0px 0px",
    })
 
-   const spring = { mass: 1, tension: 300, friction: 80 }
+   const spring = { mass: 5, tension: 300, friction: 100 }
 
    const props = useSpring({
       config: spring,
