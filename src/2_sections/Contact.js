@@ -1,6 +1,6 @@
 import React from "react"
 import IconLinkedin from "../icons/linkedin.svg"
-import IconTwitter from "../icons/twitter.svg"
+// import IconTwitter from "../icons/twitter.svg"
 import IconInstagram from "../icons/instagram.svg"
 import IconMail from "../icons/mail.svg"
 
@@ -29,14 +29,14 @@ function Contact() {
                   >
                      <IconLinkedin />
                   </a>
-                  <a
+                  {/* <a
                      className="dark-text-hover"
                      rel="noopener noreferrer"
                      target="_blank"
                      href="https://twitter.com/roomzeroone"
                   >
                      <IconTwitter />
-                  </a>
+                  </a> */}
                   <a
                      className="dark-text-hover"
                      rel="noopener noreferrer"
