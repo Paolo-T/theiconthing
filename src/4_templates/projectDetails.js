@@ -240,7 +240,7 @@ export default function ProjectDetails({ data }) {
                <div
                   className={
                      Array.isArray(gallery) &&
-                     "container columns-2 sm:columns-3 md:columns-4 gap-3 sm:gap-4 md:gap-8 pt-32 sm:pt-32 md:pt-48 mb-0 md:mb-32"
+                     "container columns-2 sm:columns-3 md:columns-4 gap-3 sm:gap-4 md:gap-8 mb-0 md:mb-32"
                   }
                >
                   {Array.isArray(gallery) &&
