@@ -59,7 +59,7 @@ export default function NotFoundPage() {
                <div className="container grid grid-cols-16 grid-gap items-center">
                   <div className="col-start-1 col-end-14 md:col-end-9 order-last md:oder-first">
                      <GatsbyImage
-                        className="mb-2 border-4 border-primary"
+                        className="mb-2 border-4 border-primary rounded-xl"
                         image={featuredImg}
                         alt="Image"
                         loading={"eager"}

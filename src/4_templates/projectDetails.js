@@ -118,7 +118,7 @@ export default function ProjectDetails({ data }) {
             ]}
             title={`Paolo Todde | ${title}`}
          />
-         <div className="w-screen">
+         <div className="w-full">
             {/* Hero */}
             <TransitionPageIn>
                {title && title.length ? (
