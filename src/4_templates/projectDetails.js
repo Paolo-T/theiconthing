@@ -264,14 +264,14 @@ export default function ProjectDetails({ data }) {
                                     .replace("_", "")
                               )}
 
-                              {/* <span className="text-grey">
+                              <span className="text-grey">
                                  {image.childImageSharp.gatsbyImageData.images.fallback.src
                                     .split("/")
                                     .pop()
                                     .slice(0, -6)
                                     .replace("_", "")
                                     .replace("20", " /")}
-                              </span> */}
+                              </span>
                            </div>
                         ))}{" "}
                   </section>
