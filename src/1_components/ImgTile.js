@@ -35,14 +35,14 @@ function ImgTile({
             } overflow-hidden`}
          >
             {linkTo && (
-               <Link to={isLocked ? "#0" : linkTo} className="cursor-default">
+               <Link to={isLocked ? "#0" : linkTo} className="cursor-default focus">
                   <div className="group">
                      <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
                   </div>
                </Link>
             )}
             {isExternal && (
-               <a href={hRef} target="_blank" rel="noopener noreferrer">
+               <a href={hRef} target="_blank" rel="noopener noreferrer" className="focus">
                   <div className="group">
                      <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
                   </div>

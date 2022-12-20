@@ -34,8 +34,8 @@
       @apply font-sans text-base md:text-xl;
    }
 
-   .a {
-      @apply font-sans text-base md:text-xl;
+   a {
+      @apply font-sans text-base md:text-xl focus;
    }
 
    .span {
@@ -81,5 +81,9 @@
 
    .grid-gap {
       @apply gap-6 md:gap-8;
+   }
+
+   .focus {
+      @apply outline outline-offset-2 outline-1 outline-none outline-primary;
    }
 }

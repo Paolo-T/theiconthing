@@ -48,10 +48,13 @@ function Footer() {
             <ul className="col-start-1 md:col-start-8 col-end-17 flex justify-between items-start mb-10 md:mb-0">
                {footerItems.map((listItem, i) => (
                   <li key={i}>
-                     <a rel="noopener noreferrer" target="_blank" href={listItem.href}>
-                        <p className="group text-xs md:text-base lg:text-base 2lg:text-lg font-bold uppercase dark-text-hover">
-                           {listItem.label}
-                        </p>
+                     <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href={listItem.href}
+                        className="group text-xs md:text-base lg:text-base 2lg:text-lg font-bold uppercase dark-text-hover"
+                     >
+                        {listItem.label}
                      </a>
                   </li>
                ))}

@@ -9,7 +9,7 @@ function Button({ linkTo, href, label, customClass }) {
                rel="noopener noreferrer"
                target="_blank"
                href={href}
-               className={`bg-transparent text-center text-offWhite border border-offWhite hover:border-primary
+               className={`bg-transparent text-center text-offWhite border border-offWhite
               dark-text-hover py-1 px-6 text-md sm:text-xl md:text-2xl
                lg:text-2xl xl:text-2xl 2xl:text-2xl font-normal ${customClass}`}
             >
@@ -22,9 +22,9 @@ function Button({ linkTo, href, label, customClass }) {
                rel="noopener noreferrer"
                target="_blank"
                href={linkTo}
-               className={`bg-transparent text-center text-offWhite border border-offWhite hover:border-primary
+               className={`bg-transparent text-center text-offWhite border border-offWhite
               dark-text-hover py-1.5 px-6 text-md sm:text-xl md:text-2xl
-               lg:text-2xl xl:text-2xl 2xl:text-2xl font-normal ${customClass}`}
+               lg:text-2xl xl:text-2xl 2xl:text-2xl font-normal    ${customClass}`}
             >
                <p>{label}</p>
             </a>
