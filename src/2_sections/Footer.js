@@ -58,7 +58,7 @@ function Footer() {
                      </a>
                   </li>
                ))}
-               <li className="animate-bounce text-center dark-text-hover">
+               <li className="animate-bounce text-center dark-text-hover focus">
                   <ScrollToTop showBelow="250" />
                </li>
             </ul>
