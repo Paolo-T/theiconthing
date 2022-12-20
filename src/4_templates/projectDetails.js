@@ -254,9 +254,24 @@ export default function ProjectDetails({ data }) {
                                  key={i}
                                  image={image.childImageSharp.gatsbyImageData}
                                  alt={`${title} "presentation image"`}
-                                 loading={i < 6 ? "eager" : "lazy"}
+                                 loading={i < 4 ? "eager" : "lazy"}
                               />
-                              {/* <span className="text-grey">Porto 2022</span> */}
+                              {console.log(
+                                 image.childImageSharp.gatsbyImageData.images.fallback.src
+                                    .split("/")
+                                    .pop()
+                                    .slice(0, -6)
+                                    .replace("_", "")
+                              )}
+
+                              {/* <span className="text-grey">
+                                 {image.childImageSharp.gatsbyImageData.images.fallback.src
+                                    .split("/")
+                                    .pop()
+                                    .slice(0, -6)
+                                    .replace("_", "")
+                                    .replace("20", " /")}
+                              </span> */}
                            </div>
                         ))}{" "}
                   </section>

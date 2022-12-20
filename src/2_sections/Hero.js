@@ -20,7 +20,7 @@ function Hero() {
                   Human centred design solutions.
                </h1>
             </div>
-            <h4>UI | UX | Code </h4>
+            <h2 className="text-sm md:text-base font-bold uppercase tracking-widest">UI | UX | Code </h2>
          </TransitionInview>
       </section>
    )
