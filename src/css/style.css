@@ -35,7 +35,7 @@
    }
 
    a {
-      @apply font-sans text-base md:text-xl focus;
+      @apply font-sans text-base md:text-xl;
    }
 
    span {
@@ -84,6 +84,6 @@
    }
 
    .focus {
-      @apply focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-none focus:outline-primary;
+      @apply outline-none focus:ring focus:ring-primary  focus:outline-primary;
    }
 }
