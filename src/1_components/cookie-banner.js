@@ -47,7 +47,7 @@ const CookieConsent = () => {
    return (
       <>
          {!bannerHidden && (
-            <div className="z-50 w-full xl:w-auto bottom-0 left-1/2 -translate-x-1/2 backdrop-blur-sm bg-dark/60 text-center fixed py-2.5 px-2 md:px-6 rounded-t-md font-sans text-sm md:text-base leading-less">
+            <div className="z-50 w-full xl:w-auto bottom-0 left-1/2 -translate-x-1/2 backdrop-blur-sm bg-dark/60 text-center fixed py-3 md:py-2.5 px-2 md:px-6 rounded-t-md font-sans text-sm md:text-base leading-less">
                <div className="flex flex-col md:flex-row space-y-2 md:space-x-2 justify-center items-center">
                   <CookieIcon className="w-6 h-6" />
                   <span className="font-sans text-sm md:text-base leading-some">
@@ -56,14 +56,14 @@ const CookieConsent = () => {
                   <div>
                      <button
                         onClick={CloseBanner}
-                        className="underline underline-offset-4 decoration-1 px-1 primary-text-hover font-sans text-sm md:text-base leading-less"
+                        className="underline underline-offset-4 decoration-1 px-1 primary-text-hover"
                      >
                         Not today
                      </button>
                      <span className="pr-1 "> – </span>
                      <button
                         onClick={EnableAnalytics}
-                        className="underline underline-offset-4 decoration-1 text-green-500 primary-text-hove font-sans text-sm md:text-base leading-less"
+                        className="underline underline-offset-4 decoration-1 text-green-500 primary-text-hover"
                      >
                         I'm OK with that.
                      </button>
