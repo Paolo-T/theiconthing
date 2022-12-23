@@ -86,4 +86,8 @@
    .focus {
       @apply outline-none focus:ring focus:ring-primary  focus:outline-primary;
    }
+
+   .underlined {
+      @apply underline underline-offset-7 decoration-2;
+   }
 }

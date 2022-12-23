@@ -19,7 +19,7 @@ function Button({ linkTo, href, onClick, label, labelSmall, underlined, noBorder
             >
                <p
                   className={` ${labelSmall ? "text-sm md:text-base leading-less" : "text-md sm:text-xl md:text-2xl"} ${
-                     underlined && "underline underline-offset-4 decoration-1"
+                     underlined && "underlined decoration-1"
                   }`}
                >
                   {label}
@@ -39,7 +39,7 @@ function Button({ linkTo, href, onClick, label, labelSmall, underlined, noBorder
             >
                <p
                   className={` ${labelSmall ? "text-sm md:text-base leading-less" : "text-md sm:text-xl md:text-2xl"} ${
-                     underlined && "underline underline-offset-4 decoration-1"
+                     underlined && "underlined decoration-1"
                   }`}
                >
                   {label}

@@ -24,7 +24,7 @@ function ImgTile({
       '"transition duration-500 transform cursor-pointer group-hover:scale-[1.025] group-hover:rotate-[0.7deg] "'
    return (
       <div
-         className={`${
+         className={`group ${
             isHorizontal & !isPageNav ? "xl:grid grid-cols-16 grid-gap items-center" : "flex-1 h-full flex flex-col"
          } overflow-hidden ${classes}`}
       >
@@ -58,9 +58,9 @@ function ImgTile({
             >
                <div className="flex-1">
                   {titleSmall ? (
-                     <h4 className="my-2 md:mb-2 uppercase">{title}</h4>
+                     <h4 className={`my-2 md:mb-2 uppercase ${!isLocked && "group-hover:underlined"}`}>{title}</h4>
                   ) : (
-                     <h2 className="mb-3 md:mb-4 uppercase">{title}</h2>
+                     <h2 className={`mb-3 md:mb-4 uppercase ${!isLocked && "group-hover:underlined"}`}>{title}</h2>
                   )}
                   {isLocked && (
                      <div className="mb-3 text-secondary">

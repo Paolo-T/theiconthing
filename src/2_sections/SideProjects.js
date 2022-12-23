@@ -5,19 +5,25 @@ import ImgTile from "../1_components/ImgTile"
 function SideProjects() {
    const images = useStaticQuery(graphql`
       query sideProjects {
-         threeImg: file(relativePath: { eq: "3dc/3dc_tile.png" }) {
-            id
-            childImageSharp {
-               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
-            }
-         }
          digitalArtImg: file(relativePath: { eq: "about/digitalArt_tile.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
-         photographytImg: file(relativePath: { eq: "photography/photography_tile.png" }) {
+         digitalArt2Img: file(relativePath: { eq: "about/digitalArt_2_tile.png" }) {
+            id
+            childImageSharp {
+               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
+            }
+         }
+         threeImg: file(relativePath: { eq: "3dc/3dc_tile.png" }) {
+            id
+            childImageSharp {
+               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
+            }
+         }
+         photographytImg: file(relativePath: { eq: "about/photography_tile.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
@@ -29,12 +35,25 @@ function SideProjects() {
    const tilesData = [
       {
          id: "",
-         title: "Artwork",
+         title: "Artwork on Instagram",
          description: "",
          img: images.digitalArtImg.childImageSharp.gatsbyImageData,
          imgAlt: "Artwork",
          linkTo: false,
          hRef: "https://www.instagram.com/paolo__todde/",
+         cta: null,
+         isExternal: true,
+         isLocked: false,
+         isPageNav: false,
+      },
+      {
+         id: "",
+         title: "Artwork on Behance",
+         description: "",
+         img: images.digitalArt2Img.childImageSharp.gatsbyImageData,
+         imgAlt: "Artwork",
+         linkTo: false,
+         hRef: "https://www.behance.net/paolotodde_art",
          cta: null,
          isExternal: true,
          isLocked: false,
@@ -70,9 +89,9 @@ function SideProjects() {
 
    return (
       <section className="w-full xl:grid grid-cols-16 grid-gap spacing-bottom">
-         <div className="col-start-1 md:col-end-17 lg:col-end-14">
+         <div className="col-start-1 md:col-end-17 lg:col-end-14 text-right">
             <h2>Side projects</h2>
-            <div className="flex flex-col md:flex-row grid-gap">
+            <div className="grid grid-cols-2 grid-gap md:flex-row grid-gap">
                {tilesData.map((tile, i) => (
                   <ImgTile
                      key={i}
