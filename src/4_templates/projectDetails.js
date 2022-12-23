@@ -270,7 +270,7 @@ export default function ProjectDetails({ data }) {
                                     .pop()
                                     .slice(0, -6)
                                     .replace("_", "")
-                                    .replace("20", " /")}
+                                    .replace("2", " 2")}
                               </span> */}
                            </div>
                         ))}{" "}
