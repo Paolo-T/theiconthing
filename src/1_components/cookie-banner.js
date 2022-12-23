@@ -63,7 +63,7 @@ const CookieConsent = () => {
                         underlined={true}
                         customClass={"primary-text-hover"}
                      />
-                     <span className="pr-1 "> – </span>
+                     <span className="px-1 "> – </span>
                      <Button
                         label="I'm ok with cookies"
                         onClick={EnableAnalytics}
