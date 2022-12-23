@@ -69,7 +69,7 @@ function Reccomendations() {
                      {
                         <div
                            key={recommendation.id}
-                           className="h-full border border-offWhite rounded-xl px-4 md:px-12 lg:px-16 py-7 md:py-14 lg:py-18 mb-6 md:mb-0"
+                           className="h-full border border-offWhite rounded-xl px-4 md:px-8 lg:px-8 py-7 md:py-14 lg:py-18 mb-6 md:mb-0"
                         >
                            <div className="flex space-x-2 text-primary justify-center">
                               <h5>{recommendation.name}</h5>
