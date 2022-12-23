@@ -46,18 +46,20 @@ const CookieConsent = () => {
 
    return (
       <>
-         {!bannerHidden && (
-            <div className="z-50 w-auto bottom-0 left-1/2 -translate-x-1/2 backdrop-blur-sm bg-dark/60 text-center fixed py-2.5 px-6 rounded-t-md">
-               <div className="flex space-x-2 justify-center items-center">
+         {bannerHidden && (
+            <div className="z-50 w-full xl:w-auto bottom-0 left-1/2 -translate-x-1/2 backdrop-blur-sm bg-dark/60 text-center fixed py-2.5 px-6 rounded-t-md">
+               <div className="flex flex-col md:flex-row space-y-2 space-x-2 justify-center items-center">
                   <CookieIcon className="w-6 h-6" />
                   <span>I use cookies to improve your experience on my website.</span>
-                  <button onClick={CloseBanner} className="underline underline-offset-4 px-1">
-                     Not today
-                  </button>
-                  <span className="mr-0"> - </span>
-                  <button onClick={EnableAnalytics} className="underline underline-offset-4 text-green-500">
-                     OK
-                  </button>
+                  <div>
+                     <button onClick={CloseBanner} className="underline underline-offset-4 px-1">
+                        Not today
+                     </button>
+                     <span className="pr-1"> – </span>
+                     <button onClick={EnableAnalytics} className="underline underline-offset-4 text-green-500">
+                        I'm OK with that.
+                     </button>
+                  </div>
                </div>
             </div>
          )}
