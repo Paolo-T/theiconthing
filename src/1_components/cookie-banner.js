@@ -48,7 +48,7 @@ const CookieConsent = () => {
    return (
       <>
          {!bannerHidden && (
-            <div className="z-50 w-full xl:w-auto bottom-0 left-1/2 -translate-x-1/2 backdrop-blur-sm bg-dark/80 text-center fixed py-3 md:py-2.5 px-2 md:px-6 rounded-t-md text-sm md:text-base leading-less">
+            <div className="z-50 w-full 2xl:w-auto bottom-0 left-1/2 -translate-x-1/2 backdrop-blur-sm bg-dark/70 text-center fixed py-3 md:py-2.5 px-2 md:px-6 rounded-t-md text-sm md:text-base leading-less">
                <div className="flex flex-col md:flex-row space-y-2 md:space-x-2 justify-center items-center">
                   <CookieIcon className="w-6 h-6" />
                   <span className="font-sans text-sm md:text-base leading-some">
