@@ -52,11 +52,17 @@ const CookieConsent = () => {
                   <CookieIcon className="w-6 h-6" />
                   <span>I use cookies to improve your experience on my website.</span>
                   <div>
-                     <button onClick={CloseBanner} className="underline underline-offset-4 px-1">
+                     <button
+                        onClick={CloseBanner}
+                        className="underline underline-offset-4 decoration-1 px-1 primary-text-hover"
+                     >
                         Not today
                      </button>
                      <span className="pr-1"> – </span>
-                     <button onClick={EnableAnalytics} className="underline underline-offset-4 text-green-500">
+                     <button
+                        onClick={EnableAnalytics}
+                        className="underline underline-offset-4 decoration-1 text-green-500 primary-text-hover"
+                     >
                         I'm OK with that.
                      </button>
                   </div>
