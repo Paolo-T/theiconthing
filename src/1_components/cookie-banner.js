@@ -51,7 +51,7 @@ const CookieConsent = () => {
                <div className="flex flex-col md:flex-row space-y-2 md:space-x-2 justify-center items-center">
                   <CookieIcon className="w-6 h-6" />
                   <span className="font-sans text-sm md:text-base leading-some">
-                     I use cookies to improve your experience on my website.
+                     I use cookies to improve your experience on this website.
                   </span>
                   <div>
                      <button
