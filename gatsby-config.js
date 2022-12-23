@@ -22,6 +22,32 @@ module.exports = {
       `gatsby-transformer-sharp`,
       `gatsby-transformer-json`,
       {
+         resolve: `gatsby-plugin-gdpr-cookies`,
+         options: {
+            googleAnalytics: {
+               trackingId: "UA-80068675-1", // leave empty if you want to disable the tracker
+               cookieName: "gatsby-gdpr-google-analytics", // default
+               anonymize: true, // default
+               allowAdFeatures: false, // default
+            },
+            hotjar: {
+               hjid: "2084246",
+               hjsv: "6",
+               cookieName: "gatsby-gdpr-hotjar", // default
+
+               // defines the environments where the tracking should be available  - default is ["production"]
+               environments: ["production", "development"],
+            },
+            reactGaOptions: {
+               debug: false,
+               gaOptions: {
+                  sampleRate: 100,
+                  siteSpeedSampleRate: 100,
+               },
+            },
+         },
+      },
+      {
          resolve: `gatsby-plugin-google-gtag`,
          options: {
             // You can add multiple tracking ids and a pageview event will be fired for all of them.
@@ -42,6 +68,7 @@ module.exports = {
             },
          },
       },
+
       {
          resolve: `gatsby-plugin-hotjar`,
          options: {
