@@ -91,7 +91,7 @@ function SideProjects() {
       <section className="w-full xl:grid grid-cols-16 grid-gap spacing-bottom">
          <div className="col-start-1 md:col-end-17 lg:col-end-14 text-right">
             <h2>Side projects</h2>
-            <div className="grid grid-cols-2 grid-gap md:flex-row grid-gap">
+            <div className="grid md:grid-cols-2 grid-gap">
                {tilesData.map((tile, i) => (
                   <ImgTile
                      key={i}
@@ -108,7 +108,7 @@ function SideProjects() {
                      isExternal={tile.isExternal}
                      isLocked={tile.isLocked}
                      isHorizontal={false}
-                     classes={""}
+                     classes={null}
                   />
                ))}
             </div>

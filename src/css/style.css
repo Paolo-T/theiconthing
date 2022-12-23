@@ -19,7 +19,7 @@
    }
 
    h4 {
-      @apply font-header text-sm md:text-base font-bold uppercase tracking-widest;
+      @apply font-header text-xs md:text-sm lg:text-base font-bold uppercase tracking-widest;
    }
 
    h5 {
@@ -35,7 +35,7 @@
    }
 
    a {
-      @apply font-sans text-base md:text-xl;
+      @apply font-sans text-base md:text-xl leading-7 md:leading-8 tracking-more;
    }
 
    span {

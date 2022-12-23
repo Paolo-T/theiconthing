@@ -23,29 +23,29 @@ function Footer() {
    return (
       <footer className="w-full text-offWhite bg-dark md:pt-10 pb-16 md:mt-0">
          <div className="container grid grid-cols-16 md:grid-gap items-center">
-            <div className="order-last md:order-first col-start-1 col-end-17 md:col-end-6 flex space-x-1 items-start md:items-center content-center border-t border-offWhite md:border-none pt-4 md:pt-0">
+            <div className="order-last md:order-first col-start-1 col-end-17 md:col-end-8 flex space-x-1 items-start md:items-center content-center border-t border-offWhite md:border-none pt-4 md:pt-0">
                <IconCopyright className="w-5 h-full text-offWhite inline-block self-start" />
-               <span>
+               <span className="text-base">
                   Designed in{" "}
-                  <a className="text-grey" target="_blank" href="https://www.figma.com/">
+                  <a className="text-base text-grey" target="_blank" href="https://www.figma.com/">
                      Figma
                   </a>
                   , coded with{" "}
-                  <a className="text-grey" target="_blank" href="https://www.gatsbyjs.com/">
+                  <a className="text-base text-grey" target="_blank" href="https://www.gatsbyjs.com/">
                      Gatsby{" "}
                   </a>
                   and{" "}
-                  <a className="text-grey" target="_blank" href="https://tailwindcss.com/">
+                  <a className="text-base text-grey" target="_blank" href="https://tailwindcss.com/">
                      Tailwindcss
                   </a>
                   . Deployed on{" "}
-                  <a className="text-grey" target="_blank" href="https://www.netlify.com/">
+                  <a className="text-base text-grey" target="_blank" href="https://www.netlify.com/">
                      Netlify
                   </a>
                </span>
             </div>
 
-            <ul className="col-start-1 md:col-start-8 col-end-17 flex justify-between items-start mb-10 md:mb-0">
+            <ul className="col-start-1 md:col-start-9 col-end-17 flex justify-between items-start mb-10 md:mb-0">
                {footerItems.map((listItem, i) => (
                   <li key={i}>
                      <a

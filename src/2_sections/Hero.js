@@ -10,7 +10,7 @@ const strings = {
 function Hero() {
    const location = useLocation()
    return (
-      <section className="relative w-full pt-32 md:pt-64 spacing-bottom text-center xl:mb-24">
+      <section className="relative w-full pt-32 md:pt-64 md:spacing-bottom text-center xl:mb-24">
          <div>
             <span className="absolute inset-0 bg-ImageBg bg-auto w-full h-full" style={{ opacity: "6%" }}></span>
             <span
