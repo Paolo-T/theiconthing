@@ -27,7 +27,7 @@ module.exports = {
             googleAnalytics: {
                trackingId: "UA-80068675-1", // leave empty if you want to disable the tracker
                cookieName: "gatsby-gdpr-google-analytics", // default
-               anonymize: false, // default
+               anonymize: true, // default
                allowAdFeatures: false, // default
             },
             hotjar: {
@@ -52,7 +52,7 @@ module.exports = {
          options: {
             // You can add multiple tracking ids and a pageview event will be fired for all of them.
             trackingIds: [
-               "G-LLSGBHM1M0", // Google Analytics / GA4
+               "G-BD727L80D5", // Google Analytics / GA4
                // "UA-80068675-1", // Google Analytics / GA
             ],
             // This object gets passed directly to the gtag config command
