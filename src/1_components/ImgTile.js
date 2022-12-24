@@ -60,7 +60,7 @@ function ImgTile({
                   {titleSmall ? (
                      <h4 className={`my-2 md:mb-2 uppercase ${!isLocked && "group-hover:underlined"}`}>{title}</h4>
                   ) : (
-                     <h2 className={`mb-3 md:mb-4 uppercase ${!isLocked && "group-hover:underlined"}`}>{title}</h2>
+                     <h2 className={` uppercase ${!isLocked && "group-hover:underlined"}`}>{title}</h2>
                   )}
                   {isLocked && (
                      <div className="mb-3 text-secondary">
