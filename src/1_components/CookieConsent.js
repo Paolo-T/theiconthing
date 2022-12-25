@@ -47,12 +47,12 @@ const CookieConsent = () => {
 
    return (
       <>
-         {!bannerHidden && (
-            <div className="z-50 w-full 2xl:w-auto bottom-0 left-1/2 -translate-x-1/2 backdrop-blur-sm bg-dark/70 text-center fixed pt-3 pb-6 md:py-2.5 px-4 md:px-6 rounded-t-md text-sm md:text-base leading-less">
+         {bannerHidden && (
+            <div className="z-50 w-full bottom-0 left-1/2 -translate-x-1/2 backdrop-blur-sm bg-dark/70 text-center fixed pt-3 pb-6 md:py-2.5 px-4 md:px-6 rounded-t-md text-sm md:text-base leading-less">
                <div className="flex flex-col md:flex-row space-y-2 md:space-x-2 justify-center items-center">
                   <CookieIcon className="w-6 h-6" />
                   <span className="font-sans text-sm md:text-base leading-some">
-                     I use cookies to improve your experience on this website.
+                     Help me improve your experience on this website by accepting some cookies.
                   </span>
                   <div>
                      <Button
@@ -61,16 +61,16 @@ const CookieConsent = () => {
                         noBorder={true}
                         labelSmall={true}
                         underlined={true}
-                        customClass={"primary-text-hover"}
+                        customClass={"text-grey primary-text-hover"}
                      />
-                     <span className="px-1 "> – </span>
+                     <span className="px-1 "> / </span>
                      <Button
                         label="I'm ok with cookies"
                         onClick={EnableAnalytics}
                         noBorder={true}
                         labelSmall={true}
                         underlined={true}
-                        customClass={"text-green-400 primary-text-hover"}
+                        customClass={"primary-text-hover"}
                      />
                   </div>
                </div>
