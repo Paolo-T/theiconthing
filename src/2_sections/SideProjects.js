@@ -90,7 +90,7 @@ function SideProjects() {
    return (
       <section className="w-full xl:grid grid-cols-16 grid-gap spacing-bottom">
          <div className="col-start-1 md:col-end-17 lg:col-end-14 text-right">
-            <h2>Side projects</h2>
+            <h2 className="pb-3">Side projects</h2>
             <div className="grid sm:grid-cols-2 grid-gap">
                {tilesData.map((tile, i) => (
                   <ImgTile
