@@ -57,7 +57,7 @@ function Reccomendations() {
 
    return (
       <section className="grid grid-cols-16 md:grid-gap spacing-top spacing-bottom">
-         <div className="col-start-1 col-end-17 md:col-start-3 lg:col-end-16 mb-6 md:mb-0 text-center md:text-left">
+         <div className="col-start-1 col-end-17 xl:col-start-3 xl:col-end-16 mb-6 md:mb-0 text-center md:text-left">
             <h2 className="mb-2">Kind recommendations</h2>
             <p>From amazingly talented humans</p>
          </div>
