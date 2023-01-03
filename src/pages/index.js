@@ -1,11 +1,11 @@
 import React from "react"
 import SEO from "../1_components/Seo"
-import Hero from "../2_sections/Hero"
-import ProjectsTiles from "../2_sections/ProjectsTiles"
-import About from "../2_sections/About"
-import SideProjects from "../2_sections/SideProjects"
-import Recommendations from "../2_sections/Recommendations"
-import Contact from "../2_sections/Contact"
+import Hero from "../1_sections/Hero"
+import ProjectsTiles from "../1_sections/ProjectsTiles"
+import About from "../1_sections/About"
+import SideProjects from "../1_sections/SideProjects"
+import Recommendations from "../1_sections/Recommendations"
+import Contact from "../1_sections/Contact"
 import TransitionInview from "../1_components/TransitionInview"
 
 function Home() {

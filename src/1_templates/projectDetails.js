@@ -3,7 +3,7 @@ import SEO from "../1_components/Seo"
 import { graphql } from "gatsby"
 import TransitionPageIn from "../1_components/TransitionPageIn"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import ProjectsTiles from "../2_sections/ProjectsTiles"
+import ProjectsTiles from "../1_sections/ProjectsTiles"
 import Loader from "../1_components/Loader"
 
 export const data = graphql`
@@ -71,7 +71,9 @@ export const data = graphql`
       }
    }
 `
-
+{
+   console.log(data)
+}
 export default function ProjectDetails({ data }) {
    const { title, subtitle } = data.projectDataJson.hero
    const heroImg =

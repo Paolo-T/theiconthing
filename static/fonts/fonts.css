@@ -7,13 +7,3 @@
    font-family: "Gilroy_regular";
    src: url("gilroy/Gilroy-Regular.woff");
 }
-
-@font-face {
-   font-family: "Jakarta_sans_body";
-   src: url("jakarta-sans/PlusJakartaSans-Regular.woff2");
-}
-
-@font-face {
-   font-family: "Garamond_regular";
-   src: url("Cormorant-Garamond/CormorantGaramond-Regular.ttf");
-}

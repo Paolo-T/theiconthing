@@ -86,7 +86,7 @@ module.exports = {
             background_color: fullConfig.theme.colors.white,
             theme_color: fullConfig.theme.colors.white,
             display: `minimal-ui`,
-            icon: `src/icons/logo.svg`,
+            icon: `${__dirname}/src/icons/logo.svg`,
          },
       },
       {
@@ -102,14 +102,14 @@ module.exports = {
       {
          resolve: `gatsby-plugin-layout`,
          options: {
-            component: require.resolve(`./src/3_layouts/index.js`),
+            component: require.resolve(`./src/1_layouts/index.js`),
          },
       },
       {
          resolve: `gatsby-source-filesystem`,
          options: {
             name: `projectData`,
-            path: `src/projectData/`,
+            path: `${__dirname}/src/projectData/`,
          },
       },
       {
@@ -123,7 +123,7 @@ module.exports = {
          resolve: "gatsby-plugin-web-font-loader",
          options: {
             custom: {
-               families: ["Garamond_regular", "Gilroy_regular", "Gilroy_semibold", "Gilroy_regular"],
+               families: ["Gilroy_regular", "Gilroy_semibold"],
                urls: ["/fonts/fonts.css"],
             },
          },
