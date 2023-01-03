@@ -7,7 +7,7 @@ module.exports = {
       title: `Paolo Todde | Product Designer | Coder`,
       siteUrl: `https://todde.design`,
       description: `UI/product designer Specialising in human-centric user experience. Tailored pixel perfect design solutions.\n\nPassionate advocate for visual communication and great user experience. I collaborate with teams in order to design high quality, accessible interfaces that are human-focused.\n\nDedicated in assisting people in achieving their online goals.`,
-      author: `Paolo Todde`,
+      author: `Paolo Todde | Product Designer | Coder`,
       twitterImage: `/images/social/twitter-preview.png`,
       metaOgImage: `/images/social/og-preview.png`,
    },
@@ -102,7 +102,7 @@ module.exports = {
       {
          resolve: `gatsby-plugin-layout`,
          options: {
-            component: require.resolve(`./src/1_layouts/index.js`),
+            component: require.resolve(`${__dirname}/src/3_layouts/index.js`),
          },
       },
       {

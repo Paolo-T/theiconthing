@@ -26,7 +26,7 @@ exports.createPages = async ({ graphql, actions: { createPage }, reporter }) => 
    data.allProjectDataJson.edges.forEach((edge) => {
       createPage({
          path: "/projects/" + edge.node.slug,
-         component: path.resolve(`./src/1_templates/projectDetails.js`),
+         component: path.resolve(`./src/4_templates/projectDetails.js`),
          //In your blog post template's graphql query, you can use pagePath
          // as a GraphQL variable to query for data from the markdown file.
          context: { slug: edge.node.slug },
