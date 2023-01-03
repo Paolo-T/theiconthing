@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import TransitionPageIn from "../1_components/TransitionPageIn"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import ProjectsTiles from "../1_sections/ProjectsTiles"
-import Loader from "../1_components/Loader"
+// import Loader from "../1_components/Loader"
 
 export const data = graphql`
    query($slug: String!) {
@@ -253,7 +253,7 @@ export default function ProjectDetails({ data }) {
                      {Array.isArray(gallery) &&
                         gallery.map((image, i) => (
                            <div key={i} className="mb-3 md:mb-7">
-                              <Loader />
+                              {/* <Loader /> */}
                               <GatsbyImage
                                  key={i}
                                  image={image.childImageSharp.gatsbyImageData}
