@@ -2,7 +2,7 @@ import React from "react"
 import { useLocation } from "@reach/router"
 import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
 import CookieIcon from "../icons/cookie.svg"
-import Button from "./Button"
+import Link from "./Linker"
 
 function isBrowser() {
    return typeof window !== "undefined"
@@ -55,7 +55,7 @@ const CookieConsent = () => {
                      Help me improve your experience on this website by accepting some cookies.
                   </span>
                   <div>
-                     <Button
+                     <Link
                         label="Not today"
                         onClick={CloseBanner}
                         noBorder={true}
@@ -64,7 +64,7 @@ const CookieConsent = () => {
                         customClass={"text-grey primary-text-hover"}
                      />
                      <span className="px-1 "> / </span>
-                     <Button
+                     <Link
                         label="I'm ok with cookies"
                         onClick={EnableAnalytics}
                         noBorder={true}

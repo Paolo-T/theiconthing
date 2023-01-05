@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import IconLock from "../icons/lock.svg"
-import Button from "./Button"
+import Linker from "./Linker"
 
 function ImgTile({
    id,
@@ -19,6 +19,7 @@ function ImgTile({
    isLocked,
    isHorizontal,
    classes,
+   tabIndex,
 }) {
    const imgHoverMotion =
       '"transition duration-500 transform cursor-pointer group-hover:scale-[1.025] group-hover:rotate-[0.7deg] "'
@@ -75,7 +76,7 @@ function ImgTile({
 
                {isLocked ||
                   (cta && (
-                     <Button label={cta} customClass={"hidden xl:inline-block mt-7"} href={hRef} linkTo={linkTo} />
+                     <Linker label={cta} customClass={"hidden xl:inline-block mt-7"} href={hRef} linkTo={linkTo} />
                   ))}
             </div>
          )}
