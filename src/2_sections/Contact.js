@@ -24,7 +24,7 @@ function Contact() {
                      target="_blank"
                      href="https://www.linkedin.com/in/paolo-todde/"
                   >
-                     <IconLinkedin />
+                     <IconLinkedin alt="link to LinkedIn profile" />
                   </a>
                   {/* <a
                      className="dark-text-hover"
@@ -40,7 +40,7 @@ function Contact() {
                      target="_blank"
                      href="https://www.instagram.com/paolo__todde/"
                   >
-                     <IconInstagram />
+                     <IconInstagram alt="link to Instagram profile" />
                   </a>
                   <a
                      className="dark-text-hover"
@@ -48,7 +48,7 @@ function Contact() {
                      target="_blank"
                      href="mailto:iampaolotodde@gmail.com"
                   >
-                     <IconMail />
+                     <IconMail alt="Send me an email" />
                   </a>
                </div>
             </div>
