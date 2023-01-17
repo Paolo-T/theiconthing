@@ -69,14 +69,14 @@ module.exports = {
          },
       },
 
-      // {
-      //    resolve: `gatsby-plugin-hotjar`,
-      //    options: {
-      //       includeInDevelopment: false, // optional parameter to include script in development
-      //       id: 2084246,
-      //       sv: 6,
-      //    },
-      // },
+      {
+         resolve: `gatsby-plugin-hotjar`,
+         options: {
+            includeInDevelopment: false, // optional parameter to include script in development
+            id: 2084246,
+            sv: 6,
+         },
+      },
       {
          resolve: `gatsby-plugin-manifest`,
          options: {

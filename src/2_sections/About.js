@@ -42,11 +42,17 @@ function About() {
                <div className="flex-1 md:pl-20 mt-0">
                   <h2 className="text-primary uppercase">Hey there, Welcome!</h2>
                   <p>
-                     I'm Paolo, a UI/product designer Specialising in human-centric user experience. Tailored pixel
-                     perfect design solutions.<br></br>
-                     <br></br>Passionate advocate for visual communication and great user experience. I collaborate with
-                     teams in order to design high quality, accessible interfaces that are human-focused.<br></br>
-                     <br></br>Dedicated in assisting people in achieving their online goals.<br></br>
+                     I'm Paolo, skilled digital product designer with a focus on UI design. I have a strong
+                     understanding of user-centered design principles and am able to create intuitive and visually
+                     appealing interfaces that are easy to use and understand. Proficient in various design tools such
+                     as Figma, Sketch, and Adobe XD, and have experience working on both web and mobile applications.
+                     <br></br>Well-versed in responsive design, ensuring that the user experience is consistent across
+                     different devices. I am a a strong collaborator and enjoy working with cross-functional teams and
+                     am able to effectively communicate my design decisions and rationale to stakeholders.<br></br>
+                     Always looking for ways to improve the user experience and am constantly staying up-to-date with
+                     the latest design trends and best practices.<br></br>Dedicated in assisting people in achieving
+                     their online goals.
+                     <br></br>
                      <br></br>Currently designing with&nbsp;
                      <a
                         className="cursor-pointer underlined hover:text-grey transition duration-300"
