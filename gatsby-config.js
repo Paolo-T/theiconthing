@@ -30,14 +30,6 @@ module.exports = {
                anonymize: true, // default
                allowAdFeatures: false, // default
             },
-            hotjar: {
-               hjid: "2084246",
-               hjsv: "6",
-               cookieName: "gatsby-gdpr-hotjar", // default
-
-               // defines the environments where the tracking should be available  - default is ["production"]
-               environments: ["production", "development"],
-            },
             reactGaOptions: {
                debug: false,
                gaOptions: {
@@ -53,7 +45,7 @@ module.exports = {
             // You can add multiple tracking ids and a pageview event will be fired for all of them.
             trackingIds: [
                "G-BD727L80D5", // Google Analytics / GA4
-               // "UA-80068675-1", // Google Analytics / GA
+               "UA-80068675-1", // Google Analytics / GA
             ],
             // This object gets passed directly to the gtag config command
             // This config will be shared across all trackingIds

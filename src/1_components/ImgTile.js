@@ -59,9 +59,9 @@ function ImgTile({
             >
                <div className="flex-1">
                   {titleSmall ? (
-                     <h4 className={`my-2 md:mb-2 uppercase ${!isLocked && "group-hover:underlined"}`}>{title}</h4>
+                     <h4 className="my-2 md:mb-2 uppercase">{title}</h4>
                   ) : (
-                     <h2 className={` uppercase ${!isLocked && "group-hover:underlined"}`}>{title}</h2>
+                     <h2 className="uppercase">{title}</h2>
                   )}
                   {isLocked && (
                      <div className="mb-3 text-secondary">
@@ -76,7 +76,12 @@ function ImgTile({
 
                {isLocked ||
                   (cta && (
-                     <Linker label={cta} customClass={"hidden xl:inline-block mt-7"} href={hRef} linkTo={linkTo} />
+                     <Linker
+                        label={cta}
+                        customClass={"hidden xl:inline-block mt-7 group-hover:border-primary group-hover:text-primary"}
+                        href={hRef}
+                        linkTo={linkTo}
+                     />
                   ))}
             </div>
          )}

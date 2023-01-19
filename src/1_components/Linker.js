@@ -12,7 +12,7 @@ function Linker({ linkTo, href, onClick, label, labelSmall, underlined, noBorder
                href={href && href}
                onClick={onClick && onClick}
                className={`bg-transparent text-center text-offWhite
-               ${!noBorder && "border border-offWhite hover:border-primary py-1 px-6"}
+               ${!noBorder && "border border-offWhite py-1 px-6"}
                dark-text-hover
                lg:text-2xl xl:text-2xl 2xl:text-2xl font-normal
                ${customClass}`}
@@ -33,7 +33,7 @@ function Linker({ linkTo, href, onClick, label, labelSmall, underlined, noBorder
                to={linkTo && linkTo}
                onClick={onClick && onClick}
                className={`bg-transparent text-center text-offWhite
-               ${!noBorder && "border border-offWhite hover:border-primary py-1.5 px-6"}
+               ${!noBorder && "border border-offWhite py-1.5 px-6"}
                dark-text-hover lg:text-2xl xl:text-2xl 2xl:text-2xl font-normal
                ${customClass}`}
             >

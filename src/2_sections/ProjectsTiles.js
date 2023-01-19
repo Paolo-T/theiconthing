@@ -92,20 +92,20 @@ function ImgTiles({ isPageNav }) {
          isExternal: false,
          isLocked: false,
       },
-      {
-         id: data.theEcoExpertsImg.id,
-         title: "The eco experts",
-         description:
-            "Find out how much you’d pay for different home improvements, how much they’d save you and the climate over their lifespan, and which company makes the best.",
+      // {
+      //    id: data.theEcoExpertsImg.id,
+      //    title: "The eco experts",
+      //    description:
+      //       "Find out how much you’d pay for different home improvements, how much they’d save you and the climate over their lifespan, and which company makes the best.",
 
-         img: data.theEcoExpertsImg.childImageSharp.gatsbyImageData,
-         imgAlt: "DIY tool rental",
-         linkTo: "/projects/theecoexperts",
-         hRef: false,
-         cta: "View",
-         isExternal: false,
-         isLocked: true,
-      },
+      //    img: data.theEcoExpertsImg.childImageSharp.gatsbyImageData,
+      //    imgAlt: "DIY tool rental",
+      //    linkTo: "/projects/theecoexperts",
+      //    hRef: false,
+      //    cta: "View",
+      //    isExternal: false,
+      //    isLocked: true,
+      // },
       {
          id: data.shuushImg.id,
          title: "Shuush",

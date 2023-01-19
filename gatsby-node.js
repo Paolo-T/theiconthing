@@ -31,7 +31,6 @@ exports.createPages = async ({ graphql, actions: { createPage }, reporter }) => 
       } else if (edge.node.template === "article") {
          templatePath = path.resolve(`./src/4_templates/articleDetails.js`)
       }
-
       createPage({
          path: edge.node.slug,
          component: templatePath,
