@@ -44,9 +44,9 @@ function About() {
                   <p>
                      I'm Paolo, skilled digital product designer with a focus on UI design.<br></br>Dedicated in
                      assisting people in achieving their online goals.<br></br>With a strong understanding of
-                     user-centered design principles and am able to create intuitive and visually appealing interfaces
+                     user-centered design principles I am able to create intuitive and visually appealing interfaces
                      that are easy to use and understand on both web and mobile.
-                     <br></br>I am a a strong collaborator and enjoy working with cross-functional teams and am able to
+                     <br></br>I am a strong collaborator and enjoy working with cross-functional teams and am able to
                      effectively communicate my design decisions and rationale to stakeholders.<br></br>
                      <br></br>
                      <br></br>Currently designing with&nbsp;

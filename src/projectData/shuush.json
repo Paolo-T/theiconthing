@@ -10,11 +10,11 @@
          "id": "section-1",
          "aside": {
             "title": "Concept",
-            "list": ["Product design", "UX/UI"]
+            "list": ["UX/UI", "Product design"]
          },
          "main": {
-            "title": "Exploration",
-            "body": "Concept design exploration for a minimalistic mesaging app. Designd to eliminate all the superfluous clutter and present only the eesential functional features."
+            "title": "Description",
+            "body": "Introducing Shuush!, a messaging app designed for simplicity and ease of use. My app concept features a clean and uncluttered interface, allowing users to focus on their conversations without distractions.\n\nUsers can easily create and join group chats, send and receive text messages, and share photos and videos. Our app also includes a built-in search function, making it easy to find and re-visit past conversations. Shuush! does not include any unnecessary features or complicated settings, making it perfect for those who value a streamlined and uncomplicated messaging experience. Download Shuush! today and start chatting with ease."
          }
       }
    ],

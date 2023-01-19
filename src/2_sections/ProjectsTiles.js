@@ -109,8 +109,7 @@ function ImgTiles({ isPageNav }) {
       {
          id: data.shuushImg.id,
          title: "Shuush",
-         description:
-            " exploration for a minimalistic mesaging app. Designd to eliminate all the superfluous clutter and present only the eesential functional features.",
+         description: "Introducing Shuush!, a messaging app designed for simplicity and ease of use.",
          img: data.shuushImg.childImageSharp.gatsbyImageData,
          imgAlt: "Shuush app presentation",
          linkTo: "/projects/shuush",
