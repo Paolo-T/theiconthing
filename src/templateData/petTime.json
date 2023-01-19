@@ -1,5 +1,6 @@
 {
-   "slug": "pet-time",
+   "slug": "/project/pet-time",
+   "template": "work",
    "hero": {
       "title": "Pet Time",
       "subtitle": "Pet management app concept design",

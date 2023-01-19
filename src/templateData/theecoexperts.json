@@ -1,5 +1,6 @@
 {
-   "slug": "theecoexperts",
+   "slug": "/project/theecoexperts",
+   "template": "work",
    "hero": {
       "title": "The Eco Experts",
       "subtitle": "Home page redesign",

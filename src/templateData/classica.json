@@ -1,5 +1,6 @@
 {
-   "slug": "classica",
+   "slug": "/project/classica",
+   "template": "work",
    "hero": {
       "title": "Classica",
       "subtitle": "Classical music app concept design",

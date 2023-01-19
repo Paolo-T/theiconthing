@@ -1,5 +1,6 @@
 {
-   "slug": "homely",
+   "slug": "/project/homely",
+   "template": "work",
    "hero": {
       "title": "Homely",
       "subtitle": "DIY Tool rental concept design",

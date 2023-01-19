@@ -1,5 +1,6 @@
 {
-   "slug": "shuush",
+   "slug": "/project/shuush",
+   "template": "work",
    "hero": {
       "title": "Shuush!",
       "subtitle": "Minimalist messaging app concept design",

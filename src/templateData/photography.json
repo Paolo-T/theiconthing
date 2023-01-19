@@ -1,5 +1,6 @@
 {
-   "slug": "photo",
+   "slug": "/project/photo",
+   "template": "work",
    "hero": {
       "title": "People in places"
    },

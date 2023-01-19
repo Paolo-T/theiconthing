@@ -6,10 +6,11 @@ exports.createPages = async ({ graphql, actions: { createPage }, reporter }) => 
    // Query for markdown nodes to use in creating pages.
    const { data } = await graphql(`
       query data {
-         allProjectDataJson {
+         allTemplateDataJson {
             edges {
                node {
                   slug
+                  template
                }
             }
          }
@@ -23,10 +24,17 @@ exports.createPages = async ({ graphql, actions: { createPage }, reporter }) => 
    }
 
    // Create pages for each markdown file.
-   data.allProjectDataJson.edges.forEach((edge) => {
+   data.allTemplateDataJson.edges.forEach((edge) => {
+      let templatePath
+      if (edge.node.template === "work") {
+         templatePath = path.resolve(`./src/4_templates/workDetails.js`)
+      } else if (edge.node.template === "article") {
+         templatePath = path.resolve(`./src/4_templates/articleDetails.js`)
+      }
+
       createPage({
-         path: "/projects/" + edge.node.slug,
-         component: path.resolve(`./src/4_templates/projectDetails.js`),
+         path: edge.node.slug,
+         component: templatePath,
          //In your blog post template's graphql query, you can use pagePath
          // as a GraphQL variable to query for data from the markdown file.
          context: { slug: edge.node.slug },

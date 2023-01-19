@@ -8,7 +8,7 @@ import ProjectsTiles from "../2_sections/ProjectsTiles"
 
 export const data = graphql`
    query($slug: String!) {
-      projectDataJson(slug: { eq: $slug }) {
+      templateDataJson(slug: { eq: $slug }) {
          slug
          hero {
             subtitle
@@ -71,20 +71,18 @@ export const data = graphql`
       }
    }
 `
-{
-   console.log(data)
-}
-export default function ProjectDetails({ data }) {
-   const { title, subtitle } = data.projectDataJson.hero
+
+export default function articletDetails({ data }) {
+   const { title, subtitle } = data.templateDataJson.hero
    const heroImg =
-      data.projectDataJson.hero.heroImg && getImage(data.projectDataJson.hero.heroImg.childImageSharp.gatsbyImageData)
-   const content_1 = data.projectDataJson.content_1
-   const contentImg_1 = data.projectDataJson.contentImg_1
-   const contentListist = data.projectDataJson.contentList
-   const content_2 = data.projectDataJson.content_2
-   const contentImg_2 = data.projectDataJson.contentImg_2
-   const contentImg_3 = data.projectDataJson.contentImg_3
-   const gallery = data.projectDataJson.gallery
+      data.templateDataJson.hero.heroImg && getImage(data.templateDataJson.hero.heroImg.childImageSharp.gatsbyImageData)
+   const content_1 = data.templateDataJson.content_1
+   const contentImg_1 = data.templateDataJson.contentImg_1
+   const contentListist = data.templateDataJson.contentList
+   const content_2 = data.templateDataJson.content_2
+   const contentImg_2 = data.templateDataJson.contentImg_2
+   const contentImg_3 = data.templateDataJson.contentImg_3
+   const gallery = data.templateDataJson.gallery
 
    return (
       <>
@@ -196,7 +194,7 @@ export default function ProjectDetails({ data }) {
                           key={i}
                           image={image.childImageSharp.gatsbyImageData}
                           className={`container grid col-span-12 mb-20 ${
-                             !data.projectDataJson.contentList.title && "mt-20"
+                             !data.templateDataJson.contentList.title && "mt-20"
                           }`}
                           alt={`${title} "presentation image"`}
                           loading="lazy"
