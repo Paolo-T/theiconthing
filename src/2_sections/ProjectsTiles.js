@@ -30,12 +30,6 @@ function ImgTiles({ isPageNav }) {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
-         brandwatchImg: file(relativePath: { eq: "brandwatch/brandwatch_tile.png" }) {
-            id
-            childImageSharp {
-               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
-            }
-         }
          homelyImg: file(relativePath: { eq: "homely/homely_tile.png" }) {
             id
             childImageSharp {
@@ -48,7 +42,7 @@ function ImgTiles({ isPageNav }) {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
-         mvfDesignSystemtImg: file(relativePath: { eq: "mvf/mvf_tile.png" }) {
+         mvfDesignSystemtImg: file(relativePath: { eq: "atomicDesign/atomic-design_tile.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)

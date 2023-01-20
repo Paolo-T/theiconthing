@@ -87,7 +87,7 @@
       @apply outline-none focus:ring focus:ring-primary  focus:outline-primary;
    }
 
-   .underlined {
+   .dark-text-hover {
       @apply underline underline-offset-7 decoration-2;
    }
 }
