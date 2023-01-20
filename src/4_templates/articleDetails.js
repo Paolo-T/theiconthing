@@ -81,7 +81,7 @@ export default function articletDetails({ data }) {
 
          <TransitionPageIn>
             {title && title.length ? (
-               <section className="container pt-32 sm:pt-32 md:pt-48 mb-0 md:mb-24">
+               <section className="container pt-32 sm:pt-32 md:pt-48 mb-6 md:mb-24">
                   <div className="page-header mb-6">
                      <h1 className="h1-page w-full text-dark">{title}</h1>
                      {subtitle ? <p className="text-xl md:text-2xl text-grey mb-2">{subtitle}</p> : null}
@@ -96,8 +96,8 @@ export default function articletDetails({ data }) {
 
             {/* Content list */}
             {contentListist.listItems && contentListist.listItems.length ? (
-               <section className="container mx-auto grid grid-cols-4 md:grid-cols-12 gap-y-6 md:gap-y-6 gap-x-0 pb-10 md:pb-24 text-dark">
-                  <h2 className="col-start-1 col-end-5 md:col-start-3 md:col-end-4 mb-0 md:mb-4 ">
+               <section className="container mx-auto grid grid-cols-4 md:grid-cols-12 gap-y-4 md:gap-y-6 gap-x-0 pb-10 md:pb-24 text-dark">
+                  <h2 className="hidden md:block col-start-1 col-end-5 md:col-start-3 md:col-end-4 mb-0 md:mb-4 ">
                      {contentListist.title}
                   </h2>
 
@@ -112,7 +112,7 @@ export default function articletDetails({ data }) {
                </section>
             ) : null}
 
-            <div className="container mx-auto grid grid-cols-4 md:grid-cols-12 mb-24">
+            <div className="container mx-auto grid grid-cols-4 md:grid-cols-12 mb-10 md:mb-24">
                <div className="md:col-start-5 md:col-end-8 flex items-baseline space-x-3 text-left text-dark">
                   <IconArrow className="rotate-90 text-primary" />
                   <Link
