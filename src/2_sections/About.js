@@ -25,10 +25,8 @@ function About() {
                <div className="relative col-span-12 w-6/12 sm:w-4/12 md:w-3/12 xl:w-3/12 h-1/2 mb-10">
                   <span
                      className="absolute h-full w-full rounded-full
-
                         bg-gradient-to-r from-offWhite/20 to-offWhite/60
-                        animate-pulse
-                        "
+                        animate-pulse"
                   ></span>
 
                   <GatsbyImage
