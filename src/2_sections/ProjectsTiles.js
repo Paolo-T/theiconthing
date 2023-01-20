@@ -171,6 +171,7 @@ function ImgTiles({ isPageNav }) {
             {tilesData.map((tile, i) => (
                <TransitionInview key={tile.id}>
                   <ImgTile
+                     classes={""}
                      id={i}
                      hRef={tile.hRef}
                      linkTo={tile.linkTo}
@@ -184,7 +185,7 @@ function ImgTiles({ isPageNav }) {
                      isExternal={tile.isExternal}
                      isLocked={tile.isLocked}
                      isHorizontal={true}
-                     classes={""}
+                     underlined={false}
                   />
                </TransitionInview>
             ))}
