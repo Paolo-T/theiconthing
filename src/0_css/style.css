@@ -35,7 +35,7 @@
    }
 
    a {
-      @apply font-sans text-base md:text-xl leading-7 md:leading-8 tracking-more;
+      @apply font-sans text-base md:text-xl leading-7 md:leading-8 tracking-more cursor-pointer;
    }
 
    span {
