@@ -23,7 +23,7 @@ function Footer() {
    return (
       <footer className="w-full text-offWhite bg-dark md:pt-10 pb-16 md:mt-0">
          <div className="container grid grid-cols-16 md:grid-gap">
-            <div className="order-last md:order-first col-start-1 col-end-17 md:col-end-8 flex space-x-1 items-start border-t border-offWhite md:border-none pt-4 md:pt-0">
+            <div className="order-last md:order-first col-start-1 col-end-17 md:col-end-8 flex space-x-1 items-center border-t border-offWhite md:border-none pt-4 md:pt-0">
                <div className="flex space-x-0.5 items-end">
                   <IconCopyright className="w-5 h-full text-offWhite inline-block" />
                   <span>{new Date().getFullYear()}. </span>
@@ -48,7 +48,7 @@ function Footer() {
                </span>
             </div>
 
-            <ul className="col-start-1 md:col-start-9 col-end-17 flex justify-between items-start mb-10 md:mb-0">
+            <ul className="col-start-1 md:col-start-9 col-end-17 flex justify-between items-center mb-10 md:mb-0">
                {footerItems.map((listItem, i) => (
                   <li key={i}>
                      <a
@@ -61,8 +61,8 @@ function Footer() {
                      </a>
                   </li>
                ))}
-               <li className="animate-bounce text-center dark-text-hover focus">
-                  <ScrollToTop showBelow="250" />
+               <li>
+                  <ScrollToTop showBelow="200" />
                </li>
             </ul>
          </div>
