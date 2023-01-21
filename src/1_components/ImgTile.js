@@ -21,8 +21,7 @@ function ImgTile({
    classes,
    tabIndex,
 }) {
-   const imgHoverMotion =
-      '"transition duration-500 transform cursor-pointer group-hover:scale-[1.025] group-hover:rotate-[0.7deg] "'
+   const imgHoverMotion = '"transition duration-500 transform group-hover:scale-[1.025] group-hover:rotate-[0.7deg]"'
    return (
       <div
          className={`group ${
@@ -33,10 +32,10 @@ function ImgTile({
          <div
             className={`${
                !isPageNav ? "h-auto col-start-1 col-end-14 rounded-xl overflow-hidden" : ""
-            } overflow-hidden focus:`}
+            } overflow-hidden`}
          >
             {linkTo && (
-               <Link to={isLocked ? "#0" : linkTo} className="cursor-default">
+               <Link to={isLocked ? "#0" : linkTo}>
                   <div className="group">
                      <GatsbyImage className={!isLocked && imgHoverMotion} image={img} alt={imgAlt} loading={"eager"} />
                   </div>

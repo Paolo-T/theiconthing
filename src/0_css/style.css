@@ -35,7 +35,7 @@
    }
 
    a {
-      @apply font-sans text-base md:text-xl leading-7 md:leading-8 tracking-more cursor-pointer;
+      @apply font-sans text-base md:text-xl leading-7 md:leading-8 tracking-more;
    }
 
    span {
@@ -61,7 +61,7 @@
    }
 
    .dark-text-hover {
-      @apply hover:text-primary transition duration-200 ease-in-out cursor-pointer;
+      @apply hover:text-primary transition duration-200 ease-in-out;
    }
 
    .primary-text-hover {

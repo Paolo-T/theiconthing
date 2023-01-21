@@ -49,7 +49,7 @@ function About() {
                      <br></br>
                      <br></br>Currently designing with&nbsp;
                      <a
-                        className="cursor-pointer underlined hover:text-grey transition duration-300"
+                        className="underlined hover:text-grey transition duration-300"
                         rel="noopener noreferrer"
                         href="https://www.johnlewis.com/"
                         target="_blank"
@@ -58,7 +58,7 @@ function About() {
                      </a>
                      &nbsp;and&nbsp; jury member at&nbsp;
                      <a
-                        className="cursor-pointer underlined hover:text-grey transition duration-300"
+                        className="underlined hover:text-grey transition duration-300"
                         rel="noopener noreferrer"
                         href="https://www.cssdesignawards.com/"
                         target="_blank"
