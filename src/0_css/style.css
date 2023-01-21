@@ -47,6 +47,7 @@
    .h1-page {
       @apply font-header tracking-normal font-bold text-4xl md:text-5xl lg:text-6xl mb-1 md:mb-3;
    }
+
    .container {
       @apply w-[90%] max-w-screen-3xl mx-auto;
    }
@@ -60,7 +61,7 @@
    }
 
    .dark-text-hover {
-      @apply hover:text-primary transition duration-200 ease-in-out;
+      @apply hover:text-primary transition duration-200 ease-in-out cursor-pointer;
    }
 
    .primary-text-hover {
@@ -85,9 +86,5 @@
 
    .focus {
       @apply outline-none focus:ring focus:ring-primary  focus:outline-primary;
-   }
-
-   .dark-text-hover {
-      @apply underline underline-offset-7 decoration-2;
    }
 }

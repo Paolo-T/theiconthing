@@ -2,28 +2,16 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import ImgTile from "../1_components/ImgTile"
 
-function SideProjects() {
+function Articles() {
    const images = useStaticQuery(graphql`
-      query sideProjects {
-         digitalArtImg: file(relativePath: { eq: "about/digitalArt_tile.png" }) {
+      query articles {
+         atomicDesignImg: file(relativePath: { eq: "articleAtomicDesign/atomic-design_tile.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
-         digitalArt2Img: file(relativePath: { eq: "about/digitalArt_2_tile.png" }) {
-            id
-            childImageSharp {
-               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
-            }
-         }
-         threeImg: file(relativePath: { eq: "3dc/3dc_tile.png" }) {
-            id
-            childImageSharp {
-               gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
-            }
-         }
-         photographytImg: file(relativePath: { eq: "about/photography_tile.png" }) {
+         userCentredImg: file(relativePath: { eq: "articleUserCentric/user-centric_tile.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
@@ -35,37 +23,11 @@ function SideProjects() {
    const tilesData = [
       {
          id: "",
-         title: "Artwork on Instagram",
+         title: "User-centred design",
          description: "",
-         img: images.digitalArtImg.childImageSharp.gatsbyImageData,
-         imgAlt: "Artwork",
-         linkTo: false,
-         hRef: "https://www.instagram.com/paolo__todde/",
-         cta: null,
-         isExternal: true,
-         isLocked: false,
-         isPageNav: false,
-      },
-      {
-         id: "",
-         title: "Artwork on Behance",
-         description: "",
-         img: images.digitalArt2Img.childImageSharp.gatsbyImageData,
-         imgAlt: "Artwork",
-         linkTo: false,
-         hRef: "https://www.behance.net/paolotodde_art",
-         cta: null,
-         isExternal: true,
-         isLocked: false,
-         isPageNav: false,
-      },
-      {
-         id: "",
-         title: "3dc",
-         description: "",
-         img: images.threeImg.childImageSharp.gatsbyImageData,
-         imgAlt: "Artwork",
-         linkTo: "project/3dc/",
+         img: images.userCentredImg.childImageSharp.gatsbyImageData,
+         imgAlt: "Image reppresenting user-centred design",
+         linkTo: "article/user-centred-design/",
          hRef: null,
          cta: null,
          isExternal: false,
@@ -74,12 +36,12 @@ function SideProjects() {
       },
       {
          id: "",
-         title: "Photography",
+         title: "Atomic design",
          description: "",
-         img: images.photographytImg.childImageSharp.gatsbyImageData,
-         imgAlt: "Artwork",
-         linkTo: "project/photo/",
-         hRef: "https://www.instagram.com/paolo__todde/",
+         img: images.atomicDesignImg.childImageSharp.gatsbyImageData,
+         imgAlt: "Image reppresenting atomic design",
+         linkTo: "article/atomic-design/",
+         hRef: null,
          cta: null,
          isExternal: false,
          isLocked: false,
@@ -90,7 +52,7 @@ function SideProjects() {
    return (
       <section className="w-full xl:grid grid-cols-16 grid-gap spacing-bottom">
          <div className="col-start-1 md:col-end-17 lg:col-end-14">
-            <h2 className="pb-3">Side projects</h2>
+            <h2 className="pb-3">What methodologies do I use?</h2>
             <div className="grid sm:grid-cols-2 grid-gap">
                {tilesData.map((tile, i) => (
                   <ImgTile
@@ -117,4 +79,4 @@ function SideProjects() {
    )
 }
 
-export default SideProjects
+export default Articles

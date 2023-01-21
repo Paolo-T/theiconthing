@@ -59,7 +59,7 @@ function ImgTile({
             >
                <div className="flex-1">
                   {titleSmall ? (
-                     <h4 className="my-2 md:mb-2 uppercase">{title}</h4>
+                     <h4 className="my-2 md:mb-2 uppercase group-hover:text-primary">{title}</h4>
                   ) : (
                      <h2 className="uppercase">{title}</h2>
                   )}

@@ -4,6 +4,7 @@ import Hero from "../2_sections/Hero"
 import ProjectsTiles from "../2_sections/ProjectsTiles"
 import About from "../2_sections/About"
 import SideProjects from "../2_sections/SideProjects"
+import Articles from "../2_sections/Articles"
 import Recommendations from "../2_sections/Recommendations"
 import Contact from "../2_sections/Contact"
 import TransitionInview from "../1_components/TransitionInview"
@@ -51,9 +52,10 @@ function Home() {
                   <ProjectsTiles />
                </TransitionInview>
                <About />
-               <SideProjects />
+               <Articles />
                <Recommendations />
                <Contact />
+               <SideProjects />
             </div>
          </div>
       </>

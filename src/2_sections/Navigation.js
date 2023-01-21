@@ -33,8 +33,8 @@ function Navigation() {
                {navItems.map((item, i) => (
                   <Link to={item.to} key={i} className="dark-text-hover">
                      <p
-                        className={`text-xs md:text-base lg:text-base 2lg:text-lg font-bold uppercase ${
-                           homePage ? "text-offWhite" : "text-dark dark-text-hover"
+                        className={`text-xs md:text-base lg:text-base 2lg:text-lg font-bold uppercase dark-text-hover ${
+                           homePage ? "text-offWhite" : "text-dark"
                         }`}
                      >
                         {item.text}
