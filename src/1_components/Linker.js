@@ -31,7 +31,6 @@ function Linker({ linkTo, href, onClick, label, labelSmall, underlined, noBorder
                type="button"
                target="_blank"
                to={linkTo && linkTo}
-               scroll={true}
                onClick={onClick && onClick}
                className={`bg-transparent text-center text-offWhite
                ${!noBorder && "border border-offWhite py-1.5 px-6"}
