@@ -42,7 +42,7 @@ function ImgTiles({ isPageNav }) {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)
             }
          }
-         mvfDesignSystemtImg: file(relativePath: { eq: "articleAtomicDesign/atomic-design_tile.png" }) {
+         mvfDesignSystemtImg: file(relativePath: { eq: "mvfDesignSystem/mvfDesignSystem_tile.png" }) {
             id
             childImageSharp {
                gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP], quality: 100)

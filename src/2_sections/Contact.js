@@ -7,8 +7,8 @@ import IconMail from "../icons/mail.svg"
 function Contact() {
    return (
       <section id="contact" className="group spacing-top pb-20 md:pb-40">
-         <div className="xl:grid grid-cols-16 grid-gap">
-            <div className="col-start-6 md:col-end-12 lg:col-end-12 justify-center text-center">
+         <div className="grid grid-cols-12 grid-gap">
+            <div className="col-start-1 col-end-14 justify-center text-center">
                <h4 className="mb-4 uppercase">Say Hello</h4>
                <a rel="noopener noreferrer" target="_blank" href="mailto:iampaolotodde@gmail.com">
                   <h2 className="mb-8 md:mb-10 leading-normal">
@@ -17,7 +17,7 @@ function Contact() {
                   </h2>
                </a>
 
-               <div className="flex items-center justify-around">
+               <div className="w-1/2 mx-auto flex items-center justify-between">
                   <a
                      className="dark-text-hover"
                      rel="noopener noreferrer"
