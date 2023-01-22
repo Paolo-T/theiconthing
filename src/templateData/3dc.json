@@ -3,7 +3,7 @@
    "template": "work",
    "hero": {
       "title": "3DC",
-      "subtitle": "Visual identity exploration",
+      "subtitle": "This visual design exploration will focus on creating a cohesive and visually appealing aesthetic",
       "heroImg": "../images/3dc/3dc_tile.png"
    },
    "content_1": [],
@@ -13,10 +13,7 @@
       "../images/3dc/3dc_3.png",
       "../images/3dc/3dc_4.png"
    ],
-   "contentList": {
-      "title": "",
-      "listItems": []
-   },
+   "contentList": {},
    "contentImg_2": [],
    "content_2": [],
    "contentImg_3": []
