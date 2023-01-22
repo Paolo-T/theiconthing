@@ -4,7 +4,6 @@ import { graphql } from "gatsby"
 import TransitionPageIn from "../1_components/TransitionPageIn"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import ProjectsTiles from "../2_sections/ProjectsTiles"
-// import Loader from "../1_components/Loader"
 
 export const data = graphql`
    query($slug: String!) {
@@ -125,7 +124,7 @@ export default function workDetails({ data }) {
             {/* Hero */}
             <TransitionPageIn>
                {title && title.length ? (
-                  <section id="top" className="container pt-32 sm:pt-32 md:pt-48 mb-0 md:mb-24">
+                  <section className="container pt-32 sm:pt-32 md:pt-48 mb-0 md:mb-24">
                      <div className="page-header mb-6">
                         <h1 className="h1-page w-full text-dark">{title}</h1>
                         {subtitle ? <p className="text-xl md:text-2xl text-grey mb-2">{subtitle}</p> : null}

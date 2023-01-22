@@ -1,6 +1,6 @@
 import React from "react"
 import IconCopyright from "../icons/copyright.svg"
-import ScrollToTop from "../1_components/ScrollToTop"
+import ScrollToTopButton from "../1_components/ScrollToTopButton"
 // import IconArrow from "../icons/arrow.svg"
 
 function Footer() {
@@ -45,7 +45,7 @@ function Footer() {
                </span>
             </div>
 
-            <ul className="col-start-1 md:col-start-9 col-end-17 flex justify-between items-center mb-10 md:mb-0">
+            <ul className="col-start-1 md:col-start-9 col-end-17 flex justify-between items-center mb-6 md:mb-0 pt-6 md:pt-0">
                {footerItems.map((listItem, i) => (
                   <li key={i}>
                      <a
@@ -59,7 +59,7 @@ function Footer() {
                   </li>
                ))}
                <li>
-                  <ScrollToTop showBelow="200" />
+                  <ScrollToTopButton showBelow="200" />
                </li>
             </ul>
          </div>

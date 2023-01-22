@@ -15,38 +15,9 @@
    ],
    "contentList": {
       "title": "",
-      "listItems": [
-         {
-            "title": "",
-            "description": "."
-         },
-         {
-            "title": "",
-            "description": ""
-         },
-         {
-            "title": "",
-            "description": ""
-         },
-         {
-            "title": "",
-            "description": ""
-         }
-      ]
+      "listItems": []
    },
    "contentImg_2": [],
-   "content_2": [
-      {
-         "id": "",
-         "aside": {
-            "title": "",
-            "list": []
-         },
-         "main": {
-            "title": "",
-            "body": ""
-         }
-      }
-   ],
+   "content_2": [],
    "contentImg_3": []
 }
