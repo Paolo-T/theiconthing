@@ -21,7 +21,7 @@ function Footer() {
       },
    ]
    return (
-      <footer className="w-full text-offWhite bg-dark md:pt-10 pb-16 md:mt-0">
+      <footer className="w-full text-offWhite bg-dark pt-10 pb-10">
          <div className="container grid grid-cols-16 md:grid-gap">
             <div className="order-last md:order-first col-start-1 col-end-17 md:col-end-8 flex space-x-1 items-center border-t border-offWhite md:border-none pt-4 md:pt-0">
                <span className="text-base">
@@ -45,7 +45,7 @@ function Footer() {
                </span>
             </div>
 
-            <ul className="col-start-1 md:col-start-9 col-end-17 flex justify-between items-center mb-6 md:mb-0 pt-6 md:pt-0">
+            <ul className="col-start-1 md:col-start-9 col-end-17 flex justify-between items-center mb-6 md:mb-0">
                {footerItems.map((listItem, i) => (
                   <li key={i}>
                      <a
