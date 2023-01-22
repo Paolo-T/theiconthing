@@ -34,9 +34,9 @@ exports.createPages = async ({ graphql, actions: { createPage }, reporter }) => 
       createPage({
          path: edge.node.slug,
          component: templatePath,
+         context: { slug: edge.node.slug },
          //In your blog post template's graphql query, you can use pagePath
          // as a GraphQL variable to query for data from the markdown file.
-         context: { slug: edge.node.slug },
       })
    })
 }
