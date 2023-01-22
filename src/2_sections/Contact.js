@@ -17,7 +17,7 @@ function Contact() {
                   </h2>
                </a>
 
-               <div className="w-1/2 mx-auto flex items-center justify-between">
+               <div className="w-1/2 xl:w-1/4 mx-auto flex items-center justify-between">
                   <a
                      className="dark-text-hover"
                      rel="noopener noreferrer"
