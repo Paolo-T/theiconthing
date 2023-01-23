@@ -1,4 +1,3 @@
-const newLocal = "D4D0C9"
 module.exports = {
    content: ["./src/**/*.{html,js}"],
    presets: [],
