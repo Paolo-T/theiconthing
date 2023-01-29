@@ -3,6 +3,7 @@ import IconLinkedin from "../icons/linkedin.svg"
 // import IconTwitter from "../icons/twitter.svg"
 import IconInstagram from "../icons/instagram.svg"
 import IconMail from "../icons/mail.svg"
+import CopySVGButton from "../1_components/copySvgButton"
 
 function Contact() {
    return (
@@ -26,14 +27,15 @@ function Contact() {
                   >
                      <IconLinkedin alt="link to LinkedIn profile" />
                   </a>
-                  {/* <a
-                     className="dark-text-hover"
-                     rel="noopener noreferrer"
-                     target="_blank"
-                     href="https://twitter.com/roomzeroone"
-                  >
-                     <IconTwitter />
-                  </a> */}
+
+                  <CopySVGButton>
+                     <IconLinkedin alt="link to LinkedIn profile" icon={<IconMail alt="Send me an email" />} />
+                  </CopySVGButton>
+
+                  <a className="dark-text-hover" href="./icons/arrow.svg" download>
+                     <IconInstagram alt="Icon" />
+                  </a>
+
                   <a
                      className="dark-text-hover"
                      rel="noopener noreferrer"

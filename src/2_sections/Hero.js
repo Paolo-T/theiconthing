@@ -3,14 +3,14 @@ import { useLocation } from "@reach/router"
 import TransitionInview from "../1_components/TransitionInview"
 
 const strings = {
-   hero: "Human centred design solutions.",
-   subtitle: "UI | UX | Code",
+   hero: "The Icon thing collection",
+   subtitle: "Icons for all",
 }
 
 function Hero() {
    const location = useLocation()
    return (
-      <section className="relative w-full pt-32 md:pt-64 md:spacing-bottom text-center xl:mb-24">
+      <section className="bg-dark text-offWhite relative w-full pt-32 md:pt-64 md:spacing-bottom text-center xl:mb-24">
          <div>
             <span className="absolute inset-0 bg-ImageBg bg-auto w-full h-full" style={{ opacity: "6%" }}></span>
             <span

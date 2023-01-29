@@ -1,13 +1,14 @@
 import React from "react"
 import SEO from "../1_components/Seo"
 import Hero from "../2_sections/Hero"
-import ProjectsTiles from "../2_sections/ProjectsTiles"
-import About from "../2_sections/About"
-import SideProjects from "../2_sections/SideProjects"
-import Articles from "../2_sections/Articles"
-import Recommendations from "../2_sections/Recommendations"
-import Contact from "../2_sections/Contact"
+// import ProjectsTiles from "../2_sections/ProjectsTiles"
+// import About from "../2_sections/About"
+// import SideProjects from "../2_sections/SideProjects"
+// import Articles from "../2_sections/Articles"
+// import Recommendations from "../2_sections/Recommendations"
+// import Contact from "../2_sections/Contact"
 import TransitionInview from "../1_components/TransitionInview"
+import IconsGallery from "../2_sections/IconsGallery"
 
 function Home() {
    return (
@@ -43,20 +44,19 @@ function Home() {
                `Tailwind css`,
                `Portfolio`,
             ]}
-            title="Paolo Todde | Product Designer | Visual Design"
+            title="Icon thing"
          />
-         <div className="bg-dark">
-            <div className="container h-full">
-               <Hero />
-               <TransitionInview>
-                  <ProjectsTiles />
-               </TransitionInview>
-               <About />
+
+         <div className="container h-full">
+            <Hero />
+            <TransitionInview>
+               <IconsGallery />
+            </TransitionInview>
+            {/* <About />
                <Articles />
                <Recommendations />
                <Contact />
-               <SideProjects />
-            </div>
+               <SideProjects /> */}
          </div>
       </>
    )

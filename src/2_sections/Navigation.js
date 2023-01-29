@@ -26,7 +26,7 @@ function Navigation() {
          <nav className="container flex justify-between pt-6 md:pt-10 pb-2">
             <Link to="/" className="text-hover">
                <p className="text-serif text-4xl sm:text-5xl md:text-6xl lg:text-6xl 2xl:text-6xl text-primary primary-text-hover">
-                  pt.
+                  Ic
                </p>
             </Link>
             <ul className="flex space-x-4 md:space-x-6 lg:space-x-9 items-end mb-1.5">

@@ -118,7 +118,7 @@ export default function workDetails({ data }) {
                `Tailwind css`,
                `Portfolio`,
             ]}
-            title={`Paolo Todde | ${title}`}
+            title={`Icon thing | ${title}`}
          />
          <div className="w-full">
             {/* Hero */}
@@ -266,15 +266,6 @@ export default function workDetails({ data }) {
                                     .slice(0, -6)
                                     .replace("_", "")
                               )}
-
-                              {/* <span className="text-grey">
-                                 {image.childImageSharp.gatsbyImageData.images.fallback.src
-                                    .split("/")
-                                    .pop()
-                                    .slice(0, -6)
-                                    .replace("_", "")
-                                    .replace("2", " 2")}
-                              </span> */}
                            </div>
                         ))}{" "}
                   </section>

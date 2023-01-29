@@ -17,9 +17,21 @@
             "title": "Overview",
             "body": "BuzzSumo is a powerful platform that allows you to find engaging pieces of content and discover new potential outreach opportunities. The site allows you to search for content that has received the most shares, links and comments."
          }
+      },
+      {
+         "id": "section-2",
+         "aside": {
+            "title": "",
+            "list": [""]
+         },
+         "main": {
+            "title": "Role",
+            "body": "As a web design and marketing designer, I was involved in creating visually appealing and user-friendly designs for the platform's website, as well as designing marketing. Optimizing the website for search engines and monitoring analytics to measure the effectiveness of designs."
+         }
       }
    ],
    "contentImg_1": ["../images/buzzsumo/buzzsumo_1.png"],
+
    "contentList": {},
    "contentImg_2": ["../images/buzzsumo/buzzsumo_2.png"],
    "content_2": [],

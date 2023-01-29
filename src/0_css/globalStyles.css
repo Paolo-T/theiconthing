@@ -10,5 +10,10 @@ body {
    -moz-osx-font-smoothing: grayscale;
 
    /*color: #fdf1e7;*/
-   color: #f3f1d0;
+   /*color: #f3f1d0;*/
+   color: #101014;
+}
+
+.no-scroll {
+   overflow: clip;
 }

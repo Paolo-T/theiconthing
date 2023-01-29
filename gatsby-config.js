@@ -4,10 +4,10 @@ const fullConfig = resolveConfig(tailwindConfig)
 
 module.exports = {
    siteMetadata: {
-      title: `Paolo Todde | Product Designer | Coder`,
+      title: `Icon Thing`,
       siteUrl: `https://todde.design`,
       description: `UI/product designer Specialising in human-centric user experience. Tailored pixel perfect design solutions.\n\nPassionate advocate for visual communication and great user experience. I collaborate with teams in order to design high quality, accessible interfaces that are human-focused.\n\nDedicated in assisting people in achieving their online goals.`,
-      author: `Paolo Todde | Product Designer | Coder`,
+      author: `Icon Thing`,
       twitterImage: `/images/social/twitter-preview.png`,
       metaOgImage: `/images/social/og-preview.png`,
    },
@@ -109,6 +109,13 @@ module.exports = {
          options: {
             name: `images`,
             path: `${__dirname}/src/images/`,
+         },
+      },
+      {
+         resolve: `gatsby-source-filesystem`,
+         options: {
+            name: `iconsGallery`,
+            path: `${__dirname}/src/iconsGallery/`,
          },
       },
       {

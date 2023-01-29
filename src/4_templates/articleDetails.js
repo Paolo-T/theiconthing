@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import TransitionPageIn from "../1_components/TransitionPageIn"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import ProjectsTiles from "../2_sections/ProjectsTiles"
-import IconArrow from "../icons/arrow.svg"
+// import IconArrow from "../icons/arrow.svg"
 import { Link } from "gatsby"
 
 export const data = graphql`
