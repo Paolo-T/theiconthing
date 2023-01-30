@@ -17,9 +17,9 @@ const IconsGallery = () => {
 
    return (
       <>
-         <section className="container-content mx-auto grid grid-cols-7">
+         <section className="container-content mx-auto grid grid-cols-6 grid-gap">
             {data.allFile.edges.map(({ node }) => (
-               <div className="p-6">
+               <div className="p-8 border border-gray-300 rounded-2xl hover:bg-neutral-100">
                   {" "}
                   <a href={node.publicURL} className="flex flex-col justify-center" download>
                      {" "}
