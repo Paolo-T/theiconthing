@@ -8,7 +8,7 @@ function Layout({ children }) {
       <div className="w-full relative">
          {/* <Navigation /> */}
          <main className="w-full">{children}</main>
-         {/* <Footer /> */}
+         <Footer />
       </div>
    )
 }

@@ -49,9 +49,7 @@ function Home() {
 
          <div className="container h-full">
             <Hero />
-            <TransitionInview>
-               <IconsGallery />
-            </TransitionInview>
+            <IconsGallery />
             {/* <About />
                <Articles />
                <Recommendations />

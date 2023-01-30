@@ -33,7 +33,7 @@ function Contact() {
                   </CopySVGButton>
 
                   <a className="dark-text-hover" href="./icons/arrow.svg" download>
-                     <IconInstagram alt="Icon" />
+                     <IconInstagram alt="Icon" className="w-[24px]" />
                   </a>
 
                   <a

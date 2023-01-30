@@ -10,13 +10,10 @@ const strings = {
 function Hero() {
    const location = useLocation()
    return (
-      <section className="bg-dark text-offWhite relative w-full rounded-2xl py-40 md:spacing-bottom text-center xl:mb-24 mt-10 overflow-hidden">
+      <section className="bg-dark text-offWhite relative w-full rounded-2xl py-40 md:spacing-bottom text-center xl:mb-24 mt-10 overflow-hidden bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500">
          <div>
             <span className="absolute inset-0 bg-ImageBg bg-auto w-full h-full" style={{ opacity: "6%" }}></span>
-            <span
-               className="absolute inset-0 z-0 bg-gradient-to-t from-dark lg:via-dark/80 to-transparent "
-               style={{ opacity: "90%" }}
-            ></span>
+            <span className="absolute inset-0 z-0  " style={{ opacity: "9e%" }}></span>
          </div>
          <TransitionInview>
             <div className="md:grid grid-cols-16 grid-gap">
