@@ -3,8 +3,8 @@ import { useLocation } from "@reach/router"
 import TransitionInview from "../1_components/TransitionInview"
 
 const strings = {
-   hero: "The Icon thing collection",
-   subtitle: "Icons for all",
+   hero: "The Icon thing",
+   subtitle: "Icon collection",
 }
 
 function Hero() {
