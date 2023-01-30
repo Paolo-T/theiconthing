@@ -21,7 +21,7 @@ function Footer() {
       },
    ]
    return (
-      <footer className="w-full text-offWhite bg-dark pt-10 pb-10">
+      <footer className="container text-offWhite bg-dark pt-10 pb-10 rounded-2xl overflow-hidden">
          <div className="container grid grid-cols-16 md:grid-gap">
             <div className="order-last md:order-first col-start-1 col-end-17 md:col-end-8 flex space-x-1 items-center border-t border-offWhite md:border-none pt-4 md:pt-0">
                <span className="text-base">
