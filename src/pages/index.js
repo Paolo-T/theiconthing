@@ -8,7 +8,7 @@ import Hero from "../2_sections/Hero"
 // import Recommendations from "../2_sections/Recommendations"
 // import Contact from "../2_sections/Contact"
 import TransitionInview from "../1_components/TransitionInview"
-import IconsGallery from "../2_sections/IconsGallery"
+import List from "../2_sections/List"
 
 function Home() {
    return (
@@ -49,7 +49,7 @@ function Home() {
 
          <div className="container h-full">
             <Hero />
-            <IconsGallery />
+            <List />
             {/* <About />
                <Articles />
                <Recommendations />
